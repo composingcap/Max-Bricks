@@ -103,7 +103,7 @@
 							"parameter_initial" : [ 0.5 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "pluck color[2]",
+							"parameter_longname" : "pluck color[1]",
 							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "pluck color",
 							"parameter_type" : 0,
@@ -165,7 +165,7 @@
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_invisible" : 2,
-							"parameter_longname" : "live.text[4]",
+							"parameter_longname" : "live.text[7]",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.text",
 							"parameter_type" : 2
@@ -246,7 +246,7 @@
 							"parameter_initial" : [ 0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "gain[4]",
+							"parameter_longname" : "gain[1]",
 							"parameter_mmax" : 6.0,
 							"parameter_mmin" : -70.0,
 							"parameter_shortname" : "gain",
@@ -307,7 +307,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 590.0, 528.0, 78.0, 23.0 ],
 					"saved_object_attributes" : 					{
-						"filename" : "mb.helpers.js",
+						"filename" : "mb.helpers",
 						"parameter_enable" : 0
 					}
 ,
@@ -341,7 +341,9 @@
 					"presentation_rect" : [ 65.0, 42.5, 51.0, 36.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "resonance[3]",
+							"parameter_initial" : [ 0.8 ],
+							"parameter_initial_enable" : 1,
+							"parameter_longname" : "resonance[1]",
 							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "resonance",
 							"parameter_type" : 0,
@@ -368,7 +370,9 @@
 					"presentation_rect" : [ 7.0, 42.0, 51.0, 36.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "brightness[4]",
+							"parameter_initial" : [ 0.8 ],
+							"parameter_initial_enable" : 1,
+							"parameter_longname" : "brightness[5]",
 							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "brightness",
 							"parameter_type" : 0,
@@ -384,7 +388,7 @@
 , 			{
 				"box" : 				{
 					"angle" : 270.0,
-					"bgcolor" : [ 1, 1, 0, 1 ],
+					"bgcolor" : [ 0.75, 0.75, 0.75, 1 ],
 					"hint" : "Pitch LFO in semitones",
 					"id" : "obj-65",
 					"maxclass" : "panel",
@@ -407,7 +411,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 379.0, 66.0, 30.0, 30.0 ]
 				}
 
@@ -415,7 +419,7 @@
 , 			{
 				"box" : 				{
 					"angle" : 270.0,
-					"bgcolor" : [ 0.75, 0.75, 0.75, 1 ],
+					"bgcolor" : [ 1, 1, 0, 1 ],
 					"hint" : "MIDI Pitch",
 					"id" : "obj-15",
 					"maxclass" : "panel",
@@ -456,10 +460,10 @@
 					"patching_rect" : [ 590.0, 24.0, 58.0, 23.0 ],
 					"restore" : 					{
 						"gain" : [ 0.0 ],
-						"live.dial" : [ 0.653543307086613 ],
+						"live.dial" : [ 0.8 ],
 						"live.dial[1]" : [ 0.8 ],
 						"live.text" : [ 0.0 ],
-						"pluck color" : [ 0.976377952755906 ]
+						"pluck color" : [ 0.5 ]
 					}
 ,
 					"text" : "autopattr",

@@ -1,0 +1,395 @@
+{
+	"patcher" : 	{
+		"fileversion" : 1,
+		"appversion" : 		{
+			"major" : 8,
+			"minor" : 3,
+			"revision" : 1,
+			"architecture" : "x64",
+			"modernui" : 1
+		}
+,
+		"classnamespace" : "box",
+		"rect" : [ 316.0, 583.0, 1082.0, 597.0 ],
+		"bglocked" : 0,
+		"openinpresentation" : 0,
+		"default_fontsize" : 12.0,
+		"default_fontface" : 0,
+		"default_fontname" : "Lato",
+		"gridonopen" : 1,
+		"gridsize" : [ 15.0, 15.0 ],
+		"gridsnaponopen" : 1,
+		"objectsnaponopen" : 1,
+		"statusbarvisible" : 2,
+		"toolbarvisible" : 1,
+		"lefttoolbarpinned" : 0,
+		"toptoolbarpinned" : 0,
+		"righttoolbarpinned" : 0,
+		"bottomtoolbarpinned" : 0,
+		"toolbars_unpinned_last_save" : 0,
+		"tallnewobj" : 0,
+		"boxanimatetime" : 200,
+		"enablehscroll" : 1,
+		"enablevscroll" : 1,
+		"devicewidth" : 0.0,
+		"description" : "",
+		"digest" : "",
+		"tags" : "",
+		"style" : "Minimal-1",
+		"subpatcher_template" : "minimal",
+		"assistshowspatchername" : 0,
+		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-14",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 0,
+					"patching_rect" : [ 643.0, 501.0, 34.0, 23.0 ],
+					"text" : "dac~"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"args" : [ 1 ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-6",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "mb.lfo~.maxpat",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 643.0, 61.0, 190.0, 120.0 ],
+					"varname" : "mb.LFO~[1]",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"args" : [ 1 ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-10",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "mb.lfo2note.maxpat",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 643.0, 219.0, 290.0, 120.0 ],
+					"varname" : "mb.lfo2note[1]",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"args" : [ 1 ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-13",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "mb.pluck~.maxpat",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 643.0, 390.0, 220.0, 79.0 ],
+					"varname" : "mb.pluck~[1]",
+					"viewvisibility" : 1
+				}
+
+			}
+ ],
+		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-13", 0 ],
+					"source" : [ "obj-10", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-14", 1 ],
+					"order" : 0,
+					"source" : [ "obj-13", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-14", 0 ],
+					"order" : 1,
+					"source" : [ "obj-13", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-10", 0 ],
+					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+ ],
+		"parameters" : 		{
+			"obj-10::obj-32" : [ "base pitch", "base pitch", 0 ],
+			"obj-10::obj-33" : [ "pitch range", "pitch range", 0 ],
+			"obj-10::obj-36" : [ "scale root", "scale root", 0 ],
+			"obj-10::obj-54" : [ "live.text[6]", "live.text[2]", 0 ],
+			"obj-10::obj-57" : [ "periodms[1]", "periodms", 0 ],
+			"obj-10::obj-93" : [ "live.text[5]", "live.text", 0 ],
+			"obj-13::obj-100" : [ "brightness[5]", "brightness", 0 ],
+			"obj-13::obj-102" : [ "resonance[1]", "resonance", 0 ],
+			"obj-13::obj-16" : [ "gain[1]", "gain", 0 ],
+			"obj-13::obj-7" : [ "pluck color[1]", "pluck color", 0 ],
+			"obj-13::obj-93" : [ "live.text[7]", "live.text", 0 ],
+			"obj-6::obj-10" : [ "lfoMax[1]", "lfoMax", 0 ],
+			"obj-6::obj-20" : [ "live.tab", "live.tab", 0 ],
+			"obj-6::obj-6" : [ "lfoRate[1]", "lfoRate", 0 ],
+			"obj-6::obj-9" : [ "lfoMin[1]", "lfoMin", 0 ],
+			"parameterbanks" : 			{
+				"0" : 				{
+					"index" : 0,
+					"name" : "",
+					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+				}
+
+			}
+,
+			"parameter_overrides" : 			{
+				"obj-10::obj-32" : 				{
+					"parameter_initial" : 60,
+					"parameter_longname" : "base pitch",
+					"parameter_range" : [ 24.0, 103.0 ],
+					"parameter_shortname" : "base pitch",
+					"parameter_unitstyle" : 8
+				}
+,
+				"obj-10::obj-33" : 				{
+					"parameter_initial" : 24,
+					"parameter_longname" : "pitch range",
+					"parameter_range" : [ 0.0, 60.0 ],
+					"parameter_shortname" : "pitch range",
+					"parameter_unitstyle" : 7
+				}
+,
+				"obj-10::obj-36" : 				{
+					"parameter_initial" : 0.0,
+					"parameter_initial_enable" : 1,
+					"parameter_invisible" : 0,
+					"parameter_linknames" : 1,
+					"parameter_longname" : "scale root",
+					"parameter_modmode" : 0,
+					"parameter_range" : [ "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B" ],
+					"parameter_shortname" : "scale root",
+					"parameter_type" : 2,
+					"parameter_unitstyle" : 10
+				}
+,
+				"obj-10::obj-54" : 				{
+					"parameter_longname" : "live.text[6]"
+				}
+,
+				"obj-10::obj-57" : 				{
+					"parameter_longname" : "periodms[1]"
+				}
+,
+				"obj-10::obj-93" : 				{
+					"parameter_longname" : "live.text[5]"
+				}
+,
+				"obj-13::obj-100" : 				{
+					"parameter_initial" : 0.8,
+					"parameter_initial_enable" : 1,
+					"parameter_longname" : "brightness[5]"
+				}
+,
+				"obj-13::obj-102" : 				{
+					"parameter_initial" : 0.8,
+					"parameter_initial_enable" : 1,
+					"parameter_longname" : "resonance[1]"
+				}
+,
+				"obj-13::obj-16" : 				{
+					"parameter_longname" : "gain[1]"
+				}
+,
+				"obj-13::obj-7" : 				{
+					"parameter_longname" : "pluck color[1]"
+				}
+,
+				"obj-13::obj-93" : 				{
+					"parameter_longname" : "live.text[7]"
+				}
+,
+				"obj-6::obj-10" : 				{
+					"parameter_longname" : "lfoMax[1]"
+				}
+,
+				"obj-6::obj-20" : 				{
+					"parameter_invisible" : 0,
+					"parameter_longname" : "live.tab",
+					"parameter_modmode" : 0,
+					"parameter_range" : [ "sin", "tri", "sawU", "sawD", "random" ],
+					"parameter_shortname" : "live.tab",
+					"parameter_type" : 2,
+					"parameter_unitstyle" : 9
+				}
+,
+				"obj-6::obj-6" : 				{
+					"parameter_longname" : "lfoRate[1]"
+				}
+,
+				"obj-6::obj-9" : 				{
+					"parameter_longname" : "lfoMin[1]"
+				}
+
+			}
+,
+			"inherited_shortname" : 1
+		}
+,
+		"dependency_cache" : [ 			{
+				"name" : "_mb.inputConnected.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/Max Bricks/patchers/utilities",
+				"patcherrelativepath" : "../patchers/utilities",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "_mb.lfoInput.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/Max Bricks/patchers/utilities",
+				"patcherrelativepath" : "../patchers/utilities",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "_mb.poly.pluck.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/Max Bricks/patchers/poly",
+				"patcherrelativepath" : "../patchers/poly",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "_mb.scaleQuantize.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/Max Bricks/patchers/utilities",
+				"patcherrelativepath" : "../patchers/utilities",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "mb.helpers.js",
+				"bootpath" : "~/Documents/Max 8/Packages/Max Bricks/javascript",
+				"patcherrelativepath" : "../javascript",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "mb.infoIcon.svg",
+				"bootpath" : "~/Documents/Max 8/Packages/Max Bricks/media",
+				"patcherrelativepath" : "../media",
+				"type" : "svg",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "mb.lfo2note.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/Max Bricks/patchers/bpatchers",
+				"patcherrelativepath" : "../patchers/bpatchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "mb.lfo~.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/Max Bricks/patchers/bpatchers",
+				"patcherrelativepath" : "../patchers/bpatchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "mb.pluck~.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/Max Bricks/patchers/bpatchers",
+				"patcherrelativepath" : "../patchers/bpatchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0,
+		"styles" : [ 			{
+				"name" : "Minimal",
+				"default" : 				{
+					"accentcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
+					"bgfillcolor" : 					{
+						"angle" : 270.0,
+						"autogradient" : 0.0,
+						"color" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+						"color1" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+						"proportion" : 0.39,
+						"type" : "color"
+					}
+,
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"editing_bgcolor" : [ 0.956862745098039, 0.956862745098039, 0.956862745098039, 1.0 ],
+					"elementcolor" : [ 0.647058823529412, 0.647058823529412, 0.647058823529412, 1.0 ],
+					"fontface" : [ 0 ],
+					"fontname" : [ "Futura Medium" ],
+					"fontsize" : [ 10.0 ],
+					"selectioncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
+			}
+, 			{
+				"name" : "Minimal-1",
+				"default" : 				{
+					"accentcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
+					"bgfillcolor" : 					{
+						"angle" : 270.0,
+						"autogradient" : 0.0,
+						"color" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+						"color1" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+						"proportion" : 0.39,
+						"type" : "color"
+					}
+,
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"editing_bgcolor" : [ 0.956862745098039, 0.956862745098039, 0.956862745098039, 1.0 ],
+					"elementcolor" : [ 0.741176470588235, 0.741176470588235, 0.741176470588235, 1.0 ],
+					"fontface" : [ 0 ],
+					"fontname" : [ "Lato" ],
+					"fontsize" : [ 12.0 ],
+					"selectioncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
+			}
+ ]
+	}
+
+}
