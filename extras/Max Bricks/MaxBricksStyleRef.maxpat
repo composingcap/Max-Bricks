@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 279.0, 139.0, 829.0, 762.0 ],
+		"rect" : [ 691.0, 566.0, 829.0, 762.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -174,7 +174,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 408.0, 144.5, 183.0, 120.0 ],
+					"patching_rect" : [ 406.0, 130.5, 183.0, 120.0 ],
 					"varname" : "mb.LFO~[2]",
 					"viewvisibility" : 1
 				}
@@ -285,6 +285,13 @@
 					"destination" : [ "obj-30", 0 ],
 					"midpoints" : [ 80.5, 277.25, 508.5, 277.25 ],
 					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"source" : [ "obj-30", 0 ]
 				}
 
 			}

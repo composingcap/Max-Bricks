@@ -3,6 +3,11 @@ var medium = [290,120];
 var extraSmall= [190,80];
 var large = [280,220];
 
+function help(){
+	var p = this.patcher;
+	var n = p.name;
+	outlet(0, ["help", n]);
+}
 
 function autoTransform(size){
 
