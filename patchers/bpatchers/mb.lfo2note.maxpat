@@ -189,18 +189,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-34",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "float" ],
-					"patching_rect" : [ 254.0, 323.0, 29.5, 23.0 ],
-					"text" : "+ 0."
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"appearance" : 1,
 					"id" : "obj-33",
 					"maxclass" : "live.dial",
@@ -362,7 +350,7 @@
 				"box" : 				{
 					"fontsize" : 10.0,
 					"id" : "obj-35",
-					"items" : [ "chromatic", ",", "diatonic", ",", "pentatonic", ",", "octatonic", ",", "wholetone", ",", "Maj7", ",", "Maj9", ",", "Diminished" ],
+					"items" : [ "diatonic", ",", "pentatonic", ",", "chromatic", ",", "octatonic", ",", "wholetone", ",", "Maj7", ",", "Maj9", ",", "Diminished" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -378,7 +366,7 @@
 				"box" : 				{
 					"id" : "obj-28",
 					"maxclass" : "newobj",
-					"numinlets" : 2,
+					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "clear" ],
 					"patching_rect" : [ 255.25, 278.0, 107.0, 23.0 ],
@@ -511,7 +499,7 @@
 					"restore" : 					{
 						"base pitch" : [ 60.0 ],
 						"live.text" : [ 0.0 ],
-						"live.text[1]" : [ 0.0 ],
+						"live.text[1]" : [ 1.0 ],
 						"noteLength" : [ 250.0 ],
 						"noteVelocity" : [ 64.0 ],
 						"periodms" : [ 125.0 ],
@@ -831,7 +819,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-34", 0 ],
+					"destination" : [ "obj-2", 0 ],
 					"source" : [ "obj-28", 0 ]
 				}
 
@@ -883,14 +871,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-2", 0 ],
-					"source" : [ "obj-34", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-28", 1 ],
+					"destination" : [ "obj-28", 2 ],
 					"midpoints" : [ 458.75, 319.0, 548.75, 319.0, 548.75, 267.0, 352.75, 267.0 ],
 					"source" : [ "obj-35", 1 ]
 				}
@@ -898,7 +879,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-34", 1 ],
+					"destination" : [ "obj-28", 1 ],
 					"source" : [ "obj-36", 0 ]
 				}
 
