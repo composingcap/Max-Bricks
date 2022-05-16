@@ -580,6 +580,8 @@
 						}
 ,
 						"valueof" : 						{
+							"parameter_initial" : [ 1 ],
+							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
 							"parameter_longname" : "lfoRate[1]",
 							"parameter_mmax" : 20.0,

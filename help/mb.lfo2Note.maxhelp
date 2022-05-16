@@ -44,7 +44,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 643.0, 501.0, 34.0, 23.0 ],
+					"patching_rect" : [ 658.0, 496.0, 34.0, 23.0 ],
 					"text" : "dac~"
 				}
 
@@ -66,31 +66,8 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 643.0, 61.0, 190.0, 120.0 ],
+					"patching_rect" : [ 658.0, 6.0, 190.0, 120.0 ],
 					"varname" : "mb.LFO~[1]",
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"args" : [ 1 ],
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-10",
-					"lockeddragscroll" : 0,
-					"lockedsize" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "mb.lfo2note.maxpat",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 643.0, 219.0, 290.0, 120.0 ],
-					"varname" : "mb.lfo2note[1]",
 					"viewvisibility" : 1
 				}
 
@@ -112,21 +89,37 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 643.0, 390.0, 220.0, 79.0 ],
+					"patching_rect" : [ 658.0, 385.0, 190.0, 83.0 ],
 					"varname" : "mb.pluck~[1]",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"args" : [ 1 ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-3",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "mb.lfo2note.maxpat",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 658.0, 148.0, 280.0, 220.0 ],
+					"varname" : "mb.lfo2note[1]",
 					"viewvisibility" : 1
 				}
 
 			}
  ],
 		"lines" : [ 			{
-				"patchline" : 				{
-					"destination" : [ "obj-13", 0 ],
-					"source" : [ "obj-10", 0 ]
-				}
-
-			}
-, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-14", 1 ],
 					"order" : 0,
@@ -144,24 +137,33 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-10", 0 ],
+					"destination" : [ "obj-13", 0 ],
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
 					"source" : [ "obj-6", 0 ]
 				}
 
 			}
  ],
 		"parameters" : 		{
-			"obj-10::obj-32" : [ "base pitch", "base pitch", 0 ],
-			"obj-10::obj-33" : [ "pitch range", "pitch range", 0 ],
-			"obj-10::obj-36" : [ "scale root", "scale root", 0 ],
-			"obj-10::obj-54" : [ "live.text[6]", "live.text[2]", 0 ],
-			"obj-10::obj-57" : [ "periodms[1]", "periodms", 0 ],
-			"obj-10::obj-93" : [ "live.text[5]", "live.text", 0 ],
 			"obj-13::obj-100" : [ "brightness[5]", "brightness", 0 ],
 			"obj-13::obj-102" : [ "resonance[1]", "resonance", 0 ],
 			"obj-13::obj-16" : [ "gain[1]", "gain", 0 ],
 			"obj-13::obj-7" : [ "pluck color[1]", "pluck color", 0 ],
 			"obj-13::obj-93" : [ "live.text[7]", "live.text", 0 ],
+			"obj-3::obj-10" : [ "noteVelocity[1]", "note velocity", 0 ],
+			"obj-3::obj-32" : [ "base pitch[1]", "base pitch", 0 ],
+			"obj-3::obj-33" : [ "pitch range[1]", "pitch range", 0 ],
+			"obj-3::obj-36" : [ "scale root[1]", "scale root", 0 ],
+			"obj-3::obj-5" : [ "noteLength[1]", "note length", 0 ],
+			"obj-3::obj-54" : [ "live.text[9]", "live.text[2]", 0 ],
+			"obj-3::obj-57" : [ "periodms[1]", "period", 0 ],
+			"obj-3::obj-93" : [ "live.text[8]", "live.text", 0 ],
 			"obj-6::obj-10" : [ "lfoMax[1]", "lfoMax", 0 ],
 			"obj-6::obj-20" : [ "live.tab", "live.tab", 0 ],
 			"obj-6::obj-6" : [ "lfoRate[1]", "lfoRate", 0 ],
@@ -176,47 +178,6 @@
 			}
 ,
 			"parameter_overrides" : 			{
-				"obj-10::obj-32" : 				{
-					"parameter_initial" : 60,
-					"parameter_longname" : "base pitch",
-					"parameter_range" : [ 24.0, 103.0 ],
-					"parameter_shortname" : "base pitch",
-					"parameter_unitstyle" : 8
-				}
-,
-				"obj-10::obj-33" : 				{
-					"parameter_initial" : 24,
-					"parameter_longname" : "pitch range",
-					"parameter_range" : [ 0.0, 60.0 ],
-					"parameter_shortname" : "pitch range",
-					"parameter_unitstyle" : 7
-				}
-,
-				"obj-10::obj-36" : 				{
-					"parameter_initial" : 0.0,
-					"parameter_initial_enable" : 1,
-					"parameter_invisible" : 0,
-					"parameter_linknames" : 1,
-					"parameter_longname" : "scale root",
-					"parameter_modmode" : 0,
-					"parameter_range" : [ "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B" ],
-					"parameter_shortname" : "scale root",
-					"parameter_type" : 2,
-					"parameter_unitstyle" : 10
-				}
-,
-				"obj-10::obj-54" : 				{
-					"parameter_longname" : "live.text[6]"
-				}
-,
-				"obj-10::obj-57" : 				{
-					"parameter_longname" : "periodms[1]"
-				}
-,
-				"obj-10::obj-93" : 				{
-					"parameter_longname" : "live.text[5]"
-				}
-,
 				"obj-13::obj-100" : 				{
 					"parameter_initial" : 0.8,
 					"parameter_initial_enable" : 1,
@@ -241,6 +202,38 @@
 					"parameter_longname" : "live.text[7]"
 				}
 ,
+				"obj-3::obj-10" : 				{
+					"parameter_longname" : "noteVelocity[1]"
+				}
+,
+				"obj-3::obj-32" : 				{
+					"parameter_longname" : "base pitch[1]"
+				}
+,
+				"obj-3::obj-33" : 				{
+					"parameter_longname" : "pitch range[1]"
+				}
+,
+				"obj-3::obj-36" : 				{
+					"parameter_longname" : "scale root[1]"
+				}
+,
+				"obj-3::obj-5" : 				{
+					"parameter_longname" : "noteLength[1]"
+				}
+,
+				"obj-3::obj-54" : 				{
+					"parameter_longname" : "live.text[9]"
+				}
+,
+				"obj-3::obj-57" : 				{
+					"parameter_longname" : "periodms[1]"
+				}
+,
+				"obj-3::obj-93" : 				{
+					"parameter_longname" : "live.text[8]"
+				}
+,
 				"obj-6::obj-10" : 				{
 					"parameter_longname" : "lfoMax[1]"
 				}
@@ -256,6 +249,8 @@
 				}
 ,
 				"obj-6::obj-6" : 				{
+					"parameter_initial" : 1,
+					"parameter_initial_enable" : 1,
 					"parameter_longname" : "lfoRate[1]"
 				}
 ,

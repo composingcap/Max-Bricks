@@ -166,7 +166,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 726.0, 305.0, 26.0, 23.0 ],
+					"patching_rect" : [ 726.0, 324.0, 26.0, 23.0 ],
 					"text" : "iter"
 				}
 
@@ -220,8 +220,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 324.0, 281.0, 192.0, 23.0 ],
-					"text" : "loadmess 0 1 2 3 4 5 6 7 8 9 10 11"
+					"patching_rect" : [ 506.5, 324.0, 145.0, 23.0 ],
+					"text" : "loadmess 0 2 4 5 7 8 9 11"
 				}
 
 			}
@@ -293,7 +293,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 209.0, 496.0, 50.0, 23.0 ],
-					"text" : "4"
+					"text" : "0"
 				}
 
 			}
@@ -599,7 +599,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-125", 1 ],
-					"order" : 1,
+					"order" : 2,
 					"source" : [ "obj-6", 0 ]
 				}
 
@@ -607,7 +607,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-134", 1 ],
-					"order" : 0,
+					"order" : 1,
 					"source" : [ "obj-6", 0 ]
 				}
 
@@ -623,7 +623,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
-					"order" : 2,
+					"order" : 0,
 					"source" : [ "obj-6", 0 ]
 				}
 
