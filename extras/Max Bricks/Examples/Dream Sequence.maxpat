@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 183.0, 224.0, 768.0, 914.0 ],
+		"rect" : [ 761.0, 277.0, 768.0, 914.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -112,7 +112,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 17.0, 767.0, 190.0, 23.0 ],
+					"patching_rect" : [ 17.0, 783.0, 190.0, 23.0 ],
 					"text" : "dac~"
 				}
 
@@ -271,7 +271,7 @@
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 17.0, 625.0, 190.0, 120.0 ],
+					"patching_rect" : [ 17.0, 635.0, 190.0, 120.0 ],
 					"varname" : "mb.grainulate~[1]",
 					"viewvisibility" : 1
 				}
@@ -378,6 +378,7 @@
 			"obj-95::obj-48" : [ "noteLength[1]", "length", 0 ],
 			"obj-95::obj-93" : [ "live.text[8]", "live.text", 0 ],
 			"obj-98::obj-10" : [ "feedback[1]", "feedback", 0 ],
+			"obj-98::obj-104" : [ "transpose", "transpose", 0 ],
 			"obj-98::obj-112" : [ "overlap[1]", "overlap", 0 ],
 			"obj-98::obj-113" : [ "randomDelay[1]", "delayR", 0 ],
 			"obj-98::obj-114" : [ "rate", "rate", 0 ],
@@ -499,6 +500,16 @@
 ,
 				"obj-98::obj-10" : 				{
 					"parameter_longname" : "feedback[1]"
+				}
+,
+				"obj-98::obj-104" : 				{
+					"parameter_exponent" : 1.0,
+					"parameter_initial" : 0,
+					"parameter_longname" : "transpose",
+					"parameter_range" : [ -7.0, 7.0 ],
+					"parameter_shortname" : "transpose",
+					"parameter_units" : "st",
+					"parameter_unitstyle" : 9
 				}
 ,
 				"obj-98::obj-112" : 				{
