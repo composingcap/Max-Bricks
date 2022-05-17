@@ -12,7 +12,7 @@
 		"classnamespace" : "box",
 		"rect" : [ 454.0, 260.0, 224.0, 287.0 ],
 		"bglocked" : 0,
-		"openinpresentation" : 0,
+		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Lato",
