@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 316.0, 583.0, 1082.0, 597.0 ],
+		"rect" : [ 100.0, 100.0, 1082.0, 597.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,11 +40,34 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"args" : [ 1 ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-88",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "mb.metro.maxpat",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 823.0, 31.0, 190.0, 80.0 ],
+					"varname" : "mb.metro[1]",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-14",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 658.0, 496.0, 34.0, 23.0 ],
+					"patching_rect" : [ 562.0, 521.0, 34.0, 23.0 ],
 					"text" : "dac~"
 				}
 
@@ -66,7 +89,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 658.0, 6.0, 190.0, 120.0 ],
+					"patching_rect" : [ 562.0, 31.0, 190.0, 120.0 ],
 					"varname" : "mb.LFO~[1]",
 					"viewvisibility" : 1
 				}
@@ -89,7 +112,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 658.0, 385.0, 190.0, 83.0 ],
+					"patching_rect" : [ 562.0, 410.0, 190.0, 83.0 ],
 					"varname" : "mb.pluck~[1]",
 					"viewvisibility" : 1
 				}
@@ -112,7 +135,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 658.0, 148.0, 280.0, 220.0 ],
+					"patching_rect" : [ 562.0, 173.0, 280.0, 220.0 ],
 					"varname" : "mb.lfo2note[1]",
 					"viewvisibility" : 1
 				}
@@ -149,6 +172,13 @@
 				}
 
 			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 1 ],
+					"source" : [ "obj-88", 0 ]
+				}
+
+			}
  ],
 		"parameters" : 		{
 			"obj-13::obj-100" : [ "brightness[5]", "brightness", 0 ],
@@ -161,13 +191,16 @@
 			"obj-3::obj-33" : [ "pitch range[1]", "pitch range", 0 ],
 			"obj-3::obj-36" : [ "scale root[1]", "scale root", 0 ],
 			"obj-3::obj-5" : [ "noteLength[1]", "note length", 0 ],
-			"obj-3::obj-54" : [ "live.text[9]", "live.text[2]", 0 ],
-			"obj-3::obj-57" : [ "periodms[1]", "period", 0 ],
 			"obj-3::obj-93" : [ "live.text[8]", "live.text", 0 ],
 			"obj-6::obj-10" : [ "lfoMax[1]", "lfoMax", 0 ],
 			"obj-6::obj-20" : [ "live.tab", "live.tab", 0 ],
 			"obj-6::obj-6" : [ "lfoRate[1]", "lfoRate", 0 ],
 			"obj-6::obj-9" : [ "lfoMin[1]", "lfoMin", 0 ],
+			"obj-88::obj-23::obj-5" : [ "timems", "timems", 0 ],
+			"obj-88::obj-23::obj-6" : [ "live.numbox[3]", "live.numbox[1]", 0 ],
+			"obj-88::obj-24" : [ "live.text[4]", "live.text[1]", 0 ],
+			"obj-88::obj-3" : [ "state", "state", 0 ],
+			"obj-88::obj-93" : [ "live.text[3]", "live.text", 0 ],
 			"parameterbanks" : 			{
 				"0" : 				{
 					"index" : 0,
@@ -220,14 +253,6 @@
 ,
 				"obj-3::obj-5" : 				{
 					"parameter_longname" : "noteLength[1]"
-				}
-,
-				"obj-3::obj-54" : 				{
-					"parameter_longname" : "live.text[9]"
-				}
-,
-				"obj-3::obj-57" : 				{
-					"parameter_longname" : "periodms[1]"
 				}
 ,
 				"obj-3::obj-93" : 				{
@@ -292,6 +317,13 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "_mb.timecontrols.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/Max Bricks/patchers/utilities",
+				"patcherrelativepath" : "../patchers/utilities",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "mb.helpers.js",
 				"bootpath" : "~/Documents/Max 8/Packages/Max Bricks/javascript",
 				"patcherrelativepath" : "../javascript",
@@ -314,6 +346,13 @@
 			}
 , 			{
 				"name" : "mb.lfo~.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/Max Bricks/patchers/bpatchers",
+				"patcherrelativepath" : "../patchers/bpatchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "mb.metro.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/Max Bricks/patchers/bpatchers",
 				"patcherrelativepath" : "../patchers/bpatchers",
 				"type" : "JSON",

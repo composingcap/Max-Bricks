@@ -167,7 +167,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 530.0, 265.0, 92.0, 23.0 ],
+					"patching_rect" : [ 504.5, 279.0, 92.0, 23.0 ],
 					"text" : "route notes size"
 				}
 
@@ -293,7 +293,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 503.5, 336.0, 145.0, 23.0 ],
+					"patching_rect" : [ 372.0, 215.0, 145.0, 23.0 ],
 					"text" : "loadmess 0 2 4 5 7 8 9 11"
 				}
 
@@ -366,7 +366,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 209.0, 496.0, 50.0, 23.0 ],
-					"text" : "3"
+					"text" : "1"
 				}
 
 			}
@@ -706,15 +706,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-15", 0 ],
-					"order" : 1,
-					"source" : [ "obj-6", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-3", 0 ],
-					"order" : 0,
 					"source" : [ "obj-6", 0 ]
 				}
 

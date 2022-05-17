@@ -1,6 +1,6 @@
 var small = [190,120]
 var medium = [290,120];
-var extraSmall= [190,80];
+var extraSmall= [190,90];
 var large = [280,220];
 
 function help(){
