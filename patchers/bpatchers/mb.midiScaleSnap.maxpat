@@ -40,6 +40,18 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 232.5, 555.0, 101.0, 23.0 ],
+					"text" : "_mb.thinNoteoffs"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-39",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -85,7 +97,7 @@
 							"parameter_initial" : [ 0.0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "scale root",
+							"parameter_longname" : "scale root[1]",
 							"parameter_mmax" : 11,
 							"parameter_shortname" : "scale root",
 							"parameter_type" : 2,
@@ -160,7 +172,7 @@
 					"patching_rect" : [ 788.0, 54.0, 58.0, 23.0 ],
 					"restore" : 					{
 						"live.text" : [ 0.0 ],
-						"scale root" : [ 0.0 ]
+						"scale root" : [ 4.0 ]
 					}
 ,
 					"text" : "autopattr",
@@ -217,7 +229,7 @@
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_invisible" : 2,
-							"parameter_longname" : "live.text[10]",
+							"parameter_longname" : "live.text[6]",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.text",
 							"parameter_type" : 2
@@ -246,7 +258,7 @@
 , 			{
 				"box" : 				{
 					"angle" : 270.0,
-					"bgcolor" : [ 0.75, 0.75, 0.75, 1 ],
+					"bgcolor" : [ 1, 1, 0, 1 ],
 					"hint" : "MIDI Note (pitch velocity) to be transposed",
 					"id" : "obj-24",
 					"maxclass" : "panel",
@@ -447,7 +459,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 96.0, 567.0, 30.0, 30.0 ]
+					"patching_rect" : [ 92.25, 608.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -698,6 +710,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
+					"order" : 1,
+					"source" : [ "obj-34", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"order" : 0,
 					"source" : [ "obj-34", 0 ]
 				}
 

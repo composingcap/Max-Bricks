@@ -1,6 +1,7 @@
 var small = [190,120]
 var medium = [290,120];
 var extraSmall= [190,90];
+var extraextraSmall= [190,40];
 var large = [280,220];
 
 function help(){
@@ -32,9 +33,15 @@ function autoTransform(size){
 		position[3] = large[0];
 		position[4] = large[1];
 	}
-	else if (size = "xs"){
+	else if (size == "xs"){
 		position[3] = extraSmall[0];
 		position[4] = extraSmall[1];
+
+	}
+	else if (size == "xxs"){
+		position[3] = extraextraSmall[0];
+		position[4] = extraextraSmall[1];
+
 
 	}
 	else{

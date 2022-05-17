@@ -165,7 +165,7 @@
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_invisible" : 2,
-							"parameter_longname" : "live.text[7]",
+							"parameter_longname" : "live.text[13]",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.text",
 							"parameter_type" : 2
@@ -223,7 +223,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 153.0, 442.800000488758087, 239.0, 23.0 ],
-					"text" : "poly~ _mb.poly.pluck 16 @target 0 @steal 1"
+					"text" : "poly~ _mb.poly.pluck 32 @target 0 @steal 1"
 				}
 
 			}
@@ -307,7 +307,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 590.0, 528.0, 78.0, 23.0 ],
 					"saved_object_attributes" : 					{
-						"filename" : "mb.helpers",
+						"filename" : "mb.helpers.js",
 						"parameter_enable" : 0
 					}
 ,
@@ -343,7 +343,7 @@
 						"valueof" : 						{
 							"parameter_initial" : [ 0.8 ],
 							"parameter_initial_enable" : 1,
-							"parameter_longname" : "resonance[1]",
+							"parameter_longname" : "resonance[2]",
 							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "resonance",
 							"parameter_type" : 0,
@@ -372,7 +372,7 @@
 						"valueof" : 						{
 							"parameter_initial" : [ 0.8 ],
 							"parameter_initial_enable" : 1,
-							"parameter_longname" : "brightness[5]",
+							"parameter_longname" : "brightness[1]",
 							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "brightness",
 							"parameter_type" : 0,
@@ -459,11 +459,11 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 590.0, 24.0, 58.0, 23.0 ],
 					"restore" : 					{
-						"gain" : [ 0.0 ],
+						"gain" : [ -9.573053368328956 ],
 						"live.dial" : [ 0.8 ],
 						"live.dial[1]" : [ 0.8 ],
 						"live.text" : [ 0.0 ],
-						"pluck color" : [ 0.5 ]
+						"pluck color" : [ 0.492125984251969 ]
 					}
 ,
 					"text" : "autopattr",
