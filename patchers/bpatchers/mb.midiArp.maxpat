@@ -276,7 +276,8 @@
 					"patching_rect" : [ 512.0, 253.0, 168.0, 53.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 89.0, 45.5, 98.0, 34.0 ],
-					"range" : 24
+					"range" : 24,
+					"varname" : "arpNotes"
 				}
 
 			}
@@ -337,6 +338,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 788.0, 54.0, 58.0, 23.0 ],
 					"restore" : 					{
+						"arpNotes" : [ 0, 16, 11, 46, 16, 20, 23, 39 ],
 						"live.text" : [ 0.0 ],
 						"noteLength" : [ 220.078740157480297 ],
 						"noteVelocity" : [ 64.0 ]
