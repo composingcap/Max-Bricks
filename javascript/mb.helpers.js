@@ -3,6 +3,7 @@ var medium = [290,120];
 var extraSmall= [190,90];
 var extraextraSmall= [190,40];
 var large = [280,220];
+var extralarge = [420,220];
 
 function help(){
 	var p = this.patcher;
@@ -32,6 +33,10 @@ function autoTransform(size){
 	else if (size == "l"){
 		position[3] = large[0];
 		position[4] = large[1];
+	}
+	else if (size == "xl"){
+		position[3] = extralarge[0];
+		position[4] = extralarge[1];
 	}
 	else if (size == "xs"){
 		position[3] = extraSmall[0];
