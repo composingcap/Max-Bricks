@@ -1,6 +1,6 @@
 # TODO
 
-## Insruments 
+## Instruments 
 - [ ] Subtractive Synth
 - [ ] Double FM Synth
 - [ ] Modal Synth
@@ -22,6 +22,7 @@
 - [ ] Distortion
 - [ ] Mixer
 - [ ] Router
+- [ ] Reverb
 
 ## Midi effects 
 - [ ] midi delay 
