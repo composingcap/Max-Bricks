@@ -23,6 +23,8 @@
 - [ ] Mixer
 - [ ] Router
 - [ ] Reverb
+- [ ] Gate
+- [ ] Compressor
 
 ## Midi effects 
 - [ ] midi delay 
