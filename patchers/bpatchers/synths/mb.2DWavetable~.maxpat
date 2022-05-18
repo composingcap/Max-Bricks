@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 707.0, 249.0, 1502.0, 1077.0 ],
+		"rect" : [ 1808.0, 234.0, 1502.0, 1077.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -62,7 +62,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1638.400022804737091, 931.0, 464.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 246.0, 82.0, 159.0, 50.0 ],
+					"presentation_rect" : [ 180.0, 85.5, 93.0, 50.0 ],
 					"setstyle" : 1,
 					"signed" : 1,
 					"size" : 256,
@@ -476,8 +476,8 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 157.33333146572113, 123.0, 150.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 113.0, 125.5, 73.0, 18.0 ],
-					"text" : "Envelope Time",
+					"presentation_rect" : [ 87.0, 125.5, 36.0, 18.0 ],
+					"text" : " Time",
 					"textjustification" : 0
 				}
 
@@ -490,7 +490,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 11.0, 122.0, 150.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 14.0, 127.0, 73.0, 18.0 ],
+					"presentation_rect" : [ 7.0, 125.5, 73.0, 18.0 ],
 					"text" : "Row ADSR",
 					"textjustification" : 0
 				}
@@ -531,12 +531,12 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 501.0, 16.0, 44.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 188.0, 127.0, 44.0, 15.0 ],
+					"presentation_rect" : [ 119.0, 128.0, 44.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_initial" : [ 6000 ],
 							"parameter_initial_enable" : 1,
-							"parameter_longname" : "live.numbox[8]",
+							"parameter_longname" : "live.numbox[2]",
 							"parameter_mmax" : 10000.0,
 							"parameter_mmin" : 1000.0,
 							"parameter_shortname" : "live.numbox",
@@ -624,6 +624,7 @@
 					"presentation_rect" : [ 52.5, 38.5, 49.0, 36.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_exponent" : 2.0,
 							"parameter_linknames" : 1,
 							"parameter_longname" : "envelope rows[1]",
 							"parameter_mmax" : 64.0,
@@ -670,7 +671,7 @@
 					"patching_rect" : [ 497.0, 68.0, 184.0, 68.0 ],
 					"peak" : 0.970588235294118,
 					"presentation" : 1,
-					"presentation_rect" : [ 14.0, 75.0, 217.0, 50.0 ],
+					"presentation_rect" : [ 7.0, 76.5, 155.0, 50.0 ],
 					"release_domain" : [ 1.5, 2000.0 ],
 					"release_time" : 389.869425349196092,
 					"sustain" : 0.590588235294116
@@ -780,7 +781,7 @@
 , 			{
 				"box" : 				{
 					"angle" : 270.0,
-					"bgcolor" : [ 0.75, 0.75, 0.75, 1 ],
+					"bgcolor" : [ 1, 1, 0, 1 ],
 					"hint" : "Pitch Bend in Semitones (signal or data LFO) modulates the pitch in semitones. Try connecting a pitchbend or LFO.",
 					"id" : "obj-71",
 					"maxclass" : "panel",
@@ -789,7 +790,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 607.5, 406.0, 43.0, 43.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 207.5, 4.0, 5.0, 5.0 ],
+					"presentation_rect" : [ 136.5, 4.0, 5.0, 5.0 ],
 					"proportion" : 0.39,
 					"shape" : 1
 				}
@@ -814,7 +815,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 606.0, 254.0, 30.0, 30.0 ]
 				}
 
@@ -1032,7 +1033,7 @@
 					"patching_rect" : [ 715.0, 747.5, 159.0, 20.0 ],
 					"pattrmode" : 1,
 					"presentation" : 1,
-					"presentation_rect" : [ 103.5, 47.0, 127.5, 20.0 ],
+					"presentation_rect" : [ 180.0, 46.5, 97.0, 20.0 ],
 					"varname" : "wavetable"
 				}
 
@@ -1168,11 +1169,11 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 224.0, 204.0, 44.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 277.0, 17.5, 38.0, 20.0 ],
+					"presentation_rect" : [ 103.5, 46.5, 38.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
-							"parameter_longname" : "live.text[19]",
+							"parameter_longname" : "live.text[10]",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.text[1]",
 							"parameter_type" : 2
@@ -1240,7 +1241,7 @@
 					"patching_rect" : [ 791.5, 34.0, 30.0, 32.0 ],
 					"pictures" : [ "mb.infoIcon.svg", "mb.infoIcon.svg" ],
 					"presentation" : 1,
-					"presentation_rect" : [ 397.0, 12.5, 21.0, 22.75 ],
+					"presentation_rect" : [ 256.0, 14.125, 21.0, 22.75 ],
 					"remapsvgcolors" : 1,
 					"saved_attribute_attributes" : 					{
 						"activebgcolor" : 						{
@@ -1270,7 +1271,7 @@
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_invisible" : 2,
-							"parameter_longname" : "live.text[20]",
+							"parameter_longname" : "live.text[11]",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.text",
 							"parameter_type" : 2
@@ -1321,10 +1322,10 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 162.0, 732.0, 136.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 317.0, 18.5, 78.0, 20.0 ],
+					"presentation_rect" : [ 131.0, 20.5, 78.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "live.gain~[10]",
+							"parameter_longname" : "live.gain~[3]",
 							"parameter_mmax" : 6.0,
 							"parameter_mmin" : -70.0,
 							"parameter_shortname" : "live.gain~",
@@ -1372,7 +1373,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1414.0, 219.0, 150.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 14.0, 195.0, 73.0, 18.0 ],
+					"presentation_rect" : [ 7.0, 195.0, 73.0, 18.0 ],
 					"text" : "Voice ADSR",
 					"textjustification" : 0
 				}
@@ -1386,8 +1387,8 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1399.0, 204.0, 150.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 120.33333146572113, 195.0, 73.0, 18.0 ],
-					"text" : "Envelope Time",
+					"presentation_rect" : [ 82.0, 195.0, 41.0, 18.0 ],
+					"text" : "Time",
 					"textjustification" : 0
 				}
 
@@ -1415,12 +1416,12 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1348.0, 204.0, 44.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 188.0, 198.0, 44.0, 15.0 ],
+					"presentation_rect" : [ 118.0, 196.0, 44.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_initial" : [ 6000 ],
 							"parameter_initial_enable" : 1,
-							"parameter_longname" : "live.numbox[5]",
+							"parameter_longname" : "live.numbox[3]",
 							"parameter_mmax" : 10000.0,
 							"parameter_mmin" : 1000.0,
 							"parameter_shortname" : "live.numbox",
@@ -1512,10 +1513,10 @@
 					"outlettype" : [ "", "", "", "", "", "", "", "", "", "" ],
 					"patching_rect" : [ 890.5, 287.5, 184.0, 68.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 14.0, 147.5, 217.0, 50.0 ],
+					"presentation_rect" : [ 7.0, 145.5, 155.0, 50.0 ],
 					"release_domain" : [ 1.5, 2000.0 ],
-					"release_time" : 389.869425349196092,
-					"sustain" : 0.12
+					"release_time" : 406.551940503354444,
+					"sustain" : 0.44
 				}
 
 			}
@@ -1550,8 +1551,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 841.0, 113.0, 99.0, 23.0 ],
-					"text" : "autoTransform xl"
+					"patching_rect" : [ 841.0, 113.0, 93.0, 23.0 ],
+					"text" : "autoTransform l"
 				}
 
 			}
@@ -1608,7 +1609,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 747.5, 406.0, 43.0, 43.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 408.0, 3.0, 5.0, 5.0 ],
+					"presentation_rect" : [ 268.0, 3.0, 5.0, 5.0 ],
 					"proportion" : 0.39,
 					"shape" : 1
 				}
@@ -1617,7 +1618,7 @@
 , 			{
 				"box" : 				{
 					"angle" : 270.0,
-					"bgcolor" : [ 0.75, 0.75, 0.75, 1 ],
+					"bgcolor" : [ 1, 1, 0, 1 ],
 					"hint" : "MIDI Notes (pitch velocity) trigger voices (16) of the additive synth",
 					"id" : "obj-15",
 					"maxclass" : "panel",
@@ -1681,14 +1682,14 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 663.0, 25.0, 58.0, 23.0 ],
 					"restore" : 					{
-						"envelope rows" : [ 0.0 ],
+						"envelope rows" : [ 3.563771002541997 ],
 						"live.gain~" : [ 0.0 ],
 						"live.numbox" : [ 6000.0 ],
 						"live.numbox[1]" : [ 6000.0 ],
 						"live.text" : [ 0.0 ],
 						"live.text[1]" : [ 0.0 ],
 						"row position" : [ 0.0 ],
-						"wavetable" : [ "SINE_MUT" ]
+						"wavetable" : [ "VOXSYNTH" ]
 					}
 ,
 					"text" : "autopattr",
@@ -1733,7 +1734,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 42.0, 14.0, 202.0, 38.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 10.5, 424.0, 30.0 ],
+					"presentation_rect" : [ 0.0, 10.5, 283.0, 30.0 ],
 					"proportion" : 0.39,
 					"rounded" : 0
 				}
@@ -1751,7 +1752,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 909.0, 401.0, 35.0, 38.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 424.0, 12.5 ],
+					"presentation_rect" : [ 0.0, 0.0, 283.0, 12.5 ],
 					"proportion" : 0.39,
 					"rounded" : 0
 				}
@@ -1769,7 +1770,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 848.5, 507.5, 35.0, 38.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 424.0, 221.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 283.0, 221.0 ],
 					"proportion" : 0.39,
 					"rounded" : 0
 				}

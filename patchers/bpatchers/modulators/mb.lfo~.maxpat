@@ -150,7 +150,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "sin", "tri", "sawU", "sawD", "random" ],
-							"parameter_longname" : "live.tab",
+							"parameter_longname" : "live.tab[1]",
 							"parameter_mmax" : 4,
 							"parameter_shortname" : "live.tab",
 							"parameter_type" : 2,
@@ -277,10 +277,10 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 557.0, 31.0, 58.0, 23.0 ],
 					"restore" : 					{
-						"lfoMax" : [ 1.0 ],
-						"lfoMin" : [ -1.0 ],
+						"lfoMax" : [ 5.0 ],
+						"lfoMin" : [ 0.0 ],
 						"lfoRate" : [ 1.0 ],
-						"live.tab" : [ 0.0 ]
+						"live.tab" : [ 1.0 ]
 					}
 ,
 					"text" : "autopattr",
@@ -457,6 +457,7 @@
 						}
 ,
 						"valueof" : 						{
+							"parameter_exponent" : 2.0,
 							"parameter_initial" : [ 1 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
