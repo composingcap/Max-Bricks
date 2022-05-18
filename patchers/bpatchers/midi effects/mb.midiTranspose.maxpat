@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1200.0, 332.0, 1268.0, 915.0 ],
+		"rect" : [ 841.0, 407.0, 1268.0, 915.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -155,7 +155,7 @@
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_invisible" : 2,
-							"parameter_longname" : "live.text[13]",
+							"parameter_longname" : "live.text[8]",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.text",
 							"parameter_type" : 2
@@ -459,7 +459,7 @@
 							"parameter_initial" : [ 100.0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "probability[1]",
+							"parameter_longname" : "probability",
 							"parameter_mmax" : 100.0,
 							"parameter_shortname" : "probability",
 							"parameter_type" : 0,
@@ -637,7 +637,7 @@
 				"box" : 				{
 					"angle" : 270.0,
 					"background" : 1,
-					"bgcolor" : [ 0.517647058823529, 0.0, 0.0, 1.0 ],
+					"bgcolor" : [ 0.204, 0.008, 0.008, 1.0 ],
 					"id" : "obj-8",
 					"maxclass" : "panel",
 					"mode" : 0,
@@ -673,7 +673,7 @@
 				"box" : 				{
 					"angle" : 270.0,
 					"background" : 1,
-					"bgcolor" : [ 1.0, 0.913725490196078, 0.913725490196078, 1.0 ],
+					"bgcolor" : [ 0.945, 0.655, 0.655, 1.0 ],
 					"id" : "obj-7",
 					"maxclass" : "panel",
 					"mode" : 0,

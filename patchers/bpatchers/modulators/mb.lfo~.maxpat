@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1563.0, 513.0, 944.0, 667.0 ],
+		"rect" : [ 1754.0, 799.0, 944.0, 667.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -150,7 +150,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "sin", "tri", "sawU", "sawD", "random" ],
-							"parameter_longname" : "live.tab[1]",
+							"parameter_longname" : "live.tab[2]",
 							"parameter_mmax" : 4,
 							"parameter_shortname" : "live.tab",
 							"parameter_type" : 2,
@@ -527,13 +527,13 @@
 				"box" : 				{
 					"angle" : 270.0,
 					"background" : 1,
-					"bgcolor" : [ 0.572549019607843, 0.462745098039216, 1.0, 1.0 ],
+					"bgcolor" : [ 0.43921568627451, 0.227450980392157, 0.905882352941176, 1.0 ],
 					"id" : "obj-23",
 					"maxclass" : "panel",
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 42.0, 14.0, 202.0, 38.0 ],
+					"patching_rect" : [ 42.0, 14.0, 215.0, 35.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 10.5, 202.0, 30.0 ],
 					"proportion" : 0.39,
@@ -563,7 +563,7 @@
 				"box" : 				{
 					"angle" : 270.0,
 					"background" : 1,
-					"bgcolor" : [ 0.976470588235294, 0.913725490196078, 1.0, 1.0 ],
+					"bgcolor" : [ 0.886274509803922, 0.792156862745098, 1.0, 1.0 ],
 					"id" : "obj-25",
 					"maxclass" : "panel",
 					"mode" : 0,

@@ -53,7 +53,7 @@
 , 			{
 				"box" : 				{
 					"angle" : 270.0,
-					"bgcolor" : [ 1, 1, 0, 1 ],
+					"bgcolor" : [ 0.75, 0.75, 0.75, 1 ],
 					"hint" : "MIDI Pitch (number)",
 					"id" : "obj-23",
 					"maxclass" : "panel",
@@ -73,6 +73,7 @@
 					"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 					"fgcolor" : [ 0.313725490196078, 0.313725490196078, 0.313725490196078, 1.0 ],
 					"id" : "obj-15",
+					"ignoreclick" : 1,
 					"maxclass" : "nslider",
 					"mode" : 1,
 					"numinlets" : 2,
@@ -286,7 +287,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 659.0, 14.0, 30.0, 30.0 ]
 				}
 
@@ -346,7 +347,7 @@
 , 			{
 				"box" : 				{
 					"angle" : 270.0,
-					"bgcolor" : [ 1, 1, 0, 1 ],
+					"bgcolor" : [ 0.75, 0.75, 0.75, 1 ],
 					"hint" : "MIDI Pitch (number)",
 					"id" : "obj-14",
 					"maxclass" : "panel",
@@ -454,11 +455,11 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 754.5, 32.0, 58.0, 23.0 ],
 					"restore" : 					{
-						"base pitch" : [ 60.0 ],
+						"base pitch" : [ 46.0 ],
 						"live.text" : [ 0.0 ],
 						"noteLength" : [ 250.0 ],
 						"noteVelocity" : [ 64.0 ],
-						"pitch range" : [ 24.0 ],
+						"pitch range" : [ 20.0 ],
 						"scale root" : [ 0.0 ]
 					}
 ,
@@ -516,7 +517,7 @@
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_invisible" : 2,
-							"parameter_longname" : "live.text[8]",
+							"parameter_longname" : "live.text[1]",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.text",
 							"parameter_type" : 2
@@ -619,7 +620,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 256.0, 35.5, 30.0, 30.0 ]
 				}
 
