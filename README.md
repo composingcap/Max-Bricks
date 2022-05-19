@@ -22,7 +22,7 @@
 - [ ] Distortion
 - [ ] Mixer
 - [ ] Router
-- [ ] Reverb
+- [X] Reverb
 - [ ] Gate
 - [ ] Compressor
 
