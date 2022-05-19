@@ -659,7 +659,7 @@
 					"presentation" : 1,
 					"presentation_linecount" : 2,
 					"presentation_rect" : [ 0.0, 77.326086956521735, 190.0, 42.0 ],
-					"text" : "Soft clip using exp and sqrt functions by Laurent de Soras"
+					"text" : "Soft clip using an atan function. Based on code by Volker Böhm."
 				}
 
 			}
@@ -923,7 +923,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 754.5, 32.0, 58.0, 23.0 ],
 					"restore" : 					{
-						"drive" : [ 0.99 ],
+						"drive" : [ 0.0 ],
 						"gain[2]" : [ 0.0 ],
 						"live.text" : [ 0.0 ],
 						"mix" : [ 100.0 ],
