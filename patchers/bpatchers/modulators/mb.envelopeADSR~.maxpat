@@ -40,6 +40,18 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-35",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 63.0, 70.0, 92.0, 23.0 ],
+					"text" : "_mb.modtrigger"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-6",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -162,18 +174,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-5",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "float" ],
-					"patching_rect" : [ 35.0, 46.0, 41.0, 23.0 ],
-					"text" : "/ 127."
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-17",
 					"maxclass" : "live.comment",
 					"numinlets" : 1,
@@ -213,7 +213,7 @@
 						"valueof" : 						{
 							"parameter_initial" : [ 6000 ],
 							"parameter_initial_enable" : 1,
-							"parameter_longname" : "live.numbox[2]",
+							"parameter_longname" : "live.numbox[3]",
 							"parameter_mmax" : 10000.0,
 							"parameter_mmin" : 1000.0,
 							"parameter_shortname" : "live.numbox",
@@ -271,13 +271,13 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 37.5, 211.0, 30.0, 30.0 ]
+					"patching_rect" : [ 40.5, 368.5, 30.0, 30.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "Number, bang, or signal can trigger",
 					"id" : "obj-3",
 					"index" : 1,
 					"maxclass" : "inlet",
@@ -303,7 +303,7 @@
 					"numinlets" : 10,
 					"numoutlets" : 10,
 					"outlettype" : [ "", "", "", "", "", "", "", "", "", "" ],
-					"patching_rect" : [ 48.0, 88.0, 184.0, 68.0 ],
+					"patching_rect" : [ 51.0, 245.5, 184.0, 68.0 ],
 					"peak" : 0.897058823529412,
 					"presentation" : 1,
 					"presentation_rect" : [ 4.0, 45.5, 194.0, 50.0 ],
@@ -320,7 +320,7 @@
 					"numinlets" : 11,
 					"numoutlets" : 3,
 					"outlettype" : [ "signal", "signal", "" ],
-					"patching_rect" : [ 37.5, 169.0, 124.0, 23.0 ],
+					"patching_rect" : [ 40.5, 326.5, 124.0, 23.0 ],
 					"text" : "live.adsr~"
 				}
 
@@ -525,7 +525,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-5", 0 ],
+					"destination" : [ "obj-35", 0 ],
 					"source" : [ "obj-3", 0 ]
 				}
 
@@ -533,7 +533,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
-					"source" : [ "obj-5", 0 ]
+					"source" : [ "obj-35", 0 ]
 				}
 
 			}
