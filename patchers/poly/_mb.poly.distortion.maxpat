@@ -46,6 +46,10 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 73.0, 46.0, 28.0, 23.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"text" : "in 1"
 				}
 
@@ -57,10 +61,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 153.0, 213.0, 43.0, 23.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"text" : "out~ 1"
 				}
 
@@ -73,10 +73,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 229.0, 43.5, 28.0, 23.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"text" : "in 3"
 				}
 
@@ -89,10 +85,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 185.0, 40.0, 28.0, 23.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"text" : "in 2"
 				}
 
@@ -105,10 +97,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 19.0, 33.0, 35.0, 23.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"text" : "in~ 1"
 				}
 
@@ -185,7 +173,7 @@
 							}
 , 							{
 								"box" : 								{
-									"code" : "require(\"_mb_stkr.waveshaping.genexpr\");\r\nParam mode(1);\r\nx = in1;\r\na = in2;\r\nd = in3;\r\n\r\n\r\nif (mode == 1){\r\n\t\r\n\tout1 = atanDrive(x,scale(a,0,1,1,10));\r\n\t\r\n\t}\r\n\t\r\nelse if (mode == 2){\r\n\t\r\n\t//out1 = polyWs(x, a*6+1);\r\n\t\r\n\tout1 = gloubiBoulga(x,a*50);\r\n\t\r\n\t}\r\n\t\r\n\r\nelse if (mode == 3){\r\n\t\r\n\tout1 = polarSplit2(x,scale(a,0,1,0.1,1));\r\n\t\r\n\t}\r\n\r\nelse if (mode == 4){\r\n\tout1 = tapeH(x, a*20, 0, scale(d, 0,1,-5,-2));\r\n\t\r\n\t}\r\n\t\r\nelse if (mode == 5){\r\n\t\r\n\tout1 = cnld(x, scale(d,0,1,0,0.1), a);\r\n\t\r\n\t}\r\n",
+									"code" : "require(\"_mb_stkr.waveshaping.genexpr\");\r\nParam mode(1);\r\nx = in1;\r\na = in2;\r\nd = in3;\r\n\r\n\r\nif (mode == 1){\r\n\t\r\n\tout1 = atanDrive(x,scale(a,0,1,1,10));\r\n\t\r\n\t}\r\n\t\r\nelse if (mode == 2){\r\n\t\r\n\t//out1 = polyWs(x, a*6+1);\r\n\t\r\n\tout1 = gloubiBoulga(x,a*10);\r\n\t\r\n\t}\r\n\t\r\n\r\nelse if (mode == 3){\r\n\t\r\n\tout1 = polarSplit2(x,scale(a,0,1,0.1,1));\r\n\t\r\n\t}\r\n\r\nelse if (mode == 4){\r\n\tout1 = tapeH(x, a*20, 0, scale(d, 0,1,-5,-2));\r\n\t\r\n\t}\r\n\t\r\nelse if (mode == 5){\r\n\t\r\n\tout1 = cnld(x, scale(d,0,1,0,0.1), a);\r\n\t\r\n\t}\r\n",
 									"fontface" : 0,
 									"fontname" : "<Monospaced>",
 									"fontsize" : 12.0,
@@ -310,8 +298,8 @@
  ]
 					}
 ,
-					"patching_rect" : [ 50.0, 100.0, 35.0, 23.0 ],
-					"text" : "gen~"
+					"patching_rect" : [ 50.0, 100.0, 151.0, 23.0 ],
+					"text" : "gen~ @gen _mb.distortions"
 				}
 
 			}
