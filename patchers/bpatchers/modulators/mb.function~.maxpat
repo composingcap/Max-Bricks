@@ -40,6 +40,18 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 172.0, 301.0, 75.0, 23.0 ],
+					"text" : "onepole~ 50"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-68",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -124,7 +136,7 @@
 			}
 , 			{
 				"box" : 				{
-					"addpoints_with_curve" : [ 0.0, 0.0, 0, 0.0, 50.0, 1.0, 0, 0.0, 200.0, 0.0, 0, -0.8, 250.0, 1.0, 0, 0.0, 300.0, 0.0, 0, 0.0, 450.0, 1.0, 0, 0.7, 700.0, 0.0, 0, 0.0, 1000.0, 0.0, 0, -0.545 ],
+					"addpoints_with_curve" : [ 0.0, 0.0, 0, 0.0, 150.0, 1.0, 0, 0.0, 700.0, 0.0, 0, -0.4, 700.0, 0.0, 0, 0.0, 1000.0, 0.0, 0, -0.545 ],
 					"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 					"clicksustain" : 0,
 					"grid" : 3,
@@ -144,7 +156,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_invisible" : 1,
-							"parameter_longname" : "function",
+							"parameter_longname" : "function[1]",
 							"parameter_shortname" : "function",
 							"parameter_type" : 3
 						}
@@ -187,7 +199,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 147.5, 309.0, 38.0, 23.0 ],
+					"patching_rect" : [ 143.5, 323.0, 38.0, 23.0 ],
 					"text" : "gate~"
 				}
 
@@ -283,7 +295,7 @@
 							"parameter_initial" : [ 0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "lfoRate[4]",
+							"parameter_longname" : "lfoRate[1]",
 							"parameter_mmax" : 20.0,
 							"parameter_shortname" : "lfoRate",
 							"parameter_type" : 0,
@@ -324,7 +336,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
-							"parameter_longname" : "live.text[3]",
+							"parameter_longname" : "live.text[5]",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.text",
 							"parameter_type" : 2
@@ -602,7 +614,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 557.0, 31.0, 58.0, 23.0 ],
 					"restore" : 					{
-						"function" : [ 1000.0, 0.0, 1.0, 0.0, 0.0, 0, 0.0, 50.0, 1.0, 0, 0.0, 200.0, 0.0, 0, -0.8, 250.0, 1.0, 0, 0.0, 300.0, 0.0, 0, 0.0, 450.0, 1.0, 0, 0.7, 700.0, 0.0, 0, 0.0, 1000.0, 0.0, 0, -0.545, "curve" ],
+						"function" : [ 1000.0, 0.0, 1.0, 0.0, 0.0, 0, 0.0, 150.0, 1.0, 0, 0.0, 700.0, 0.0, 0, -0.4, 700.0, 0.0, 0, 0.0, 1000.0, 0.0, 0, -0.545, "curve" ],
 						"lfoMax" : [ 1.0 ],
 						"lfoMin" : [ 0.0 ],
 						"lfoRate" : [ 0.0 ],
@@ -672,7 +684,7 @@
 							"parameter_initial" : [ 1 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "lfoMax[4]",
+							"parameter_longname" : "lfoMax[1]",
 							"parameter_mmax" : 1000.0,
 							"parameter_mmin" : -1000.0,
 							"parameter_shortname" : "lfoMax",
@@ -700,7 +712,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_linknames" : 1,
-							"parameter_longname" : "lfoMin[4]",
+							"parameter_longname" : "lfoMin[1]",
 							"parameter_mmax" : 1000.0,
 							"parameter_mmin" : -1000.0,
 							"parameter_shortname" : "lfoMin",
@@ -819,6 +831,13 @@
 			}
  ],
 		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-71", 1 ],
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-5", 4 ],
 					"source" : [ "obj-10", 0 ]
@@ -1071,7 +1090,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-71", 1 ],
+					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-65", 0 ]
 				}
 

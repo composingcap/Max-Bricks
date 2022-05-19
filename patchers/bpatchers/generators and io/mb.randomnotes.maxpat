@@ -78,7 +78,7 @@
 , 			{
 				"box" : 				{
 					"angle" : 270.0,
-					"bgcolor" : [ 1, 1, 0, 1 ],
+					"bgcolor" : [ 0.75, 0.75, 0.75, 1 ],
 					"hint" : "MIDI Note (pitch velocity) to be transposed",
 					"id" : "obj-1",
 					"maxclass" : "panel",
@@ -147,7 +147,7 @@
 							"parameter_initial" : [ 20 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "noteVelocity[6]",
+							"parameter_longname" : "noteVelocity[4]",
 							"parameter_mmax" : 64.0,
 							"parameter_shortname" : "velocity range",
 							"parameter_type" : 0,
@@ -178,7 +178,7 @@
 							"parameter_initial" : [ 64 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "noteVelocity[5]",
+							"parameter_longname" : "noteVelocity[3]",
 							"parameter_mmin" : 1.0,
 							"parameter_shortname" : "base velocity",
 							"parameter_type" : 0,
@@ -257,7 +257,7 @@
 							"parameter_initial" : [ 250 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "noteLength[5]",
+							"parameter_longname" : "noteLength[3]",
 							"parameter_mmax" : 1000.0,
 							"parameter_mmin" : 50.0,
 							"parameter_shortname" : "length range",
@@ -289,7 +289,7 @@
 							"parameter_initial" : [ 250 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "noteLength[6]",
+							"parameter_longname" : "noteLength[4]",
 							"parameter_mmax" : 1000.0,
 							"parameter_mmin" : 50.0,
 							"parameter_shortname" : "base length",
@@ -320,7 +320,7 @@
 							"parameter_initial" : [ 24 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "pitch range[3]",
+							"parameter_longname" : "pitch range[1]",
 							"parameter_mmax" : 60.0,
 							"parameter_shortname" : "pitch range",
 							"parameter_type" : 0,
@@ -350,7 +350,7 @@
 							"parameter_initial" : [ 60 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "base pitch[3]",
+							"parameter_longname" : "base pitch[1]",
 							"parameter_mmax" : 103.0,
 							"parameter_mmin" : 24.0,
 							"parameter_shortname" : "base pitch",
@@ -453,10 +453,10 @@
 					"id" : "obj-26",
 					"maxclass" : "newobj",
 					"numinlets" : 3,
-					"numoutlets" : 2,
-					"outlettype" : [ "float", "float" ],
-					"patching_rect" : [ 224.0, 376.0, 61.0, 23.0 ],
-					"text" : "makenote"
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 224.0, 376.0, 86.0, 23.0 ],
+					"text" : "_mb.makenote"
 				}
 
 			}
@@ -480,7 +480,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 223.0, 109.0, 30.0, 30.0 ]
 				}
 
@@ -494,18 +494,6 @@
 					"outlettype" : [ "int" ],
 					"patching_rect" : [ 223.0, 232.0, 80.0, 23.0 ],
 					"text" : "random 1000"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-5",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 225.0, 505.0, 29.5, 23.0 ],
-					"text" : "join"
 				}
 
 			}
@@ -586,7 +574,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 889.0, 154.0, 78.0, 23.0 ],
 					"saved_object_attributes" : 					{
-						"filename" : "mb.helpers.js",
+						"filename" : "mb.helpers",
 						"parameter_enable" : 0
 					}
 ,
@@ -747,25 +735,9 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-5", 1 ],
-					"order" : 1,
-					"source" : [ "obj-26", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-5", 0 ],
+					"destination" : [ "obj-18", 0 ],
 					"order" : 1,
 					"source" : [ "obj-26", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-7", 1 ],
-					"order" : 0,
-					"source" : [ "obj-26", 1 ]
 				}
 
 			}
@@ -876,13 +848,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-52", 0 ],
 					"source" : [ "obj-49", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-18", 0 ],
-					"source" : [ "obj-5", 0 ]
 				}
 
 			}

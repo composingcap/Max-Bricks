@@ -1,0 +1,59 @@
+{
+	"pattrstorage" : 	{
+		"name" : "u879006881",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"data" : 				{
+					"mb.midiArp[1]::arpNotes" : [ 0, 16, 7, 9, 11, 46, 16, 20, 19, 20, 23, 39 ],
+					"mb.midiArp[1]::live.text" : [ 0.0 ],
+					"mb.midiArp[1]::noteLength" : [ 220.078740157480297 ],
+					"mb.midiArp[1]::noteVelocity" : [ 64.0 ],
+					"mb.midiScaleSnap[1]::live.text" : [ 0.0 ],
+					"mb.midiScaleSnap[1]::scale root" : [ 4.0 ],
+					"mb.harmonicsynth~[1]::live.gain~" : [ 0.0 ],
+					"mb.harmonicsynth~[1]::live.numbox" : [ 6000.0 ],
+					"mb.harmonicsynth~[1]::live.text" : [ 0.0 ],
+					"mb.harmonicsynth~[1]::live.text[1]" : [ 0.0 ],
+					"mb.harmonicsynth~[1]::nharmonics" : [ 0 ],
+					"mb.harmonicsynth~[1]::partials" : [ 1.0, 0.486111111111111, 0.875, 0.430555555555556 ],
+					"mb.metro[4]::live.text[1]" : [ 1.0 ],
+					"mb.metro[4]::state" : [ 1.0 ],
+					"mb.metro[4]::_mb.timecontrols::live.menu" : [ 10.0 ],
+					"mb.metro[4]::_mb.timecontrols::timems" : [ 250.0 ],
+					"mb.transport[1]::live.numbox" : [ 120.0 ],
+					"mb.transport[1]::live.text" : [ 0.0 ],
+					"mb.transport[1]::live.text[1]" : [ 0.0 ],
+					"mb.transport[1]::state" : [ 1.0 ],
+					"mb.randomnotes[2]::base pitch" : [ 48.0 ],
+					"mb.randomnotes[2]::noteLength" : [ 500.0 ],
+					"mb.randomnotes[2]::noteLength[2]" : [ 500.0 ],
+					"mb.randomnotes[2]::noteVelocity" : [ 64.0 ],
+					"mb.randomnotes[2]::noteVelocity[2]" : [ 20.0 ],
+					"mb.randomnotes[2]::pitch range" : [ 48.000000000000071 ],
+					"mb.metro[2]::live.text[1]" : [ 1.0 ],
+					"mb.metro[2]::state" : [ 1.0 ],
+					"mb.metro[2]::_mb.timecontrols::live.menu" : [ 19.0 ],
+					"mb.metro[2]::_mb.timecontrols::timems" : [ 50.0 ],
+					"mb.audioOut[1]::gain" : [ 0.0 ],
+					"mb.audioOut[1]::live.numbox" : [ 1.0 ],
+					"mb.audioOut[1]::live.text" : [ 1.0 ],
+					"mb.granulate~[1]::delay" : [ 50.0 ],
+					"mb.granulate~[1]::feedback" : [ 0.795500139812021 ],
+					"mb.granulate~[1]::gain[2]" : [ 0.0 ],
+					"mb.granulate~[1]::live.text" : [ 0.0 ],
+					"mb.granulate~[1]::mix" : [ 50.0 ],
+					"mb.granulate~[1]::overlap" : [ 2.0 ],
+					"mb.granulate~[1]::randomDelay" : [ 500.0 ],
+					"mb.granulate~[1]::rate" : [ 8.0 ],
+					"mb.granulate~[1]::spread" : [ 1.0 ],
+					"mb.granulate~[1]::transpose" : [ 0.0 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}
