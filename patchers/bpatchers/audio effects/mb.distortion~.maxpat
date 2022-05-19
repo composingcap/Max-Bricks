@@ -659,7 +659,7 @@
 					"presentation" : 1,
 					"presentation_linecount" : 2,
 					"presentation_rect" : [ 0.0, 77.326086956521735, 190.0, 42.0 ],
-					"text" : "Soft clip using an atan function. Based on code by Volker Böhm."
+					"text" : "Soft clip using exp and sqrt functions by Laurent de Soras"
 				}
 
 			}
@@ -923,7 +923,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 754.5, 32.0, 58.0, 23.0 ],
 					"restore" : 					{
-						"drive" : [ 0.0 ],
+						"drive" : [ 0.99 ],
 						"gain[2]" : [ 0.0 ],
 						"live.text" : [ 0.0 ],
 						"mix" : [ 100.0 ],
@@ -954,7 +954,7 @@
 					"patching_rect" : [ 746.0, 64.0, 30.0, 32.0 ],
 					"pictures" : [ "mb.infoIcon.svg", "mb.infoIcon.svg" ],
 					"presentation" : 1,
-					"presentation_rect" : [ 163.0, 13.5, 21.0, 22.75 ],
+					"presentation_rect" : [ 258.0, 13.5, 21.0, 22.75 ],
 					"remapsvgcolors" : 1,
 					"saved_attribute_attributes" : 					{
 						"activebgcolor" : 						{
@@ -1120,7 +1120,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 107.5, 408.0, 136.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 84.0, 20.5, 78.0, 20.0 ],
+					"presentation_rect" : [ 172.0, 17.5, 78.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_initial" : [ 0 ],
@@ -1184,7 +1184,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 135.0, 55.0, 30.0, 30.0 ]
 				}
 
