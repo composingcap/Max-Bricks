@@ -40,6 +40,18 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 125.0, 118.0, 66.0, 23.0 ],
+					"text" : "route bang"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-7",
 					"maxclass" : "kslider",
 					"mode" : 1,
@@ -257,7 +269,7 @@
 							"parameter_initial" : [ 250 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "noteLength[3]",
+							"parameter_longname" : "noteLength[4]",
 							"parameter_mmax" : 1000.0,
 							"parameter_mmin" : 50.0,
 							"parameter_shortname" : "length range",
@@ -289,7 +301,7 @@
 							"parameter_initial" : [ 250 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "noteLength[4]",
+							"parameter_longname" : "noteLength[3]",
 							"parameter_mmax" : 1000.0,
 							"parameter_mmin" : 50.0,
 							"parameter_shortname" : "base length",
@@ -481,7 +493,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 223.0, 109.0, 30.0, 30.0 ]
+					"patching_rect" : [ 120.0, 78.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -698,7 +710,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-28", 0 ],
 					"order" : 1,
-					"source" : [ "obj-24", 0 ]
+					"source" : [ "obj-2", 0 ]
 				}
 
 			}
@@ -706,7 +718,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-32", 0 ],
 					"order" : 0,
-					"source" : [ "obj-24", 0 ]
+					"source" : [ "obj-2", 0 ]
 				}
 
 			}
@@ -714,7 +726,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
 					"order" : 2,
-					"source" : [ "obj-24", 0 ]
+					"source" : [ "obj-2", 0 ]
 				}
 
 			}
@@ -722,6 +734,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-90", 0 ],
 					"order" : 3,
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
 					"source" : [ "obj-24", 0 ]
 				}
 

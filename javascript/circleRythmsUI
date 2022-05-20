@@ -1,0 +1,90 @@
+
+
+
+var rhythms = new Dict();
+var fps = 6;
+var slice = 0;
+var mysize = 0;
+draw();
+
+function draw() {
+	with(Math){
+		with(sketch){
+
+			
+			glclearcolor(0,0,0,0);
+			glclear();
+
+			glcolor(1.000, 1, 0,1);
+			var seg = 360/mysize;
+			circle(1,seg*slice, seg*(slice+1)-seg*0.25);
+			gllinewidth(10);
+			var keys = rhythms.getkeys();
+			if (keys == undefined) return;
+			for(var i=0; i< keys.length; i++){
+				var r = rhythms.get(keys[i]).get("rhythm");
+				mysize  = r.length
+				var c = rhythms.get(keys[i]).get("color");
+				var seg = 360/r.length;
+				var rad = 0.1+(keys.length-i)*(0.85/keys.length);
+				for (var j = 0; j < r.length; j++){
+					if (r[j] == 1){
+						
+						glcolor(c[0],c[1],c[2],1);
+						framecircle(rad,seg*j, seg*(j+1)-seg*0.25);
+					}
+
+
+			}
+
+		}
+
+}
+	}
+}
+
+function drawLoop(){
+	draw();
+	refresh();
+}
+/*
+drawTask = new Task(drawLoop, this);
+		drawTask.interval= ((1/fps)*1000);
+		drawTask.repeat(-1);
+function autoDraw(state){
+	if ((state) && (!drawTask.running)){
+		drawTask.interval= ((1/fps)*1000);
+
+		drawTask.repeat(-1);
+	}
+	else if ((!state) && (drawTask.running)){
+			drawTask.cancel();
+		}
+
+	}
+	function notifydeleted(){
+		drawTask.cancel();
+	
+		}
+		*/
+function bang(){
+drawLoop();
+
+}
+function fsaa(v)
+{
+	sketch.fsaa = v;
+	bang();
+}
+
+function setRhythmDict(dname){
+	rhythms = new Dict(dname);
+}
+
+function selectSlice(s){
+	slice = s;
+	drawLoop();
+
+}
+
+
