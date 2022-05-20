@@ -116,7 +116,7 @@
 							"parameter_initial" : [ 64 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "noteVelocity[3]",
+							"parameter_longname" : "noteVelocity[1]",
 							"parameter_mmin" : 1.0,
 							"parameter_shortname" : "note velocity",
 							"parameter_type" : 0,
@@ -147,7 +147,7 @@
 							"parameter_initial" : [ 250 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "noteLength[3]",
+							"parameter_longname" : "noteLength[1]",
 							"parameter_mmax" : 1000.0,
 							"parameter_mmin" : 50.0,
 							"parameter_shortname" : "note length",
@@ -320,15 +320,27 @@
 				"box" : 				{
 					"fontsize" : 10.0,
 					"id" : "obj-35",
-					"items" : "<empty>",
+					"items" : [ "diatonic", ",", "pentatonic", ",", "chromatic", ",", "octatonic", ",", "wholetone", ",", "Maj7", ",", "Maj9", ",", "Diminished" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
-					"parameter_enable" : 0,
+					"parameter_enable" : 1,
 					"patching_rect" : [ 408.75, 286.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 89.0, 67.500000000000014, 73.0, 20.0 ]
+					"presentation_rect" : [ 89.0, 67.500000000000014, 73.0, 20.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_enum" : [ "diatonic", "pentatonic", "chromatic", "octatonic", "wholetone", "Maj7", "Maj9", "Diminished" ],
+							"parameter_longname" : "umenu",
+							"parameter_mmax" : 7,
+							"parameter_shortname" : "umenu",
+							"parameter_type" : 2
+						}
+
+					}
+,
+					"varname" : "scale"
 				}
 
 			}
@@ -460,6 +472,7 @@
 						"noteLength" : [ 414.566929133858252 ],
 						"noteVelocity" : [ 68.000000000000014 ],
 						"pitch range" : [ 20.0 ],
+						"scale" : [ 0 ],
 						"scale root" : [ 0.0 ]
 					}
 ,
@@ -517,7 +530,7 @@
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_invisible" : 2,
-							"parameter_longname" : "live.text[5]",
+							"parameter_longname" : "live.text[1]",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.text",
 							"parameter_type" : 2
