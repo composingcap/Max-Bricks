@@ -5,7 +5,7 @@
 - [ ] Double FM Synth
 - [ ] Modal Synth
 - [ ] RM Synth
-- [ ] Drum Synth
+- [x] Drum Synth
 - [ ] Kick Drum 
 
 ## Audio Effects
@@ -19,7 +19,7 @@
 - [ ] Formant filter- 5 biquads (parallel or in series) 
  - Cascading peaking/notch filters, subtract result 
 - [ ] Glitcher/stutterer 
-- [ ] Distortion
+- [x] Distortion
 - [ ] Mixer
 - [ ] Router
 - [X] Reverb
@@ -27,17 +27,16 @@
 - [ ] Compressor
 
 ## Midi effects 
-- [ ] midi delay 
 - [ ] midi mirror 
 - [ ] Midi quantizer 
-- [ ] Midi retrigger (glitch) 
+- [x] Midi retrigger (glitch) 
 - [ ] Midi Chord 
-- [ ] Note Echo 
+- [x] Note Echo 
 - [ ] Midi Random 
 
 ## Timing
-- [ ] Euclidean generator 
-- [ ] Rythm Sequencer 
+- [x] Euclidean generator 
+- [x] Rythm Sequencer 
 
 
 ## Generators
