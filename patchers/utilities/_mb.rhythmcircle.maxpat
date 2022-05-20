@@ -57,8 +57,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 33.0, 796.0, 40.0, 23.0 ],
-					"text" : "zl.mth"
+					"patching_rect" : [ 33.0, 796.0, 37.0, 23.0 ],
+					"text" : "zl.nth"
 				}
 
 			}
@@ -82,7 +82,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "int" ],
 					"patching_rect" : [ 26.0, 668.000000437500034, 30.0, 30.0 ]
 				}
 
