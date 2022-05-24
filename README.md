@@ -28,7 +28,7 @@
 
 ## Midi effects 
 - [x] midi mirror 
-- [ ] Midi quantizer 
+- [x] Midi quantizer 
 - [x] Midi retrigger (glitch) 
 - [ ] Midi Chord 
 - [x] Note Echo 
