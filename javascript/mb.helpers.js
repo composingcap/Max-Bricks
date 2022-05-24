@@ -5,6 +5,8 @@ var extraextraSmall= [190,40];
 var large = [280,220];
 var extralarge = [420,220];
 
+var snapshotapi = 0;
+
 function help(){
 	var p = this.patcher;
 	var n = p.name;
@@ -60,21 +62,25 @@ function autoTransform(size){
 	
 
 	}
-	function makePattrstorage(){
+	function presetCreate(){
 		var p = this.patcher;
 
 		var pos = p.getattr("patching_rect");
 		post(pos);
 		var parent = p.parentpatcher;
 
-		var storage = parent.getnamed("__MAXBRICKSTORAGE");
+		storage= parent.newdefault(pos[0]+75,pos[1] + 50, "pattrstorage cues");
 
-		if (storage == undefined){
-			storage= parent.newdefault(0,0, "pattrstorage __MAXBRICKSTORAGE");
+		preset= parent.newdefault(pos[0]+75,pos[1] + 75, "preset");
 
-		}
+		preset.setattr("pattrstorage", storage.getattr("name"));			
 
-		parent.hiddenconnect(p, 0, storage, 0);
-		
+	}
+
+	function initSnaps(){
+		var p = this.patcher;
+		var parent = p.parentpatcher;
+		snapshotapi = new SnapshotAPI("patcher");
+		snapshotapi.addsnapshot(1);
 
 	}
