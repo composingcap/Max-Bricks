@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 100.0, 100.0, 1082.0, 597.0 ],
+		"rect" : [ 477.0, 504.0, 1081.0, 730.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -46,40 +46,17 @@
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
-					"id" : "obj-3",
+					"id" : "obj-13",
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "mb.pitch~.maxpat",
+					"name" : "mb.metro.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 29.0, 458.0, 190.0, 90.0 ],
-					"varname" : "mb.pitch~[1]",
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"args" : [ 1 ],
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-12",
-					"lockeddragscroll" : 0,
-					"lockedsize" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "mb.harmonicsynth~.maxpat",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 29.0, 225.0, 280.0, 220.0 ],
-					"varname" : "mb.harmonicsynth~[1]",
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 195.0, 149.0, 190.0, 40.0 ],
+					"varname" : "mb.metro[1]",
 					"viewvisibility" : 1
 				}
 
@@ -101,7 +78,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 29.0, 103.0, 290.0, 120.0 ],
+					"patching_rect" : [ 24.0, 27.0, 290.0, 120.0 ],
 					"varname" : "mb.notein[1]",
 					"viewvisibility" : 1
 				}
@@ -119,12 +96,13 @@
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "mb.audioOut.maxpat",
+					"name" : "mb.simplesynth~.maxpat",
 					"numinlets" : 2,
-					"numoutlets" : 0,
+					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 343.0, 172.0, 190.0, 90.0 ],
-					"varname" : "mb.audioOut[1]",
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 24.0, 250.0, 280.0, 220.0 ],
+					"varname" : "mb.simplesynth~[1]",
 					"viewvisibility" : 1
 				}
 
@@ -141,13 +119,58 @@
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
+					"name" : "mb.audioOut.maxpat",
+					"numinlets" : 2,
+					"numoutlets" : 0,
+					"offset" : [ 0.0, 0.0 ],
+					"patching_rect" : [ 31.0, 533.0, 190.0, 90.0 ],
+					"varname" : "mb.audioOut[1]",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"args" : [ 1 ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-25",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
 					"name" : "mb.pan~.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 343.0, 127.0, 190.0, 40.0 ],
+					"patching_rect" : [ 31.0, 472.0, 190.0, 40.0 ],
 					"varname" : "mb.pan~[1]",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"args" : [ 1 ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-32",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "mb.midiQuantize.maxpat",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 24.0, 199.0, 190.0, 40.0 ],
+					"varname" : "mb.midiQuantize[1]",
 					"viewvisibility" : 1
 				}
 
@@ -155,56 +178,71 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-3", 0 ],
-					"source" : [ "obj-12", 0 ]
+					"destination" : [ "obj-32", 1 ],
+					"source" : [ "obj-13", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-12", 0 ],
+					"destination" : [ "obj-32", 0 ],
 					"source" : [ "obj-16", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-19", 1 ],
-					"source" : [ "obj-22", 1 ]
+					"destination" : [ "obj-25", 0 ],
+					"source" : [ "obj-19", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-19", 0 ],
-					"source" : [ "obj-22", 0 ]
+					"destination" : [ "obj-22", 1 ],
+					"source" : [ "obj-25", 1 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-22", 0 ],
-					"midpoints" : [ 38.5, 558.0, 332.5, 558.0, 332.5, 116.0, 352.5, 116.0 ],
-					"source" : [ "obj-3", 0 ]
+					"source" : [ "obj-25", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-19", 0 ],
+					"source" : [ "obj-32", 0 ]
 				}
 
 			}
  ],
 		"parameters" : 		{
-			"obj-12::obj-19" : [ "live.text[4]", "live.text[1]", 0 ],
-			"obj-12::obj-44" : [ "live.numbox[1]", "live.numbox", 0 ],
-			"obj-12::obj-76" : [ "live.gain~[3]", "live.gain~", 0 ],
-			"obj-12::obj-93" : [ "live.text[5]", "live.text", 0 ],
-			"obj-19::obj-25" : [ "dspState[3]", "dspState", 0 ],
-			"obj-19::obj-3" : [ "live.gain~[4]", "live.gain~", 0 ],
-			"obj-19::obj-9" : [ "live.numbox[3]", "live.numbox", 0 ],
-			"obj-22::obj-2" : [ "pan[1]", "pan", 0 ],
-			"obj-22::obj-27" : [ "gain[3]", "gain", 0 ],
-			"obj-3::obj-11" : [ "freqShift", "freq shift", 0 ],
-			"obj-3::obj-14" : [ "mix", "mix", 0 ],
-			"obj-3::obj-27" : [ "gain[2]", "gain", 0 ],
-			"obj-3::obj-4" : [ "pitchShift", "pitch shift", 0 ],
-			"obj-3::obj-93" : [ "live.text[3]", "live.text", 0 ],
+			"obj-13::obj-23::obj-3" : [ "noteval[1]", "ntoeval", 0 ],
+			"obj-13::obj-23::obj-5" : [ "timems[1]", "timems", 0 ],
+			"obj-13::obj-29" : [ "timeMode[1]", "timeMode", 0 ],
+			"obj-13::obj-3" : [ "state[1]", "state", 0 ],
+			"obj-19::obj-19" : [ "live.text[6]", "live.text[1]", 0 ],
+			"obj-19::obj-35" : [ "sinpitch[1]", "pitch", 0 ],
+			"obj-19::obj-37" : [ "sinamp[1]", "amp", 0 ],
+			"obj-19::obj-44" : [ "live.numbox[3]", "live.numbox", 0 ],
+			"obj-19::obj-56" : [ "triamp[1]", "amp", 0 ],
+			"obj-19::obj-58" : [ "sawamp[1]", "amp", 0 ],
+			"obj-19::obj-61" : [ "squareamp[1]", "amp", 0 ],
+			"obj-19::obj-62" : [ "tripitch[1]", "pitch", 0 ],
+			"obj-19::obj-63" : [ "sawpitch[1]", "pitch", 0 ],
+			"obj-19::obj-64" : [ "squarepitch[1]", "pitch", 0 ],
+			"obj-19::obj-76" : [ "live.gain~[3]", "live.gain~", 0 ],
+			"obj-19::obj-93" : [ "live.text[7]", "live.text", 0 ],
+			"obj-22::obj-25" : [ "dspState[3]", "dspState", 0 ],
+			"obj-22::obj-3" : [ "live.gain~[4]", "live.gain~", 0 ],
+			"obj-22::obj-9" : [ "live.numbox[4]", "live.numbox", 0 ],
+			"obj-25::obj-2" : [ "pan[1]", "pan", 0 ],
+			"obj-25::obj-27" : [ "gain[3]", "gain", 0 ],
+			"obj-32::obj-33" : [ "noteval[2]", "noteval", 0 ],
+			"obj-32::obj-93" : [ "live.text[4]", "live.text", 0 ],
 			"parameterbanks" : 			{
 				"0" : 				{
 					"index" : 0,
@@ -215,40 +253,96 @@
 			}
 ,
 			"parameter_overrides" : 			{
-				"obj-12::obj-19" : 				{
-					"parameter_longname" : "live.text[4]"
+				"obj-13::obj-23::obj-3" : 				{
+					"parameter_longname" : "noteval[1]"
 				}
 ,
-				"obj-12::obj-44" : 				{
-					"parameter_longname" : "live.numbox[1]"
+				"obj-13::obj-23::obj-5" : 				{
+					"parameter_longname" : "timems[1]"
 				}
 ,
-				"obj-12::obj-76" : 				{
-					"parameter_longname" : "live.gain~[3]"
+				"obj-13::obj-29" : 				{
+					"parameter_longname" : "timeMode[1]"
 				}
 ,
-				"obj-12::obj-93" : 				{
-					"parameter_longname" : "live.text[5]"
+				"obj-13::obj-3" : 				{
+					"parameter_longname" : "state[1]"
 				}
 ,
-				"obj-19::obj-25" : 				{
-					"parameter_longname" : "dspState[3]"
+				"obj-19::obj-19" : 				{
+					"parameter_longname" : "live.text[6]"
 				}
 ,
-				"obj-19::obj-3" : 				{
-					"parameter_longname" : "live.gain~[4]"
+				"obj-19::obj-35" : 				{
+					"parameter_longname" : "sinpitch[1]"
 				}
 ,
-				"obj-19::obj-9" : 				{
+				"obj-19::obj-37" : 				{
+					"parameter_longname" : "sinamp[1]"
+				}
+,
+				"obj-19::obj-44" : 				{
 					"parameter_longname" : "live.numbox[3]"
 				}
 ,
-				"obj-22::obj-2" : 				{
+				"obj-19::obj-56" : 				{
+					"parameter_longname" : "triamp[1]"
+				}
+,
+				"obj-19::obj-58" : 				{
+					"parameter_longname" : "sawamp[1]"
+				}
+,
+				"obj-19::obj-61" : 				{
+					"parameter_longname" : "squareamp[1]"
+				}
+,
+				"obj-19::obj-62" : 				{
+					"parameter_longname" : "tripitch[1]"
+				}
+,
+				"obj-19::obj-63" : 				{
+					"parameter_longname" : "sawpitch[1]"
+				}
+,
+				"obj-19::obj-64" : 				{
+					"parameter_longname" : "squarepitch[1]"
+				}
+,
+				"obj-19::obj-76" : 				{
+					"parameter_longname" : "live.gain~[3]"
+				}
+,
+				"obj-19::obj-93" : 				{
+					"parameter_longname" : "live.text[7]"
+				}
+,
+				"obj-22::obj-25" : 				{
+					"parameter_longname" : "dspState[3]"
+				}
+,
+				"obj-22::obj-3" : 				{
+					"parameter_longname" : "live.gain~[4]"
+				}
+,
+				"obj-22::obj-9" : 				{
+					"parameter_longname" : "live.numbox[4]"
+				}
+,
+				"obj-25::obj-2" : 				{
 					"parameter_longname" : "pan[1]"
 				}
 ,
-				"obj-22::obj-27" : 				{
+				"obj-25::obj-27" : 				{
 					"parameter_longname" : "gain[3]"
+				}
+,
+				"obj-32::obj-33" : 				{
+					"parameter_longname" : "noteval[2]"
+				}
+,
+				"obj-32::obj-93" : 				{
+					"parameter_longname" : "live.text[4]"
 				}
 
 			}
@@ -278,14 +372,14 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "_mb.poly.harmonicsynth.maxpat",
+				"name" : "_mb.poly.simplesynth.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/Max Bricks/patchers/poly",
 				"patcherrelativepath" : "../patchers/poly",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "_mb.xfader~.maxpat",
+				"name" : "_mb.timecontrols.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/Max Bricks/patchers/utilities",
 				"patcherrelativepath" : "../patchers/utilities",
 				"type" : "JSON",
@@ -295,13 +389,6 @@
 				"name" : "mb.audioOut.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/Max Bricks/patchers/bpatchers/generators and io",
 				"patcherrelativepath" : "../patchers/bpatchers/generators and io",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "mb.harmonicsynth~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Max Bricks/patchers/bpatchers/synths",
-				"patcherrelativepath" : "../patchers/bpatchers/synths",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -320,6 +407,20 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "mb.metro.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/Max Bricks/patchers/bpatchers/timing and utilities",
+				"patcherrelativepath" : "../patchers/bpatchers/timing and utilities",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "mb.midiQuantize.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/Max Bricks/patchers/bpatchers/midi effects",
+				"patcherrelativepath" : "../patchers/bpatchers/midi effects",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "mb.notein.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/Max Bricks/patchers/bpatchers/generators and io",
 				"patcherrelativepath" : "../patchers/bpatchers/generators and io",
@@ -334,9 +435,9 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "mb.pitch~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Max Bricks/patchers/bpatchers/audio effects",
-				"patcherrelativepath" : "../patchers/bpatchers/audio effects",
+				"name" : "mb.simplesynth~.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/Max Bricks/patchers/bpatchers/synths",
+				"patcherrelativepath" : "../patchers/bpatchers/synths",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -344,13 +445,6 @@
 				"name" : "pan2S.maxpat",
 				"bootpath" : "~/AppData/Roaming/Cycling '74/Max 8/examples/spatialization/panning/lib",
 				"patcherrelativepath" : "../../../../../AppData/Roaming/Cycling '74/Max 8/examples/spatialization/panning/lib",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "panmodule2.maxpat",
-				"bootpath" : "~/AppData/Roaming/Cycling '74/Max 8/examples/legacy-examples/5-point-1-fun/lib",
-				"patcherrelativepath" : "../../../../../AppData/Roaming/Cycling '74/Max 8/examples/legacy-examples/5-point-1-fun/lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
