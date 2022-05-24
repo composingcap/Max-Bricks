@@ -101,7 +101,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 36.0, 261.0, 290.0, 120.0 ],
+					"patching_rect" : [ 36.0, 260.0, 290.0, 120.0 ],
 					"varname" : "mb.sinesynth~[1]",
 					"viewvisibility" : 1
 				}
@@ -123,8 +123,31 @@
 					"numinlets" : 2,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 36.0, 422.0, 190.0, 90.0 ],
+					"patching_rect" : [ 36.0, 450.0, 190.0, 90.0 ],
 					"varname" : "mb.audioOut[1]",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"args" : [ 1 ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-6",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "mb.pan~.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "signal", "signal" ],
+					"patching_rect" : [ 36.0, 402.0, 190.0, 40.0 ],
+					"varname" : "mb.pan~[1]",
 					"viewvisibility" : 1
 				}
 
@@ -139,17 +162,22 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-24", 1 ],
-					"order" : 0,
+					"destination" : [ "obj-6", 0 ],
 					"source" : [ "obj-21", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-24", 1 ],
+					"source" : [ "obj-6", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-24", 0 ],
-					"order" : 1,
-					"source" : [ "obj-21", 0 ]
+					"source" : [ "obj-6", 0 ]
 				}
 
 			}
@@ -170,6 +198,8 @@
 			"obj-24::obj-25" : [ "dspState[3]", "dspState", 0 ],
 			"obj-24::obj-3" : [ "live.gain~[4]", "live.gain~", 0 ],
 			"obj-24::obj-9" : [ "live.numbox[4]", "live.numbox", 0 ],
+			"obj-6::obj-2" : [ "pan[1]", "pan", 0 ],
+			"obj-6::obj-27" : [ "gain[3]", "gain", 0 ],
 			"obj-9::obj-12" : [ "live.text[14]", "live.text[1]", 0 ],
 			"obj-9::obj-23::obj-3" : [ "noteval[1]", "ntoeval", 0 ],
 			"obj-9::obj-23::obj-5" : [ "timems[1]", "timems", 0 ],
@@ -216,6 +246,14 @@
 ,
 				"obj-24::obj-9" : 				{
 					"parameter_longname" : "live.numbox[4]"
+				}
+,
+				"obj-6::obj-2" : 				{
+					"parameter_longname" : "pan[1]"
+				}
+,
+				"obj-6::obj-27" : 				{
+					"parameter_longname" : "gain[3]"
 				}
 ,
 				"obj-9::obj-12" : 				{
@@ -317,9 +355,23 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "mb.pan~.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/Max Bricks/patchers/bpatchers/audio effects",
+				"patcherrelativepath" : "../patchers/bpatchers/audio effects",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "mb.sinesynth~.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/Max Bricks/patchers/bpatchers/synths",
 				"patcherrelativepath" : "../patchers/bpatchers/synths",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "pan2S.maxpat",
+				"bootpath" : "~/AppData/Roaming/Cycling '74/Max 8/examples/spatialization/panning/lib",
+				"patcherrelativepath" : "../../../../../AppData/Roaming/Cycling '74/Max 8/examples/spatialization/panning/lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
