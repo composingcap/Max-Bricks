@@ -13,21 +13,21 @@
 - [ ] Flanger 
 - [ ] comb filter 
 - [ ] EQ 
-- [ ] Simple filter 
-- [ ] Freq Shifter 
-- [ ] Pitch Shifter 
+- [x] Simple filter 
+- [x] Freq Shifter 
+- [x] Pitch Shifter 
 - [ ] Formant filter- 5 biquads (parallel or in series) 
  - Cascading peaking/notch filters, subtract result 
 - [ ] Glitcher/stutterer 
 - [x] Distortion
-- [ ] Mixer
+- [x] Mixer
 - [ ] Router
 - [X] Reverb
 - [ ] Gate
 - [ ] Compressor
 
 ## Midi effects 
-- [ ] midi mirror 
+- [x] midi mirror 
 - [ ] Midi quantizer 
 - [x] Midi retrigger (glitch) 
 - [ ] Midi Chord 
