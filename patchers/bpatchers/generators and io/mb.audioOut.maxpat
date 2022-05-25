@@ -58,7 +58,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 244.0, 188.0, 30.0, 30.0 ]
 				}
 
@@ -71,7 +71,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 127.0, 188.0, 30.0, 30.0 ]
 				}
 
@@ -139,7 +139,7 @@
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_invisible" : 2,
-							"parameter_longname" : "dspState[2]",
+							"parameter_longname" : "dspState[3]",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "dspState",
 							"parameter_type" : 2
@@ -148,8 +148,7 @@
 					}
 ,
 					"text" : "DSP off",
-					"texton" : "DSP on",
-					"varname" : "live.text"
+					"texton" : "DSP on"
 				}
 
 			}
@@ -160,7 +159,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 387.0, 318.0, 29.5, 23.0 ],
+					"patching_rect" : [ 387.0, 385.0, 29.5, 23.0 ],
 					"text" : "+ 1"
 				}
 
@@ -172,7 +171,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 341.0, 337.0, 29.5, 23.0 ],
+					"patching_rect" : [ 341.0, 404.0, 29.5, 23.0 ],
 					"text" : "join"
 				}
 
@@ -204,7 +203,8 @@
 					"presentation_rect" : [ 107.5, 59.0, 44.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "live.numbox[2]",
+							"parameter_invisible" : 2,
+							"parameter_longname" : "live.numbox[3]",
 							"parameter_mmax" : 63.0,
 							"parameter_mmin" : 1.0,
 							"parameter_shortname" : "live.numbox",
@@ -213,8 +213,7 @@
 						}
 
 					}
-,
-					"varname" : "live.numbox"
+
 				}
 
 			}
@@ -233,7 +232,7 @@
 					"presentation_rect" : [ 7.0, 48.5, 75.0, 36.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "live.gain~[2]",
+							"parameter_longname" : "live.gain~[6]",
 							"parameter_mmax" : 6.0,
 							"parameter_mmin" : -70.0,
 							"parameter_shortname" : "live.gain~",
@@ -325,7 +324,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 889.0, 154.0, 78.0, 23.0 ],
 					"saved_object_attributes" : 					{
-						"filename" : "mb.helpers",
+						"filename" : "mb.helpers.js",
 						"parameter_enable" : 0
 					}
 ,
@@ -342,9 +341,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 746.0, 101.0, 58.0, 23.0 ],
 					"restore" : 					{
-						"gain" : [ 0.0 ],
-						"live.numbox" : [ 1.0 ],
-						"live.text" : [ 1.0 ]
+						"gain" : [ 0.0 ]
 					}
 ,
 					"text" : "autopattr",
@@ -413,7 +410,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 341.0, 365.0, 39.0, 23.0 ],
+					"patching_rect" : [ 341.0, 432.0, 39.0, 23.0 ],
 					"text" : "$1 $2"
 				}
 

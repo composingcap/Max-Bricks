@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 674.0, 549.0, 224.0, 287.0 ],
+		"rect" : [ 295.0, 447.0, 240.0, 304.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,30 @@
 		"subpatcher_template" : "minimal",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 335.0, 506.0, 48.0, 23.0 ],
+					"text" : "help $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 335.0, 539.0, 53.0, 23.0 ],
+					"text" : "pcontrol"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-63",
 					"maxclass" : "message",
@@ -273,7 +297,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-10",
-					"items" : [ "audio effects", ",", "generators and io", ",", "midi effects", ",", "modulators", ",", "synths", ",", "timing" ],
+					"items" : [ "audio effects", ",", "generators and io", ",", "midi effects", ",", "modulators", ",", "synths", ",", "timing and utilities" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -293,7 +317,7 @@
 					"fontname" : "Lato",
 					"fontsize" : 12.0,
 					"id" : "obj-8",
-					"items" : [ "mb.echo~.maxpat", ",", "mb.grainulate~.maxpat" ],
+					"items" : [ "!mb.amrmsynth~.maxpat", ",", "!mb.doublefm~.maxpat", ",", "!mb.modalSynth~.maxpat", ",", "!mb.subtractiveSynth~.maxpat", ",", "mb.2DWavetable~.maxpat", ",", "mb.classicsynth~.maxpat", ",", "mb.drumrack~.maxpat", ",", "mb.harmonicsynth~.maxpat", ",", "mb.pluck~.maxpat", ",", "mb.simplefm~.maxpat", ",", "mb.simplesynth~.maxpat", ",", "mb.sinesynth~.maxpat" ],
 					"maxclass" : "chooser",
 					"numinlets" : 1,
 					"numoutlets" : 6,
@@ -301,7 +325,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 265.0, 191.0, 154.0, 196.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 13.0, 67.0, 192.0, 201.0 ],
+					"presentation_rect" : [ 0.0, 67.0, 234.0, 237.0 ],
 					"selectioncolor" : [ 0.72156862745098, 0.72156862745098, 0.72156862745098, 1.0 ],
 					"stripecolor" : [ 0.537254901960784, 0.537254901960784, 0.537254901960784, 1.0 ],
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
@@ -415,6 +439,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-51", 0 ],
 					"source" : [ "obj-50", 0 ]
 				}
@@ -475,6 +506,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-58", 0 ],
 					"source" : [ "obj-63", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"source" : [ "obj-8", 3 ]
 				}
 
 			}

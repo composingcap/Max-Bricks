@@ -139,7 +139,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 889.0, 154.0, 78.0, 23.0 ],
 					"saved_object_attributes" : 					{
-						"filename" : "mb.helpers",
+						"filename" : "mb.helpers.js",
 						"parameter_enable" : 0
 					}
 ,
@@ -276,10 +276,21 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
-					"parameter_enable" : 0,
+					"parameter_enable" : 1,
 					"patching_rect" : [ 385.0, 229.0, 219.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 7.0, 45.5, 131.0, 20.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_enum" : [ "all", "Arturia MiniLab mkII", "Focusrite USB MIDI" ],
+							"parameter_longname" : "midiInputSelect",
+							"parameter_mmax" : 2,
+							"parameter_shortname" : "midiInputSelect",
+							"parameter_type" : 2
+						}
+
+					}
+,
 					"varname" : "midiInputSelect"
 				}
 

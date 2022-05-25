@@ -165,7 +165,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 754.5, 32.0, 58.0, 23.0 ],
 					"restore" : 					{
-						"gain[2]" : [ 0.0 ],
+						"gain" : [ 0.0 ],
 						"pan" : [ 0.0 ]
 					}
 ,
@@ -243,7 +243,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 798.0, 182.0, 78.0, 23.0 ],
 					"saved_object_attributes" : 					{
-						"filename" : "mb.helpers",
+						"filename" : "mb.helpers.js",
 						"parameter_enable" : 0
 					}
 ,
@@ -269,7 +269,7 @@
 							"parameter_initial" : [ 0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "gain[3]",
+							"parameter_longname" : "gain",
 							"parameter_mmax" : 6.0,
 							"parameter_mmin" : -70.0,
 							"parameter_shortname" : "gain",
@@ -281,7 +281,7 @@
 ,
 					"showname" : 0,
 					"shownumber" : 0,
-					"varname" : "gain[2]"
+					"varname" : "gain"
 				}
 
 			}
@@ -327,7 +327,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 111.5, 64.0, 30.0, 30.0 ]
 				}
 

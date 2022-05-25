@@ -6,6 +6,11 @@ var large = [280,220];
 var extralarge = [420,220];
 
 var snapshotapi = 0;
+var storage;
+var presetFlag = false;
+var p;
+var parent;
+var storage;
 
 function help(){
 	var p = this.patcher;
@@ -16,7 +21,7 @@ function help(){
 function autoTransform(size){
 
 	var p = this.patcher;
-
+	p.setattr("varname", "temp");
 	var n = p.name;
 	
 	var parent = p.parentpatcher;
@@ -56,31 +61,92 @@ function autoTransform(size){
 		position[4] = medium[1];
 	}
 
-	var b = parent.newdefault(position[0], position[1],"bpatcher "+ n + " @args 1 @patching_rect " + position[0] + " " + position[1] + " " + position[3] + " "+ position[4]);
+
+	if (presetFlag){
+		
+		
+		var b = parent.newdefault(position[0], position[1],"bpatcher "+ n + " @embed 1 @args 1 @patching_rect " + position[0] + " " + position[1] + " " + position[3] + " "+ position[4]);
+		parent.connect(b,0,storage,0);
+		parent.connect(storage,0,b,0);
+	}
+	else{
+		var b = parent.newdefault(position[0], position[1],"bpatcher "+ n + " @args 1 @patching_rect " + position[0] + " " + position[1] + " " + position[3] + " "+ position[4]);
+	}
 
 	p.dispose();
 	
 
 	}
-	function presetCreate(){
+	function presetInit(){
+		
 		var p = this.patcher;
 
 		var pos = p.getattr("patching_rect");
-		post(pos);
 		var parent = p.parentpatcher;
 
-		storage= parent.newdefault(pos[0]+75,pos[1] + 50, "pattrstorage cues");
 
-		preset= parent.newdefault(pos[0]+75,pos[1] + 75, "preset");
 
-		preset.setattr("pattrstorage", storage.getattr("name"));			
+		storage= parent.newdefault(pos[0],pos[1] + 125, "pattrstorage");
+
+		presetFlag = true;
 
 	}
 
-	function initSnaps(){
-		var p = this.patcher;
-		var parent = p.parentpatcher;
-		snapshotapi = new SnapshotAPI("patcher");
-		snapshotapi.addsnapshot(1);
+function presetCreate(){
+	p = this.patcher;
+	parent = p.parentpatcher;
+	storage= parent.newdefault(0,0, "pattrstorage cues");
 
+}
+
+function dict_dump(dictName) {
+	var d = new Dict(dictName);
+	dict_crawl(d, "");
+  
+  }
+  
+  
+  function dict_crawl(dict, keyString, mode) {
+	  if (mode == null) mode="dump";
+	var keys = dict.getkeys();
+	if (typeof keys === 'string') {
+	  keys = [keys];
 	}
+	for (var k = 0; k < keys.length; k++) {
+	  key = keys[k];
+	  var type = dict.gettype(key);
+  
+  
+	  if (type == "dictionary") {
+		dict_crawl(dict.get(key), keyString + key + "::");
+  
+	  } else {
+		outArray = []
+		outArray.push(keyString + key)
+  
+		if (type == "array") {
+		  var ar = dict.get(key);
+  
+		  for (var i = 0; i < ar.length; i++) {
+  
+			outArray.push(ar[i]);
+  
+		  }
+  
+		} else {
+		  outArray.push(dict.get(key));
+		}
+  
+  
+	  if (mode="dump"){
+		  outArray.unshift(mode)
+		outlet(0, outArray)
+  }
+	  }
+  
+  
+	}
+  
+  
+  
+  }
