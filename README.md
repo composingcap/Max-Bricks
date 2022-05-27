@@ -3,7 +3,7 @@
 ## Instruments 
 - [ ] Subtractive Synth
 - [ ] Double FM Synth
-- [ ] Modal Synth
+- [x] Modal Synth
 - [ ] RM Synth
 - [x] Drum Synth
 - [ ] Kick Drum 
@@ -23,7 +23,7 @@
 - [x] Mixer
 - [ ] Router
 - [X] Reverb
-- [ ] Gate
+- [x] Gate
 - [ ] Compressor
 
 ## Midi effects 
