@@ -40,11 +40,52 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"bubble" : 1,
+					"id" : "obj-21",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 207.52991771697998, 114.858974099159241, 153.0, 39.0 ],
+					"presentation_linecount" : 2,
+					"text" : "Playlist Max object is used to play sound files"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bubble" : 1,
+					"id" : "obj-20",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 342.803417980670929, 429.324790239334106, 153.0, 54.0 ],
+					"presentation_linecount" : 3,
+					"text" : "Bang when the gate opens. Good for triggering events"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bubble" : 1,
+					"id" : "obj-19",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 292.52991771697998, 341.247865915298462, 150.0, 39.0 ],
+					"text" : "Signal for side chaining the gate"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-17",
 					"maxclass" : "scope~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 276.068378865718842, 279.846156418323517, 112.051281869411469, 68.461537837982178 ]
+					"patching_rect" : [ 172.871796846389771, 341.247865915298462, 112.051281869411469, 68.461537837982178 ]
 				}
 
 			}
@@ -56,7 +97,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 419.0, 376.923080742359161, 24.0, 24.0 ]
+					"patching_rect" : [ 316.803417980670929, 444.324790239334106, 24.0, 24.0 ]
 				}
 
 			}
@@ -90,7 +131,7 @@
 					"originaltempo" : 120.0,
 					"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 148.0, 93.0, 150.0, 30.0 ],
+					"patching_rect" : [ 44.803417980670929, 119.358974099159241, 150.0, 30.0 ],
 					"pitchcorrection" : 0,
 					"quality" : "basic",
 					"timestretch" : [ 0 ]
@@ -114,7 +155,7 @@
 					"numoutlets" : 4,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal", "signal", "signal", "bang" ],
-					"patching_rect" : [ 148.0, 138.675213813781738, 290.0, 120.0 ],
+					"patching_rect" : [ 44.803417980670929, 200.076923310756683, 290.0, 120.0 ],
 					"varname" : "mb.gate~",
 					"viewvisibility" : 1
 				}
@@ -136,7 +177,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 148.0, 388.341881155967712, 190.0, 90.0 ],
+					"patching_rect" : [ 44.803417980670929, 459.145300149917603, 190.0, 90.0 ],
 					"varname" : "mb.audioOut",
 					"viewvisibility" : 1
 				}
@@ -146,6 +187,7 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-9", 1 ],
+					"midpoints" : [ 87.053417980670929, 184.217948704957962, 325.303417980670929, 184.217948704957962 ],
 					"source" : [ "obj-14", 1 ]
 				}
 
@@ -160,7 +202,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-12", 1 ],
-					"midpoints" : [ 247.833333333333314, 369.132479429244995, 328.5, 369.132479429244995 ],
+					"midpoints" : [ 144.636751314004243, 430.53418892621994, 225.303417980670929, 430.53418892621994 ],
 					"source" : [ "obj-9", 1 ]
 				}
 
