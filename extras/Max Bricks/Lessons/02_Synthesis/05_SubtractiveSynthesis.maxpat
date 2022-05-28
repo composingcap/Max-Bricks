@@ -131,7 +131,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 12.0, 13.0, 323.0, 30.0 ],
-					"text" : "Wavefolding"
+					"text" : "Subtractive Synthesis"
 				}
 
 			}
@@ -145,57 +145,9 @@
 				}
 
 			}
-, 			{
-				"box" : 				{
-					"args" : [ 1 ],
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-3",
-					"lockeddragscroll" : 0,
-					"lockedsize" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "mb.notein.maxpat",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 482.0, 31.0, 280.0, 118.0 ],
-					"varname" : "mb.notein[1]",
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"args" : [ 1 ],
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-88",
-					"lockeddragscroll" : 0,
-					"lockedsize" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "mb.audioOut.maxpat",
-					"numinlets" : 2,
-					"numoutlets" : 0,
-					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 482.0, 355.5, 190.0, 90.0 ],
-					"varname" : "mb.audioOut[1]",
-					"viewvisibility" : 1
-				}
-
-			}
  ],
 		"lines" : [  ],
 		"parameters" : 		{
-			"obj-88::obj-25" : [ "dspState[3]", "dspState", 0 ],
-			"obj-88::obj-3" : [ "live.gain~[6]", "live.gain~", 0 ],
-			"obj-88::obj-9" : [ "live.numbox[3]", "live.numbox", 0 ],
 			"parameterbanks" : 			{
 				"0" : 				{
 					"index" : 0,
@@ -205,53 +157,10 @@
 
 			}
 ,
-			"parameter_overrides" : 			{
-				"obj-88::obj-25" : 				{
-					"parameter_longname" : "dspState[3]"
-				}
-,
-				"obj-88::obj-3" : 				{
-					"parameter_longname" : "live.gain~[6]"
-				}
-,
-				"obj-88::obj-9" : 				{
-					"parameter_longname" : "live.numbox[3]"
-				}
-
-			}
-,
 			"inherited_shortname" : 1
 		}
 ,
-		"dependency_cache" : [ 			{
-				"name" : "_mb.notetagger.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Max Bricks/patchers/utilities",
-				"patcherrelativepath" : "../../../patchers/utilities",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "mb.audioOut.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Max Bricks/patchers/bpatchers/generators and io",
-				"patcherrelativepath" : "../../../patchers/bpatchers/generators and io",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "mb.helpers.js",
-				"bootpath" : "~/Documents/Max 8/Packages/Max Bricks/javascript",
-				"patcherrelativepath" : "../../../javascript",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "mb.notein.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Max Bricks/patchers/bpatchers/generators and io",
-				"patcherrelativepath" : "../../../patchers/bpatchers/generators and io",
-				"type" : "JSON",
-				"implicit" : 1
-			}
- ],
+		"dependency_cache" : [  ],
 		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "Minimal",

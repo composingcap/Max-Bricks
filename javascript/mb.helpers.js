@@ -7,7 +7,7 @@ var extralarge = [420,220];
 
 var snapshotapi = 0;
 var storage;
-var presetFlag = false;
+var editFlag = false;
 var p;
 var parent;
 var storage;
@@ -62,7 +62,7 @@ function autoTransform(size){
 	}
 
 
-	if (presetFlag){
+	if (!editFlag){
 		
 		
 		var b = parent.newdefault(position[0], position[1],"bpatcher "+ n + " @embed 1 @args 1 @patching_rect " + position[0] + " " + position[1] + " " + position[3] + " "+ position[4]);
@@ -77,25 +77,34 @@ function autoTransform(size){
 	
 
 	}
-	function presetInit(){
-		
-		var p = this.patcher;
-
-		var pos = p.getattr("patching_rect");
-		var parent = p.parentpatcher;
+	function embedMe(){
 
 
 
-		storage= parent.newdefault(pos[0],pos[1] + 125, "pattrstorage");
+		//storage= parent.newdefault(pos[0],pos[1] + 125, "pattrstorage");
 
-		presetFlag = true;
+		editFlag = true;
 
 	}
 
 function presetCreate(){
 	p = this.patcher;
 	parent = p.parentpatcher;
-	storage= parent.newdefault(0,0, "pattrstorage cues");
+	if (p.box.varname == ""){
+		p.box.varname = "preset";
+
+	}
+
+
+	storage= parent.newdefault(0,0, "pattrstorage cues_"+p.box.varname);
+	parent.hiddenconnect(p.box, 0 , storage, 0);
+	parent.hiddenconnect(storage, 0 , p.box, 0);
+
+
+}
+
+function presetDelete(){
+	parent.remove(storage);
 
 }
 
@@ -149,4 +158,9 @@ function dict_dump(dictName) {
   
   
   
+  }
+
+  function getName(){
+	outlet(0,this.patcher.box.varname)
+
   }
