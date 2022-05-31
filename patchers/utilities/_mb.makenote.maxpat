@@ -136,18 +136,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-1",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 436.666666666666629, 340.0, 91.0, 23.0 ],
-					"text" : "_mb.notetagger"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"comment" : "",
 					"id" : "obj-28",
 					"index" : 1,
@@ -214,7 +202,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "int" ],
 					"patching_rect" : [ 367.0, 86.0, 30.0, 30.0 ]
 				}
 
@@ -239,7 +227,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "float" ],
 					"patching_rect" : [ 121.0, 69.0, 30.0, 30.0 ]
 				}
 
@@ -252,7 +240,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "int" ],
 					"patching_rect" : [ 70.0, 74.0, 30.0, 30.0 ]
 				}
 
@@ -276,7 +264,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 243.666666666666657, 201.0, 29.5, 23.0 ],
+					"patching_rect" : [ 243.666666666666657, 175.0, 29.5, 23.0 ],
 					"text" : "i"
 				}
 
@@ -285,11 +273,11 @@
 				"box" : 				{
 					"id" : "obj-3",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
+					"numinlets" : 2,
 					"numoutlets" : 1,
-					"outlettype" : [ "float" ],
-					"patching_rect" : [ 242.666666666666657, 168.0, 55.0, 23.0 ],
-					"text" : "cpuclock"
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 242.666666666666657, 142.0, 101.0, 23.0 ],
+					"text" : "random 1000000"
 				}
 
 			}
