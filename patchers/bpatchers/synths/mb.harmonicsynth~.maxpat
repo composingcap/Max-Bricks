@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1631.0, 371.0, 1143.0, 937.0 ],
+		"rect" : [ 1631.0, 371.0, 1142.0, 937.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,49 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-62",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 231.0, 622.5, 91.0, 23.0 ],
+					"text" : "_mb.param gain"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-61",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 452.0, 305.5, 90.0, 23.0 ],
+					"text" : "_mb.param fold"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-13",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 898.333333333333371, 522.5, 59.0, 23.0 ],
+					"restore" : [ 2.167551657122766, 1188.519044466713922, 0.12, 2000.0, 0.0, 1.0, 0.0, 0.0, 0.545454545454546, 1.0 ],
+					"saved_object_attributes" : 					{
+						"parameter_enable" : 0,
+						"parameter_mappable" : 0
+					}
+,
+					"text" : "pattr adsr",
+					"varname" : "adsr"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"appearance" : 1,
 					"hint" : "Wave folding will saturate the sound adding upper partials",
 					"id" : "obj-26",
@@ -48,12 +91,12 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 480.0, 294.0, 47.0, 36.0 ],
+					"patching_rect" : [ 452.0, 350.0, 47.0, 36.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 238.0, 78.5, 47.0, 36.0 ],
+					"presentation_rect" : [ 236.0, 71.5, 35.0, 36.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "fold",
+							"parameter_longname" : "fold[2]",
 							"parameter_mmax" : 2.0,
 							"parameter_shortname" : "fold",
 							"parameter_type" : 0,
@@ -89,11 +132,11 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 370.0, 294.0, 44.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 218.0, 47.0, 44.0, 15.0 ],
+					"presentation_rect" : [ 155.0, 15.0, 44.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
-							"parameter_longname" : "live.text[5]",
+							"parameter_longname" : "live.text[9]",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.text[1]",
 							"parameter_type" : 2
@@ -145,81 +188,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-24",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 1043.0, 158.0, 56.0, 23.0 ],
-					"text" : "loadbang"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"activebgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
-					"activebgoncolor" : [ 1.0, 0.709803921568627, 0.196078431372549, 0.0 ],
-					"activetextcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"bgcolor" : [ 0.647058823529412, 0.647058823529412, 0.647058823529412, 0.0 ],
-					"bordercolor" : [ 0.313725490196078, 0.313725490196078, 0.313725490196078, 0.0 ],
-					"hint" : "Additive synthesis occurs when a sounds is created from the sum of other sounds. This block is an example of harmonic additive synthesis where a sound is contructed based on adding different partials from the same harmonic series together.\nClick to find out more.",
-					"id" : "obj-93",
-					"maxclass" : "live.text",
-					"mode" : 0,
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"parameter_enable" : 1,
-					"parameter_mappable" : 0,
-					"patching_rect" : [ 791.5, 34.0, 30.0, 32.0 ],
-					"pictures" : [ "mb.infoIcon.svg", "mb.infoIcon.svg" ],
-					"presentation" : 1,
-					"presentation_rect" : [ 251.0, 12.5, 21.0, 22.75 ],
-					"remapsvgcolors" : 1,
-					"saved_attribute_attributes" : 					{
-						"activebgcolor" : 						{
-							"expression" : ""
-						}
-,
-						"activebgoncolor" : 						{
-							"expression" : ""
-						}
-,
-						"activetextcolor" : 						{
-							"expression" : ""
-						}
-,
-						"bgcolor" : 						{
-							"expression" : ""
-						}
-,
-						"bordercolor" : 						{
-							"expression" : ""
-						}
-,
-						"textcolor" : 						{
-							"expression" : ""
-						}
-,
-						"valueof" : 						{
-							"parameter_enum" : [ "val1", "val2" ],
-							"parameter_invisible" : 2,
-							"parameter_longname" : "live.text[4]",
-							"parameter_mmax" : 1,
-							"parameter_shortname" : "live.text",
-							"parameter_type" : 2
-						}
-
-					}
-,
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"usepicture" : 1,
-					"varname" : "live.text"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-91",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -253,15 +221,15 @@
 					"orientation" : 1,
 					"outlettype" : [ "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 179.0, 475.0, 136.0, 20.0 ],
+					"patching_rect" : [ 179.0, 683.5, 136.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 171.0, 18.5, 78.0, 20.0 ],
+					"presentation_rect" : [ 201.0, 16.5, 78.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "live.gain~[3]",
+							"parameter_longname" : "gain[1]",
 							"parameter_mmax" : 6.0,
 							"parameter_mmin" : -70.0,
-							"parameter_shortname" : "live.gain~",
+							"parameter_shortname" : "gain",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4
 						}
@@ -270,7 +238,7 @@
 ,
 					"showname" : 0,
 					"shownumber" : 0,
-					"varname" : "live.gain~"
+					"varname" : "gain"
 				}
 
 			}
@@ -281,8 +249,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 179.0, 432.0, 34.0, 23.0 ],
-					"text" : "/~ 8."
+					"patching_rect" : [ 179.0, 521.0, 34.0, 23.0 ],
+					"text" : "/~ 2."
 				}
 
 			}
@@ -326,7 +294,7 @@
 					"presentation_rect" : [ 14.0, 109.5, 219.0, 14.0 ],
 					"setminmax" : [ 0.0, 1.0 ],
 					"settype" : 0,
-					"size" : 4,
+					"size" : 8,
 					"slidercolor" : [ 0.0, 0.192156862745098, 1.0, 1.0 ],
 					"spacing" : 1,
 					"thickness" : 5
@@ -352,7 +320,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 14.0, 71.5, 219.0, 36.0 ],
 					"setminmax" : [ 0.0, 1.0 ],
-					"size" : 4,
+					"size" : 8,
 					"slidercolor" : [ 0.0, 0.0, 0.0, 0.44 ],
 					"spacing" : 1,
 					"thickness" : 5,
@@ -634,7 +602,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 685.0, 600.0, 91.0, 23.0 ],
+					"patching_rect" : [ 654.0, 600.0, 91.0, 23.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1387,17 +1355,17 @@
 						"valueof" : 						{
 							"parameter_initial" : [ 6000 ],
 							"parameter_initial_enable" : 1,
-							"parameter_longname" : "live.numbox[7]",
+							"parameter_longname" : "envelopeTime[1]",
 							"parameter_mmax" : 10000.0,
 							"parameter_mmin" : 1000.0,
-							"parameter_shortname" : "live.numbox",
+							"parameter_shortname" : "envelopeTime",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 2
 						}
 
 					}
 ,
-					"varname" : "live.numbox"
+					"varname" : "envelopeTime"
 				}
 
 			}
@@ -1456,7 +1424,7 @@
 					"numinlets" : 5,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 177.0, 401.0, 289.0, 23.0 ],
+					"patching_rect" : [ 177.0, 490.0, 289.0, 23.0 ],
 					"text" : "poly~ _mb.poly.harmonicsynth 32 @target 0 @steal 1"
 				}
 
@@ -1468,7 +1436,7 @@
 					"numinlets" : 10,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 890.5, 372.5, 113.5, 23.0 ],
+					"patching_rect" : [ 898.333333333333371, 493.5, 113.5, 23.0 ],
 					"text" : "join 10 @triggers -1"
 				}
 
@@ -1480,9 +1448,10 @@
 					"activelinecolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"activeslopehandlecolor" : [ 0.0, 0.129, 0.847, 1.0 ],
 					"attack_domain" : [ 0.0, 2000.0 ],
-					"attack_time" : 2.167551657122763,
+					"attack_time" : 2.167551657122766,
 					"decay_domain" : [ 1.5, 2000.0 ],
-					"decay_time" : 2000.0,
+					"decay_slope" : 0.545454545454546,
+					"decay_time" : 1188.519044466713922,
 					"hint" : "Sets the envelope for each synth note",
 					"id" : "obj-28",
 					"maxclass" : "live.adsrui",
@@ -1493,7 +1462,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 14.0, 155.5, 263.0, 50.0 ],
 					"release_domain" : [ 1.5, 2000.0 ],
-					"release_time" : 389.869425349196092,
+					"release_time" : 2000.0,
 					"sustain" : 0.12
 				}
 
@@ -1669,7 +1638,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 42.0, 20.0, 195.0, 26.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 7.0, 12.5, 162.0, 26.0 ],
+					"presentation_rect" : [ 7.0, 12.5, 136.0, 26.0 ],
 					"text" : "Harmonic Synth",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -1698,13 +1667,11 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 663.0, 25.0, 58.0, 23.0 ],
 					"restore" : 					{
-						"fold" : [ 0.0 ],
-						"live.gain~" : [ 0.0 ],
-						"live.numbox" : [ 6000.0 ],
-						"live.text" : [ 0.0 ],
-						"live.text[1]" : [ 0.0 ],
-						"nharmonics" : [ 0 ],
-						"partials" : [ 1.0, 0.0, 0.0, 1.0 ]
+						"envelopeTime" : [ 6000.0 ],
+						"fold" : [ 1.0 ],
+						"gain" : [ -5.10223829407289 ],
+						"nharmonics" : [ "8" ],
+						"partials" : [ 1.0, 0.347222222222222, 0.486111111111111, 0.180555555555556, 1.0, 0.541666666666667, 0.180555555555556, 0.0 ]
 					}
 ,
 					"text" : "autopattr",
@@ -1720,7 +1687,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 179.0, 628.0, 30.0, 30.0 ]
+					"patching_rect" : [ 179.0, 717.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -1758,10 +1725,22 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
-					"parameter_enable" : 0,
+					"parameter_enable" : 1,
 					"patching_rect" : [ 628.0, 109.0, 100.0, 20.0 ],
+					"pattrmode" : 1,
 					"presentation" : 1,
 					"presentation_rect" : [ 14.0, 44.5, 41.999998271465302, 20.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_enum" : [ "4", "8", "16", "32", "64" ],
+							"parameter_longname" : "nharmonics[1]",
+							"parameter_mmax" : 4,
+							"parameter_shortname" : "nharmonics",
+							"parameter_type" : 2
+						}
+
+					}
+,
 					"varname" : "nharmonics"
 				}
 
@@ -1788,24 +1767,6 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 276.0, 242.0, 209.0, 23.0 ],
 					"text" : "vexpr pow(abs($f1)\\, 0.5)*(($f1>0)*2-1)"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"angle" : 270.0,
-					"background" : 1,
-					"bgcolor" : [ 0.462745098039216, 0.701960784313725, 1.0, 1.0 ],
-					"id" : "obj-8",
-					"maxclass" : "panel",
-					"mode" : 0,
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 42.0, 14.0, 202.0, 38.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 10.5, 305.0, 30.0 ],
-					"proportion" : 0.39,
-					"rounded" : 0
 				}
 
 			}
@@ -1845,6 +1806,36 @@
  ],
 					"thinmode" : "none",
 					"thinto" : 0.001000000047497
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-14",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 370.0, 344.0, 65.0, 23.0 ],
+					"text" : "allnotesoff"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 270.0,
+					"background" : 1,
+					"bgcolor" : [ 0.462745098039216, 0.701960784313725, 1.0, 1.0 ],
+					"id" : "obj-8",
+					"maxclass" : "panel",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 42.0, 14.0, 202.0, 38.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 0.0, 10.5, 305.0, 30.0 ],
+					"proportion" : 0.39,
+					"rounded" : 0
 				}
 
 			}
@@ -1901,13 +1892,15 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-14",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 370.0, 344.0, 65.0, 23.0 ],
-					"text" : "allnotesoff"
+					"background" : 1,
+					"hint" : "Additive synthesis occurs when a sounds is created from the sum of other sounds. This block is an example of harmonic additive synthesis where a sound is contructed based on adding different partials from the same harmonic series together. Click to find out more.",
+					"id" : "obj-80",
+					"maxclass" : "hint",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 89.5, 77.0, 100.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 0.0, 10.5, 169.0, 30.0 ]
 				}
 
 			}
@@ -1937,6 +1930,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-50", 0 ],
 					"source" : [ "obj-12", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-40", 3 ],
+					"source" : [ "obj-13", 0 ]
 				}
 
 			}
@@ -2009,15 +2009,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-40", 4 ],
-					"order" : 1,
-					"source" : [ "obj-26", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-67", 1 ],
-					"order" : 0,
 					"source" : [ "obj-26", 0 ]
 				}
 
@@ -2101,7 +2092,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-40", 3 ],
+					"destination" : [ "obj-13", 0 ],
 					"source" : [ "obj-30", 0 ]
 				}
 
@@ -2234,6 +2225,27 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-19", 0 ],
+					"source" : [ "obj-55", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-26", 0 ],
+					"source" : [ "obj-61", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-76", 0 ],
+					"source" : [ "obj-62", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
 					"source" : [ "obj-67", 0 ]
 				}
@@ -2315,13 +2327,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-18", 0 ],
 					"source" : [ "obj-91", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-31", 0 ],
-					"source" : [ "obj-93", 0 ]
 				}
 
 			}

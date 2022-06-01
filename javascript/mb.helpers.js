@@ -77,7 +77,7 @@ function autoTransform(size){
 	
 
 	}
-	function embedMe(){
+	function editMode(){
 
 
 
@@ -87,7 +87,7 @@ function autoTransform(size){
 
 	}
 
-function presetCreate(){
+function presetCreate(inlet){
 	p = this.patcher;
 	parent = p.parentpatcher;
 	if (p.box.varname == ""){
@@ -95,10 +95,10 @@ function presetCreate(){
 
 	}
 
-
+	if (inlet == undefined) inlet = 0;
 	storage= parent.newdefault(0,0, "pattrstorage cues_"+p.box.varname);
 	parent.hiddenconnect(p.box, 0 , storage, 0);
-	parent.hiddenconnect(storage, 0 , p.box, 0);
+	parent.hiddenconnect(storage, 0 , p.box, inlet);
 
 
 }
@@ -163,4 +163,8 @@ function dict_dump(dictName) {
   function getName(){
 	outlet(0,this.patcher.box.varname)
 
+  }
+
+  function getParentName(){
+	outlet(0,this.patcher.parentpatcher.box.varname)
   }

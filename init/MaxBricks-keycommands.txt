@@ -1,0 +1,2 @@
+max definecommand M patcher inserttextobj mb.;
+max definecommandinstructions patcher M "maxbrick object";
