@@ -37,6 +37,11 @@ function autoTransform(size){
 		position[4] = medium[1];
 	}
 
+	else if (size == "ms"){
+		position[3] = medium[0];
+		position[4] = extraSmall[1];
+	}
+
 	else if (size == "l"){
 		position[3] = large[0];
 		position[4] = large[1];
