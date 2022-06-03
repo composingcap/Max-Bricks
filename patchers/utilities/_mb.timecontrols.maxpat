@@ -53,7 +53,7 @@
 					}
 ,
 					"text" : "pattr metroTime",
-					"varname" : "noteVal"
+					"varname" : "metroTime"
 				}
 
 			}
@@ -199,7 +199,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 299.5, 549.0, 80.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 160.0, -2.5, 43.75, 20.0 ],
+					"presentation_rect" : [ 160.0, -2.5, 38.75, 20.0 ],
 					"triangle" : 0
 				}
 
@@ -301,7 +301,7 @@
 							"parameter_initial" : [ 7.0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "_noteval",
+							"parameter_longname" : "_noteval[1]",
 							"parameter_mmax" : 20,
 							"parameter_shortname" : "ntoeval",
 							"parameter_type" : 2
@@ -464,7 +464,7 @@
 							"parameter_initial" : [ 250 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "_timems",
+							"parameter_longname" : "_timems[1]",
 							"parameter_mmax" : 5000.0,
 							"parameter_mmin" : 10.0,
 							"parameter_shortname" : "timems",
@@ -504,7 +504,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 299.5, 549.0, 80.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 161.625, 0.0, 42.125, 15.0 ],
+					"presentation_rect" : [ 161.625, 0.0, 37.125, 15.0 ],
 					"proportion" : 0.39,
 					"rounded" : 0
 				}
