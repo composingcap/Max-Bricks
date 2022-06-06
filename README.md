@@ -9,10 +9,10 @@
 - [ ] Kick Drum 
 
 ## Audio Effects
-- [ ] Chorus
+- [x] Chorus
 - [ ] Flanger 
 - [ ] comb filter 
-- [ ] EQ 
+- [x] EQ 
 - [x] Simple filter 
 - [x] Freq Shifter 
 - [x] Pitch Shifter 
@@ -24,7 +24,7 @@
 - [ ] Router
 - [X] Reverb
 - [x] Gate
-- [ ] Compressor
+- [x] Compressor
 
 ## Midi effects 
 - [x] midi mirror 
