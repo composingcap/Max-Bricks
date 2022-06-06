@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1571.0, 495.0, 1082.0, 597.0 ],
+		"rect" : [ 1560.0, 522.0, 1082.0, 597.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,12 +40,24 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-22",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 109.0, 363.0, 93.0, 23.0 ],
+					"text" : "route _mod _set"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-7",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 185.0, 388.0, 41.0, 23.0 ],
+					"patching_rect" : [ 331.0, 395.0, 41.0, 23.0 ],
 					"text" : "unjoin"
 				}
 
@@ -57,7 +69,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "int", "int" ],
-					"patching_rect" : [ 226.0, 469.0, 59.0, 23.0 ],
+					"patching_rect" : [ 226.0, 462.0, 59.0, 23.0 ],
 					"text" : "change 0."
 				}
 
@@ -69,7 +81,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 159.75, 458.0, 29.5, 23.0 ],
+					"patching_rect" : [ 226.0, 428.0, 29.5, 23.0 ],
 					"text" : "- 0."
 				}
 
@@ -81,7 +93,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "float" ],
-					"patching_rect" : [ 251.0, 403.0, 30.0, 23.0 ],
+					"patching_rect" : [ 397.0, 410.0, 30.0, 23.0 ],
 					"text" : "t b f"
 				}
 
@@ -93,7 +105,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 109.0, 458.0, 29.5, 23.0 ],
+					"patching_rect" : [ 109.0, 410.0, 29.5, 23.0 ],
 					"text" : "+ 0."
 				}
 
@@ -107,7 +119,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 240.5, 339.0, 30.0, 30.0 ]
+					"patching_rect" : [ 386.5, 346.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -120,7 +132,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 196.0, 350.0, 30.0, 30.0 ]
+					"patching_rect" : [ 342.0, 357.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -164,10 +176,10 @@
 					"id" : "obj-5",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 288.0, 222.0, 23.0, 23.0 ],
-					"text" : "t b"
+					"numoutlets" : 3,
+					"outlettype" : [ "bang", "bang", "bang" ],
+					"patching_rect" : [ 288.0, 222.0, 42.0, 23.0 ],
+					"text" : "t b b b"
 				}
 
 			}
@@ -178,7 +190,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 287.0, 188.0, 108.0, 23.0 ],
+					"patching_rect" : [ 288.0, 186.0, 108.0, 23.0 ],
 					"text" : "r _MB.PARAMGET"
 				}
 
@@ -437,6 +449,38 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-17", 0 ],
+					"order" : 1,
+					"source" : [ "obj-22", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-18", 0 ],
+					"order" : 1,
+					"source" : [ "obj-22", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-21", 1 ],
+					"order" : 0,
+					"source" : [ "obj-22", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"order" : 0,
+					"source" : [ "obj-22", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
 					"source" : [ "obj-24", 0 ]
 				}
@@ -458,16 +502,21 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-18", 0 ],
-					"order" : 1,
-					"source" : [ "obj-6", 0 ]
+					"destination" : [ "obj-10", 0 ],
+					"source" : [ "obj-5", 1 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-21", 1 ],
-					"order" : 0,
+					"destination" : [ "obj-3", 0 ],
+					"source" : [ "obj-5", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-22", 0 ],
 					"source" : [ "obj-6", 0 ]
 				}
 
