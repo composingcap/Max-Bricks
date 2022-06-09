@@ -267,7 +267,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
-							"parameter_longname" : "live.text[2]",
+							"parameter_longname" : "live.text[8]",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.text[1]",
 							"parameter_type" : 2
@@ -339,76 +339,12 @@
 					"patching_rect" : [ 754.5, 32.0, 58.0, 23.0 ],
 					"restore" : 					{
 						"_feedback" : [ 0.602257563861465 ],
-						"gain[3]" : [ 0.0 ],
-						"live.text" : [ 0.0 ],
+						"gain[3]" : [ 2.333333333333329 ],
 						"mix" : [ 100.0 ]
 					}
 ,
 					"text" : "autopattr",
 					"varname" : "__MAXBRICKSTORAGE"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"activebgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
-					"activebgoncolor" : [ 1.0, 0.709803921568627, 0.196078431372549, 0.0 ],
-					"activetextcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"bgcolor" : [ 0.647058823529412, 0.647058823529412, 0.647058823529412, 0.0 ],
-					"bordercolor" : [ 0.313725490196078, 0.313725490196078, 0.313725490196078, 0.0 ],
-					"hint" : "Echo is a feedback delay audio effect",
-					"id" : "obj-93",
-					"maxclass" : "live.text",
-					"mode" : 0,
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"parameter_enable" : 1,
-					"parameter_mappable" : 0,
-					"patching_rect" : [ 746.0, 64.0, 30.0, 32.0 ],
-					"pictures" : [ "mb.infoIcon.svg", "mb.infoIcon.svg" ],
-					"presentation" : 1,
-					"presentation_rect" : [ 163.0, 13.5, 21.0, 22.75 ],
-					"remapsvgcolors" : 1,
-					"saved_attribute_attributes" : 					{
-						"activebgcolor" : 						{
-							"expression" : ""
-						}
-,
-						"activebgoncolor" : 						{
-							"expression" : ""
-						}
-,
-						"activetextcolor" : 						{
-							"expression" : ""
-						}
-,
-						"bgcolor" : 						{
-							"expression" : ""
-						}
-,
-						"bordercolor" : 						{
-							"expression" : ""
-						}
-,
-						"textcolor" : 						{
-							"expression" : ""
-						}
-,
-						"valueof" : 						{
-							"parameter_enum" : [ "val1", "val2" ],
-							"parameter_invisible" : 2,
-							"parameter_longname" : "live.text[1]",
-							"parameter_mmax" : 1,
-							"parameter_shortname" : "live.text",
-							"parameter_type" : 2
-						}
-
-					}
-,
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"usepicture" : 1,
-					"varname" : "live.text"
 				}
 
 			}
@@ -585,7 +521,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 112.75, 459.0, 136.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 60.5, 15.5, 78.0, 20.0 ],
+					"presentation_rect" : [ 105.5, 15.5, 78.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_initial" : [ 0 ],
@@ -629,6 +565,7 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 16.0,
+					"hint" : "Echo is a feedback delay audio effect",
 					"id" : "obj-59",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -660,7 +597,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 3,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"outlettype" : [ "multichannelsignal" ],
 					"patching_rect" : [ 112.75, 409.0, 74.0, 23.0 ],
 					"text" : "_mb.xfader~"
 				}
@@ -1092,13 +1029,6 @@
 					"midpoints" : [ 144.5, 110.5, 122.25, 110.5 ],
 					"order" : 2,
 					"source" : [ "obj-6", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-31", 0 ],
-					"source" : [ "obj-93", 0 ]
 				}
 
 			}
