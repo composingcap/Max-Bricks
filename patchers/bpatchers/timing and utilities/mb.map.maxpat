@@ -40,6 +40,18 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-76",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 515.583333333333258, 299.0, 129.0, 23.0 ],
+					"text" : "tosymbol @separator ::"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-73",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -229,7 +241,7 @@
 ,
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
-							"parameter_longname" : "live.text[13]",
+							"parameter_longname" : "live.text[17]",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.text[4]",
 							"parameter_type" : 2
@@ -1186,7 +1198,7 @@
 ,
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
-							"parameter_longname" : "live.text[8]",
+							"parameter_longname" : "live.text[16]",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.text[12]",
 							"parameter_type" : 2
@@ -1248,7 +1260,7 @@
 ,
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
-							"parameter_longname" : "live.text[14]",
+							"parameter_longname" : "live.text[18]",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.text[12]",
 							"parameter_type" : 2
@@ -1419,7 +1431,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_invisible" : 1,
-							"parameter_longname" : "mappings[3]",
+							"parameter_longname" : "mappings[1]",
 							"parameter_shortname" : "mappings",
 							"parameter_type" : 3
 						}
@@ -1465,7 +1477,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "refresh", "val2" ],
-							"parameter_longname" : "live.text[12]",
+							"parameter_longname" : "live.text[15]",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "refresh",
 							"parameter_type" : 2
@@ -1691,7 +1703,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 580.0, 307.0, 129.0, 23.0 ],
+					"patching_rect" : [ 649.0, 299.0, 129.0, 23.0 ],
 					"text" : "tosymbol @separator ::"
 				}
 
@@ -1704,7 +1716,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 553.583333333333258, 269.0, 53.0, 23.0 ],
-					"text" : "zl.slice 1"
+					"text" : "zl.ecils 1"
 				}
 
 			}
@@ -1768,7 +1780,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 553.583333333333258, 200.0, 92.0, 23.0 ],
+					"patching_rect" : [ 553.583333333333258, 181.0, 92.0, 23.0 ],
 					"text" : "r _MB.PARAMS"
 				}
 
@@ -1859,7 +1871,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "1", "2", "3", "4", "5", "6", "7", "8" ],
-							"parameter_longname" : "live.tab[2]",
+							"parameter_longname" : "live.tab[3]",
 							"parameter_mmax" : 7,
 							"parameter_shortname" : "live.tab",
 							"parameter_type" : 2,
@@ -2968,7 +2980,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-226", 0 ],
+					"destination" : [ "obj-76", 0 ],
 					"source" : [ "obj-224", 0 ]
 				}
 
@@ -3692,6 +3704,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-143", 0 ],
 					"source" : [ "obj-75", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-226", 0 ],
+					"source" : [ "obj-76", 0 ]
 				}
 
 			}
