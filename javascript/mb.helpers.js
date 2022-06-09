@@ -171,5 +171,26 @@ function dict_dump(dictName) {
   }
 
   function getParentName(){
-	outlet(0,this.patcher.parentpatcher.box.varname)
+	
+	var n = "";
+	n = parentNameBurrow(this.patcher.parentpatcher,n)
+	outlet(0,n);
+  }
+
+  function parentNameBurrow(p, n){
+	  if (n == ""){
+		n = p.box.varname;
+	  }
+	  else{
+		  n = p.box.varname + "::" + n
+	  }
+	  
+		if (p.parentpatcher.box){
+			n = parentNameBurrow(p.parentpatcher, n);
+	
+		}
+		else{
+		}
+		return n;
+		
   }

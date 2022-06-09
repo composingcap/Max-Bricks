@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1560.0, 522.0, 1082.0, 597.0 ],
+		"rect" : [ 642.0, 501.0, 1082.0, 597.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,18 @@
 		"subpatcher_template" : "minimal",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-25",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 483.0, 245.0, 173.0, 23.0 ],
+					"text" : "mb.eq3~"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-22",
 					"maxclass" : "newobj",
@@ -324,7 +336,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 110.0, 121.0, 78.0, 23.0 ],
 					"saved_object_attributes" : 					{
-						"filename" : "mb.helpers",
+						"filename" : "mb.helpers.js",
 						"parameter_enable" : 0
 					}
 ,
@@ -428,7 +440,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-25", 1 ],
+					"order" : 0,
+					"source" : [ "obj-20", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
+					"order" : 1,
 					"source" : [ "obj-20", 0 ]
 				}
 
