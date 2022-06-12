@@ -1,17 +1,15 @@
 # TODO
 
 ## Instruments 
-- [ ] Subtractive Synth
-- [ ] Double FM Synth
+- [x] Subtractive Synth
+- [x] Double FM Synth
 - [x] Modal Synth
-- [ ] RM Synth
+- [x] RM Synth
 - [x] Drum Synth
 - [ ] Kick Drum 
 
 ## Audio Effects
 - [x] Chorus
-- [ ] Flanger 
-- [ ] comb filter 
 - [x] EQ 
 - [x] Simple filter 
 - [x] Freq Shifter 
@@ -21,7 +19,7 @@
 - [ ] Glitcher/stutterer 
 - [x] Distortion
 - [x] Mixer
-- [ ] Router
+- [x] Patchbay
 - [X] Reverb
 - [x] Gate
 - [x] Compressor
@@ -32,7 +30,7 @@
 - [x] Midi retrigger (glitch) 
 - [ ] Midi Chord 
 - [x] Note Echo 
-- [ ] Midi Random 
+- [x] Midi Random 
 
 ## Timing
 - [x] Euclidean generator 
