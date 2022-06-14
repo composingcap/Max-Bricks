@@ -40,6 +40,46 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-33",
+					"maxclass" : "live.text",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 381.0, 348.5, 44.0, 15.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 143.0, 18.0, 44.0, 15.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_enum" : [ "val1", "val2" ],
+							"parameter_longname" : "live.text[18]",
+							"parameter_mmax" : 1,
+							"parameter_shortname" : "live.text[1]",
+							"parameter_type" : 2
+						}
+
+					}
+,
+					"text" : "panic",
+					"varname" : "live.text[1]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-34",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 381.0, 382.5, 65.0, 23.0 ],
+					"text" : "allnotesoff"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-28",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -53,7 +93,7 @@
 , 			{
 				"box" : 				{
 					"angle" : 270.0,
-					"bgcolor" : [ 1, 1, 0, 1 ],
+					"bgcolor" : [ 0.75, 0.75, 0.75, 1 ],
 					"hint" : "Metro",
 					"id" : "obj-32",
 					"maxclass" : "panel",
@@ -197,7 +237,7 @@
 							"parameter_initial" : [ 64 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "_noteVelocity",
+							"parameter_longname" : "_noteVelocity[1]",
 							"parameter_mmin" : 1.0,
 							"parameter_shortname" : "velocity",
 							"parameter_type" : 0,
@@ -228,7 +268,7 @@
 							"parameter_initial" : [ 250 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "_noteLength",
+							"parameter_longname" : "_noteLength[1]",
 							"parameter_mmax" : 1000.0,
 							"parameter_mmin" : 50.0,
 							"parameter_shortname" : "length",
@@ -813,6 +853,20 @@
 					"destination" : [ "obj-28", 0 ],
 					"order" : 0,
 					"source" : [ "obj-31", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-34", 0 ],
+					"source" : [ "obj-33", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-10", 0 ],
+					"source" : [ "obj-34", 0 ]
 				}
 
 			}

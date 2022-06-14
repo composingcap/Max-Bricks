@@ -40,6 +40,25 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 552.0, 455.0, 113.0, 23.0 ],
+					"restore" : [ 127.0, 0.0, 127.0, 0.0, 0.0, 1, 0.0, 63.0, 63.0, 0, 0.0, 127.0, 127.0, 1, 0.0, "curve" ],
+					"saved_object_attributes" : 					{
+						"parameter_enable" : 0,
+						"parameter_mappable" : 0
+					}
+,
+					"text" : "pattr dynamicCurve",
+					"varname" : "dynamicCurve"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-49",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -97,7 +116,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_invisible" : 1,
-							"parameter_longname" : "function",
+							"parameter_longname" : "function[1]",
 							"parameter_shortname" : "function",
 							"parameter_type" : 3
 						}
@@ -105,7 +124,7 @@
 					}
 ,
 					"snap2grid" : 3,
-					"varname" : "dynamics"
+					"varname" : "_dynamics"
 				}
 
 			}
@@ -215,87 +234,6 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 752.0, 124.0, 31.0, 23.0 ],
 					"text" : "help"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-25",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 788.0, 54.0, 58.0, 23.0 ],
-					"restore" : 					{
-						"dynamics" : [ 127.0, 0.0, 127.0, 0.0, 0.0, 1, 0.0, 63.0, 63.0, 0, 0.0, 127.0, 127.0, 1, 0.0, "curve" ],
-						"live.text" : [ 0.0 ]
-					}
-,
-					"text" : "autopattr",
-					"varname" : "__MAXBRICKSTORAGE"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"activebgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
-					"activebgoncolor" : [ 1.0, 0.709803921568627, 0.196078431372549, 0.0 ],
-					"activetextcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"bgcolor" : [ 0.647058823529412, 0.647058823529412, 0.647058823529412, 0.0 ],
-					"bordercolor" : [ 0.313725490196078, 0.313725490196078, 0.313725490196078, 0.0 ],
-					"hint" : "MIDI Transpose adds a set number of semitones and octaves to an incoming MIDI note (pitch velocity) and keeps track of that transposition until receiving  a note off message.",
-					"id" : "obj-93",
-					"maxclass" : "live.text",
-					"mode" : 0,
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"parameter_enable" : 1,
-					"parameter_mappable" : 0,
-					"patching_rect" : [ 681.0, 71.0, 30.0, 32.0 ],
-					"pictures" : [ "mb.infoIcon.svg", "mb.infoIcon.svg" ],
-					"presentation" : 1,
-					"presentation_rect" : [ 163.0, 13.5, 21.0, 22.75 ],
-					"remapsvgcolors" : 1,
-					"saved_attribute_attributes" : 					{
-						"activebgcolor" : 						{
-							"expression" : ""
-						}
-,
-						"activebgoncolor" : 						{
-							"expression" : ""
-						}
-,
-						"activetextcolor" : 						{
-							"expression" : ""
-						}
-,
-						"bgcolor" : 						{
-							"expression" : ""
-						}
-,
-						"bordercolor" : 						{
-							"expression" : ""
-						}
-,
-						"textcolor" : 						{
-							"expression" : ""
-						}
-,
-						"valueof" : 						{
-							"parameter_enum" : [ "val1", "val2" ],
-							"parameter_invisible" : 2,
-							"parameter_longname" : "live.text[5]",
-							"parameter_mmax" : 1,
-							"parameter_shortname" : "live.text",
-							"parameter_type" : 2
-						}
-
-					}
-,
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"usepicture" : 1,
-					"varname" : "live.text"
 				}
 
 			}
@@ -425,6 +363,13 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
+					"destination" : [ "obj-42", 0 ],
+					"source" : [ "obj-1", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-19", 0 ],
 					"source" : [ "obj-16", 0 ]
 				}
@@ -553,13 +498,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-48", 1 ],
 					"source" : [ "obj-49", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-26", 0 ],
-					"source" : [ "obj-93", 0 ]
 				}
 
 			}

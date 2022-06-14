@@ -40,6 +40,18 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-29",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 177.0, 436.0, 40.0, 23.0 ],
+					"text" : "*~ 0.1"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-26",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -135,7 +147,7 @@
 						"valueof" : 						{
 							"parameter_initial" : [ 0.5 ],
 							"parameter_initial_enable" : 1,
-							"parameter_longname" : "_resonance[1]",
+							"parameter_longname" : "_resonance[2]",
 							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "resonance",
 							"parameter_type" : 0,
@@ -156,7 +168,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 890.5, 406.0, 59.0, 23.0 ],
-					"restore" : [ 245.355856456977705, 2000.0, 0.316470588235294, 2000.0, 0.0, 1.0, 0.0, 0.029411764705882, 0.46815834767642, -0.831313994443703 ],
+					"restore" : [ 2.303140490103667, 1144.148861317674346, 0.029411764705882, 2000.0, 0.0, 1.0, 0.0, 0.029411764705882, 0.46815834767642, -0.831313994443703 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -216,7 +228,7 @@
 						"valueof" : 						{
 							"parameter_enum" : [ "lowpass", "bandpass", "highpass" ],
 							"parameter_enum_icons" : [ "lowpass.svg", "bandpass.svg", "highpass.svg" ],
-							"parameter_longname" : "live.menu[1]",
+							"parameter_longname" : "live.menu[2]",
 							"parameter_mmax" : 2,
 							"parameter_shortname" : "live.menu",
 							"parameter_type" : 2
@@ -268,7 +280,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
-							"parameter_longname" : "live.text[10]",
+							"parameter_longname" : "live.text[6]",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.text[1]",
 							"parameter_type" : 2
@@ -357,7 +369,7 @@
 					"presentation_rect" : [ 198.0, 19.5, 78.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "live.gain~[3]",
+							"parameter_longname" : "live.gain~[4]",
 							"parameter_mmax" : 6.0,
 							"parameter_mmin" : -70.0,
 							"parameter_shortname" : "live.gain~",
@@ -439,7 +451,7 @@
 						"valueof" : 						{
 							"parameter_initial" : [ 6000 ],
 							"parameter_initial_enable" : 1,
-							"parameter_longname" : "live.numbox[5]",
+							"parameter_longname" : "live.numbox[20]",
 							"parameter_mmax" : 10000.0,
 							"parameter_mmin" : 1000.0,
 							"parameter_shortname" : "live.numbox",
@@ -521,10 +533,10 @@
 					"activeslopehandlecolor" : [ 0.0, 0.129, 0.847, 1.0 ],
 					"attack_domain" : [ 0.0, 2000.0 ],
 					"attack_slope" : 0.029411764705882,
-					"attack_time" : 245.355856456977705,
+					"attack_time" : 2.303140490103667,
 					"decay_domain" : [ 1.5, 2000.0 ],
 					"decay_slope" : 0.46815834767642,
-					"decay_time" : 2000.0,
+					"decay_time" : 1144.148861317674346,
 					"hint" : "Sets the envelope for each synth note",
 					"id" : "obj-28",
 					"maxclass" : "live.adsrui",
@@ -537,7 +549,7 @@
 					"release_domain" : [ 1.5, 2000.0 ],
 					"release_slope" : -0.831313994443703,
 					"release_time" : 2000.0,
-					"sustain" : 0.316470588235294
+					"sustain" : 0.029411764705882
 				}
 
 			}
@@ -651,7 +663,7 @@
 , 			{
 				"box" : 				{
 					"angle" : 270.0,
-					"bgcolor" : [ 0.75, 0.75, 0.75, 1 ],
+					"bgcolor" : [ 1, 1, 0, 1 ],
 					"hint" : "MIDI Notes (pitch velocity) trigger voices (16) of the additive synth",
 					"id" : "obj-15",
 					"maxclass" : "panel",
@@ -815,7 +827,7 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-76", 0 ],
+					"destination" : [ "obj-29", 0 ],
 					"source" : [ "obj-1", 0 ]
 				}
 
@@ -1009,6 +1021,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-30", 0 ],
 					"source" : [ "obj-28", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-76", 0 ],
+					"source" : [ "obj-29", 0 ]
 				}
 
 			}

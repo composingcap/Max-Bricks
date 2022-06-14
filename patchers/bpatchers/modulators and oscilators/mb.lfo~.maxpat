@@ -68,7 +68,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 985.0, 586.0, 1082.0, 597.0 ],
+						"rect" : [ 1457.0, 604.0, 1082.0, 597.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -96,7 +96,20 @@
 						"style" : "Minimal-1",
 						"subpatcher_template" : "minimal",
 						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-2",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "signal" ],
+									"patching_rect" : [ 176.199999999999989, 254.0, 42.0, 23.0 ],
+									"text" : "+~ 0.5"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-36",
 									"maxclass" : "newobj",
@@ -288,6 +301,13 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-1", 1 ],
+									"source" : [ "obj-2", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-36", 0 ],
 									"source" : [ "obj-26", 0 ]
 								}
@@ -295,7 +315,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-1", 1 ],
+									"destination" : [ "obj-2", 0 ],
 									"order" : 3,
 									"source" : [ "obj-27", 0 ]
 								}
@@ -606,7 +626,7 @@
 						"valueof" : 						{
 							"parameter_initial" : [ 1 ],
 							"parameter_initial_enable" : 1,
-							"parameter_longname" : "lfoMax",
+							"parameter_longname" : "lfoMax[4]",
 							"parameter_mmax" : 1000.0,
 							"parameter_mmin" : -1000.0,
 							"parameter_shortname" : "lfoMax",
@@ -641,7 +661,7 @@
 							"parameter_initial" : [ -1 ],
 							"parameter_initial_enable" : 1,
 							"parameter_invisible" : 1,
-							"parameter_longname" : "number[1]",
+							"parameter_longname" : "number[3]",
 							"parameter_shortname" : "number[1]",
 							"parameter_type" : 3
 						}
@@ -670,7 +690,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "sin", "tri", "sawU", "sawD", "random" ],
-							"parameter_longname" : "live.tab[4]",
+							"parameter_longname" : "live.tab[5]",
 							"parameter_mmax" : 4,
 							"parameter_shortname" : "live.tab",
 							"parameter_type" : 2,
@@ -903,7 +923,7 @@
 							"parameter_initial" : [ 1 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "_lfoRate",
+							"parameter_longname" : "_lfoRate[1]",
 							"parameter_mmax" : 20.0,
 							"parameter_shortname" : "lfoRate",
 							"parameter_type" : 0,
