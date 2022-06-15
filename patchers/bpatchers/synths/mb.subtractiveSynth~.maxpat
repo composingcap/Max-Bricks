@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 603.0, 271.0, 1670.0, 937.0 ],
+		"rect" : [ 1653.0, 367.0, 1139.0, 937.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -134,6 +134,7 @@
 , 			{
 				"box" : 				{
 					"appearance" : 1,
+					"hint" : "Higher resonance will result in a more pitched sound. ",
 					"id" : "obj-4",
 					"maxclass" : "live.dial",
 					"numinlets" : 1,
@@ -147,7 +148,7 @@
 						"valueof" : 						{
 							"parameter_initial" : [ 0.5 ],
 							"parameter_initial_enable" : 1,
-							"parameter_longname" : "_resonance[2]",
+							"parameter_longname" : "_resonance[3]",
 							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "resonance",
 							"parameter_type" : 0,
@@ -213,6 +214,7 @@
 , 			{
 				"box" : 				{
 					"fontsize" : 14.0,
+					"hint" : "Filter shape",
 					"id" : "obj-23",
 					"maxclass" : "live.menu",
 					"numinlets" : 1,
@@ -228,7 +230,7 @@
 						"valueof" : 						{
 							"parameter_enum" : [ "lowpass", "bandpass", "highpass" ],
 							"parameter_enum_icons" : [ "lowpass.svg", "bandpass.svg", "highpass.svg" ],
-							"parameter_longname" : "live.menu[2]",
+							"parameter_longname" : "live.menu[3]",
 							"parameter_mmax" : 2,
 							"parameter_shortname" : "live.menu",
 							"parameter_type" : 2
@@ -280,7 +282,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
-							"parameter_longname" : "live.text[6]",
+							"parameter_longname" : "live.text[2]",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.text[1]",
 							"parameter_type" : 2
@@ -369,7 +371,7 @@
 					"presentation_rect" : [ 198.0, 19.5, 78.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "live.gain~[4]",
+							"parameter_longname" : "live.gain~[8]",
 							"parameter_mmax" : 6.0,
 							"parameter_mmin" : -70.0,
 							"parameter_shortname" : "live.gain~",
@@ -451,7 +453,7 @@
 						"valueof" : 						{
 							"parameter_initial" : [ 6000 ],
 							"parameter_initial_enable" : 1,
-							"parameter_longname" : "live.numbox[20]",
+							"parameter_longname" : "live.numbox[1]",
 							"parameter_mmax" : 10000.0,
 							"parameter_mmin" : 1000.0,
 							"parameter_shortname" : "live.numbox",
@@ -654,7 +656,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 747.5, 406.0, 43.0, 43.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 268.0, 3.5, 5.0, 5.0 ],
+					"presentation_rect" : [ 277.0, 3.5, 5.0, 5.0 ],
 					"proportion" : 0.39,
 					"shape" : 1
 				}
@@ -663,7 +665,7 @@
 , 			{
 				"box" : 				{
 					"angle" : 270.0,
-					"bgcolor" : [ 1, 1, 0, 1 ],
+					"bgcolor" : [ 0.75, 0.75, 0.75, 1 ],
 					"hint" : "MIDI Notes (pitch velocity) trigger voices (16) of the additive synth",
 					"id" : "obj-15",
 					"maxclass" : "panel",
@@ -706,6 +708,7 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 16.0,
+					"hint" : "Subtractive synthesis is created by modifying a complex sounds sourse such as noise and taking parts out of the sound to create any desired timbre. Subtractive Synth filters white noise with a state variable filter that is pitched by MIDI notes.",
 					"id" : "obj-59",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -803,7 +806,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 848.5, 507.5, 35.0, 38.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 305.0, 221.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 305.0, 122.0 ],
 					"proportion" : 0.39,
 					"rounded" : 0
 				}
