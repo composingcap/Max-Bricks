@@ -1,41 +1,8 @@
-# TODO
+Max Bricks is a pedagogical package for Max with the aim to help new Max users who are familiar with DAW environments like Ableton become more coftorble working within a visual programming environment. To do this, Max Bricks contains a suite of bpatcher modules that both feel more like a plugin in a DAW while teaching basic concepts of electronic music to students. This approach is not dissimilar to other Max packages like BEAP, but it is specifically aimed to allows users to write musically fuffilling works while learning Max. 
 
-## Instruments 
-- [x] Subtractive Synth
-- [x] Double FM Synth
-- [x] Modal Synth
-- [x] RM Synth
-- [x] Drum Synth
-- [ ] Kick Drum 
-
-## Audio Effects
-- [x] Chorus
-- [x] EQ 
-- [x] Simple filter 
-- [x] Freq Shifter 
-- [x] Pitch Shifter 
-- [ ] Formant filter- 5 biquads (parallel or in series) 
- - Cascading peaking/notch filters, subtract result 
-- [ ] Glitcher/stutterer 
-- [x] Distortion
-- [x] Mixer
-- [x] Patchbay
-- [X] Reverb
-- [x] Gate
-- [x] Compressor
-
-## Midi effects 
-- [x] midi mirror 
-- [x] Midi quantizer 
-- [x] Midi retrigger (glitch) 
-- [ ] Midi Chord 
-- [x] Note Echo 
-- [x] Midi Random 
-
-## Timing
-- [x] Euclidean generator 
-- [x] Rythm Sequencer 
-
-
-## Generators
-- [ ] Pitch Tracker
+## Max Bricks contains:
+- Modules for audio and MIDI input and output 
+- Polyphonic Syntesis instruments 
+- A suite of basic audio effects
+- A suite of MIDI effects
+- Tools for timing
