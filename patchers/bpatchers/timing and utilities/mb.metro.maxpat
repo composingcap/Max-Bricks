@@ -64,14 +64,14 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 324.0, 241.0, 61.0, 23.0 ],
-					"restore" : [ 250.0 ],
+					"patching_rect" : [ 348.0, 234.0, 126.0, 23.0 ],
 					"saved_object_attributes" : 					{
+						"initial" : [ 250 ],
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
 					}
 ,
-					"text" : "pattr time",
+					"text" : "pattr time @initial 250",
 					"varname" : "time"
 				}
 
@@ -83,7 +83,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "" ],
-					"patching_rect" : [ 209.0, 234.0, 93.0, 23.0 ],
+					"patching_rect" : [ 231.0, 234.0, 93.0, 23.0 ],
 					"text" : "_mb.param time"
 				}
 
