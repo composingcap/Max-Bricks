@@ -84,6 +84,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 438.5, 680.5, 59.0, 23.0 ],
+					"restore" : [ 0 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -140,6 +141,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 625.0, 337.5, 58.0, 23.0 ],
+					"restore" : [ 0.0 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -208,7 +210,7 @@
 					"presentation_rect" : [ 236.0, 71.5, 35.0, 36.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "fold[2]",
+							"parameter_longname" : "fold[3]",
 							"parameter_mmax" : 2.0,
 							"parameter_shortname" : "fold",
 							"parameter_type" : 0,
@@ -248,7 +250,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
-							"parameter_longname" : "live.text[9]",
+							"parameter_longname" : "live.text[10]",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.text[1]",
 							"parameter_type" : 2
@@ -338,7 +340,7 @@
 					"presentation_rect" : [ 201.0, 16.5, 78.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "gain[1]",
+							"parameter_longname" : "gain[2]",
 							"parameter_mmax" : 6.0,
 							"parameter_mmin" : -70.0,
 							"parameter_shortname" : "gain",
@@ -1468,7 +1470,7 @@
 						"valueof" : 						{
 							"parameter_initial" : [ 6000 ],
 							"parameter_initial_enable" : 1,
-							"parameter_longname" : "envelopeTime[1]",
+							"parameter_longname" : "envelopeTime[2]",
 							"parameter_mmax" : 10000.0,
 							"parameter_mmin" : 1000.0,
 							"parameter_shortname" : "envelopeTime",
@@ -1693,7 +1695,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 747.5, 406.0, 43.0, 43.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 268.0, 3.5, 5.0, 5.0 ],
+					"presentation_rect" : [ 277.0, 3.5, 5.0, 5.0 ],
 					"proportion" : 0.39,
 					"shape" : 1
 				}
@@ -1745,11 +1747,12 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 16.0,
+					"hint" : "Additive synthesis occurs when a sounds is created from the sum of other sounds. This block is an example of harmonic additive synthesis where a sound is contructed based on adding different partials from the same harmonic series together.",
 					"id" : "obj-59",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 42.0, 20.0, 195.0, 26.0 ],
+					"patching_rect" : [ 45.5, 20.0, 195.0, 26.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 7.0, 12.5, 136.0, 26.0 ],
 					"text" : "Harmonic Synth",
@@ -1825,7 +1828,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "4", "8", "16", "32", "64" ],
-							"parameter_longname" : "nharmonics[1]",
+							"parameter_longname" : "nharmonics[2]",
 							"parameter_mmax" : 4,
 							"parameter_shortname" : "nharmonics",
 							"parameter_type" : 2
@@ -1979,20 +1982,6 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 785.0, 20.0, 170.0, 199.0 ],
 					"proportion" : 0.39
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"background" : 1,
-					"hint" : "Additive synthesis occurs when a sounds is created from the sum of other sounds. This block is an example of harmonic additive synthesis where a sound is contructed based on adding different partials from the same harmonic series together. Click to find out more.",
-					"id" : "obj-80",
-					"maxclass" : "hint",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 89.5, 77.0, 100.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 10.5, 169.0, 30.0 ]
 				}
 
 			}

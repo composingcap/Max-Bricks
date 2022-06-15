@@ -2,7 +2,7 @@ var small = [190,120]
 var medium = [290,120];
 var extraSmall= [190,90];
 var extraextraSmall= [190,40];
-var large = [280,220];
+var large = [290,220];
 var extralarge = [420,220];
 
 var snapshotapi = 0;
