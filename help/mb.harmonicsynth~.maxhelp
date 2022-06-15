@@ -1140,18 +1140,6 @@
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-75",
-									"maxclass" : "newobj",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 179.0, 521.0, 34.0, 23.0 ],
-									"text" : "/~ 2."
-								}
-
-							}
-, 							{
-								"box" : 								{
 									"id" : "obj-74",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
@@ -2529,7 +2517,7 @@
 								"box" : 								{
 									"fontface" : 1,
 									"fontsize" : 16.0,
-									"hint" : "Additive synthesis occurs when a sounds is created from the sum of other sounds. This block is an example of harmonic additive synthesis where a sound is contructed based on adding different partials from the same harmonic series together.",
+									"hint" : "Additive synthesis occurs when a sounds is created from the sum of other sounds.",
 									"id" : "obj-59",
 									"maxclass" : "comment",
 									"numinlets" : 1,
@@ -3035,7 +3023,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-75", 0 ],
+									"destination" : [ "obj-76", 0 ],
 									"source" : [ "obj-40", 0 ]
 								}
 
@@ -3228,13 +3216,6 @@
 								"patchline" : 								{
 									"destination" : [ "obj-73", 0 ],
 									"source" : [ "obj-74", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-76", 0 ],
-									"source" : [ "obj-75", 0 ]
 								}
 
 							}
