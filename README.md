@@ -6,3 +6,4 @@ Max Bricks is a pedagogical package for Max with the aim to help new Max users w
 - A suite of basic audio effects
 - A suite of MIDI effects
 - Tools for timing
+- Note and signal generators
