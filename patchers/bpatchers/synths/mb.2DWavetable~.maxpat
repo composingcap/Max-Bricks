@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 25.0, 266.0, 1502.0, 1077.0 ],
+		"rect" : [ 149.0, 277.0, 1502.0, 1077.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -1222,7 +1222,7 @@
 						"valueof" : 						{
 							"parameter_initial" : [ 6000 ],
 							"parameter_initial_enable" : 1,
-							"parameter_longname" : "live.numbox[7]",
+							"parameter_longname" : "live.numbox[5]",
 							"parameter_mmax" : 10000.0,
 							"parameter_mmin" : 1000.0,
 							"parameter_shortname" : "live.numbox",
@@ -1299,6 +1299,7 @@
 , 			{
 				"box" : 				{
 					"appearance" : 1,
+					"hint" : "controls the depth of the row ADSR",
 					"id" : "obj-100",
 					"maxclass" : "live.dial",
 					"numinlets" : 1,
@@ -1349,7 +1350,7 @@
 					"decay_slope" : 0.0,
 					"decay_time" : 2000.0,
 					"final" : 0.014705882352941,
-					"hint" : "Sets the envelope for each synth note",
+					"hint" : "An envelope that changes the waveform for each voice",
 					"id" : "obj-99",
 					"maxclass" : "live.adsrui",
 					"numinlets" : 10,
@@ -1392,6 +1393,7 @@
 , 			{
 				"box" : 				{
 					"appearance" : 1,
+					"hint" : "Sets the base waveform of the selected wavetable to play from",
 					"id" : "obj-94",
 					"maxclass" : "live.dial",
 					"numinlets" : 1,
@@ -1469,7 +1471,7 @@
 				"box" : 				{
 					"angle" : 270.0,
 					"bgcolor" : [ 0.75, 0.75, 0.75, 1 ],
-					"hint" : "Pitch Bend in Semitones (signal or data LFO) modulates the pitch in semitones. Try connecting a pitchbend or LFO.",
+					"hint" : "Wavetable positon modulator (0-64)",
 					"id" : "obj-71",
 					"maxclass" : "panel",
 					"mode" : 0,
@@ -1496,7 +1498,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "Pitch Bend in Semitones (signal or data LFO)",
+					"comment" : "Wavetable positon modulator (0-64)",
 					"id" : "obj-74",
 					"index" : 2,
 					"maxclass" : "inlet",
@@ -1710,6 +1712,7 @@
 , 			{
 				"box" : 				{
 					"fontsize" : 10.0,
+					"hint" : "Select a wavetable",
 					"id" : "obj-46",
 					"items" : [ "AKVF_VID", ",", "AKWF_FMS", ",", "FMADDI02", ",", "FOURIER", ",", "GLITCHBO", ",", "HARMONIX", ",", "HYPERBOL", ",", "SINE_MUT", ",", "SINE_SPE", ",", "SUPERSAW", ",", "VOCAL_00", ",", "VOXSYNTH" ],
 					"maxclass" : "umenu",
@@ -1860,7 +1863,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
-							"parameter_longname" : "live.text[3]",
+							"parameter_longname" : "live.text[6]",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.text[1]",
 							"parameter_type" : 2
@@ -1949,7 +1952,7 @@
 					"presentation_rect" : [ 195.0, 15.5, 78.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "live.gain~[2]",
+							"parameter_longname" : "live.gain~[5]",
 							"parameter_mmax" : 6.0,
 							"parameter_mmin" : -70.0,
 							"parameter_shortname" : "live.gain~",
@@ -2271,6 +2274,7 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 16.0,
+					"hint" : "2D Wavetable plays 64 row wavetables allowing users to create evolving sounds. ",
 					"id" : "obj-59",
 					"maxclass" : "comment",
 					"numinlets" : 1,
