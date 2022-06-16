@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1910.0, 529.0, 1082.0, 597.0 ],
+		"rect" : [ 689.0, 284.0, 1082.0, 597.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -54,7 +54,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 57.0, 411.0, 190.0, 90.0 ],
+					"patching_rect" : [ 671.0, 436.0, 190.0, 90.0 ],
 					"varname" : "mb.audioOut[1]",
 					"viewvisibility" : 1
 				}
@@ -77,7 +77,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 57.0, 21.0, 290.0, 120.0 ],
+					"patching_rect" : [ 671.0, 46.0, 290.0, 120.0 ],
 					"varname" : "mb.notein[1]",
 					"viewvisibility" : 1
 				}
@@ -100,7 +100,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 57.0, 158.0, 280.0, 220.0 ],
+					"patching_rect" : [ 671.0, 183.0, 290.0, 220.0 ],
 					"varname" : "mb.simplesynth~[1]",
 					"viewvisibility" : 1
 				}
@@ -134,10 +134,10 @@
 			"obj-15::obj-63" : [ "sawpitch[1]", "pitch", 0 ],
 			"obj-15::obj-64" : [ "squarepitch[1]", "pitch", 0 ],
 			"obj-15::obj-76" : [ "live.gain~[4]", "live.gain~", 0 ],
-			"obj-15::obj-93" : [ "live.text[5]", "live.text", 0 ],
 			"obj-3::obj-25" : [ "dspState[3]", "dspState", 0 ],
 			"obj-3::obj-3" : [ "live.gain~[3]", "live.gain~", 0 ],
 			"obj-3::obj-9" : [ "live.numbox[3]", "live.numbox", 0 ],
+			"obj-6::obj-3" : [ "midiInputSelect", "midiInputSelect", 0 ],
 			"parameterbanks" : 			{
 				"0" : 				{
 					"index" : 0,
@@ -192,10 +192,6 @@
 					"parameter_longname" : "live.gain~[4]"
 				}
 ,
-				"obj-15::obj-93" : 				{
-					"parameter_longname" : "live.text[5]"
-				}
-,
 				"obj-3::obj-25" : 				{
 					"parameter_longname" : "dspState[3]"
 				}
@@ -206,6 +202,12 @@
 ,
 				"obj-3::obj-9" : 				{
 					"parameter_longname" : "live.numbox[3]"
+				}
+,
+				"obj-6::obj-3" : 				{
+					"parameter_invisible" : 0,
+					"parameter_modmode" : 0,
+					"parameter_unitstyle" : 10
 				}
 
 			}
@@ -235,6 +237,13 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "_mb.param.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/Max Bricks/patchers/utilities",
+				"patcherrelativepath" : "../patchers/utilities",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "_mb.poly.simplesynth.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/Max Bricks/patchers/poly",
 				"patcherrelativepath" : "../patchers/poly",
@@ -253,13 +262,6 @@
 				"bootpath" : "~/Documents/Max 8/Packages/Max Bricks/javascript",
 				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "mb.infoIcon.svg",
-				"bootpath" : "~/Documents/Max 8/Packages/Max Bricks/media",
-				"patcherrelativepath" : "../media",
-				"type" : "svg",
 				"implicit" : 1
 			}
 , 			{

@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 606.0, 275.0, 1096.0, 984.0 ],
+		"rect" : [ 200.0, 242.0, 1096.0, 984.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -344,7 +344,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 901.0, 437.5, 59.0, 23.0 ],
-					"restore" : [ 0 ],
+					"restore" : [ 0.0, 1423.762236774438634, 0.323529411764705, 389.869425349196092, 0.0, 1.0, 0.0, 0.0, 1.0, 1.0 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -430,7 +430,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_linknames" : 1,
-							"parameter_longname" : "_squarepitch",
+							"parameter_longname" : "_squarepitch[1]",
 							"parameter_mmax" : 24.0,
 							"parameter_mmin" : -24.0,
 							"parameter_shortname" : "pitch",
@@ -460,7 +460,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_linknames" : 1,
-							"parameter_longname" : "_sawpitch",
+							"parameter_longname" : "_sawpitch[1]",
 							"parameter_mmax" : 24.0,
 							"parameter_mmin" : -24.0,
 							"parameter_shortname" : "pitch",
@@ -490,7 +490,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_linknames" : 1,
-							"parameter_longname" : "_tripitch",
+							"parameter_longname" : "_tripitch[1]",
 							"parameter_mmax" : 24.0,
 							"parameter_mmin" : -24.0,
 							"parameter_shortname" : "pitch",
@@ -739,7 +739,7 @@
 							"parameter_initial" : [ -48.0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "_squareamp",
+							"parameter_longname" : "_squareamp[1]",
 							"parameter_mmax" : 0.0,
 							"parameter_mmin" : -48.0,
 							"parameter_shortname" : "amp",
@@ -988,7 +988,7 @@
 							"parameter_initial" : [ -48.0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "_sawamp",
+							"parameter_longname" : "_sawamp[1]",
 							"parameter_mmax" : 0.0,
 							"parameter_mmin" : -48.0,
 							"parameter_shortname" : "amp",
@@ -1237,7 +1237,7 @@
 							"parameter_initial" : [ -48.0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "_triamp",
+							"parameter_longname" : "_triamp[1]",
 							"parameter_mmax" : 0.0,
 							"parameter_mmin" : -48.0,
 							"parameter_shortname" : "amp",
@@ -1486,7 +1486,7 @@
 							"parameter_initial" : [ -48.0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "_sinamp",
+							"parameter_longname" : "_sinamp[1]",
 							"parameter_mmax" : 0.0,
 							"parameter_mmin" : -48.0,
 							"parameter_shortname" : "amp",
@@ -1516,7 +1516,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_linknames" : 1,
-							"parameter_longname" : "_sinpitch",
+							"parameter_longname" : "_sinpitch[1]",
 							"parameter_mmax" : 24.0,
 							"parameter_mmin" : -24.0,
 							"parameter_shortname" : "pitch",
@@ -1618,7 +1618,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
-							"parameter_longname" : "live.text[11]",
+							"parameter_longname" : "live.text[1]",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.text[1]",
 							"parameter_type" : 2
@@ -1695,7 +1695,7 @@
 					"presentation_rect" : [ 196.33333146572113, 18.5, 78.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "live.gain~[3]",
+							"parameter_longname" : "live.gain~[4]",
 							"parameter_mmax" : 6.0,
 							"parameter_mmin" : -70.0,
 							"parameter_shortname" : "live.gain~",
@@ -1791,7 +1791,7 @@
 						"valueof" : 						{
 							"parameter_initial" : [ 6000 ],
 							"parameter_initial_enable" : 1,
-							"parameter_longname" : "live.numbox[5]",
+							"parameter_longname" : "live.numbox[1]",
 							"parameter_mmax" : 10000.0,
 							"parameter_mmin" : 1000.0,
 							"parameter_shortname" : "live.numbox",
@@ -1872,7 +1872,6 @@
 					"activelinecolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"activeslopehandlecolor" : [ 0.0, 0.129, 0.847, 1.0 ],
 					"attack_domain" : [ 0.0, 2000.0 ],
-					"attack_time" : 4.462206781272322,
 					"decay_domain" : [ 1.5, 2000.0 ],
 					"decay_time" : 1423.762236774438634,
 					"hint" : "Sets the envelope for each synth note",
@@ -1979,7 +1978,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 747.5, 406.0, 43.0, 43.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 268.0, 3.5, 5.0, 5.0 ],
+					"presentation_rect" : [ 277.0, 3.5, 5.0, 5.0 ],
 					"proportion" : 0.39,
 					"shape" : 1
 				}
