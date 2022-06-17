@@ -416,7 +416,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 264.5, 249.0, 50.0, 23.0 ],
-					"text" : "101"
+					"text" : "0"
 				}
 
 			}
@@ -724,7 +724,7 @@
 					"presentation_rect" : [ 198.0, 49.0, 74.0, 30.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "hihat[3]",
+							"parameter_longname" : "hihat[2]",
 							"parameter_mmax" : 6.0,
 							"parameter_mmin" : -70.0,
 							"parameter_shortname" : "hihat",
@@ -755,7 +755,7 @@
 					"presentation_rect" : [ 105.5, 49.0, 74.0, 30.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "snare[3]",
+							"parameter_longname" : "snare[2]",
 							"parameter_mmax" : 6.0,
 							"parameter_mmin" : -70.0,
 							"parameter_shortname" : "snare",
@@ -786,7 +786,7 @@
 					"presentation_rect" : [ 13.0, 49.0, 74.0, 30.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "kick[3]",
+							"parameter_longname" : "kick[2]",
 							"parameter_mmax" : 6.0,
 							"parameter_mmin" : -70.0,
 							"parameter_shortname" : "kick",
@@ -829,7 +829,7 @@
 , 			{
 				"box" : 				{
 					"angle" : 270.0,
-					"bgcolor" : [ 0.75, 0.75, 0.75, 1 ],
+					"bgcolor" : [ 1, 1, 0, 1 ],
 					"hint" : "Pitch Bend in Semitones (signal or data LFO) modulates the pitch in semitones. Try connecting a pitchbend or LFO.",
 					"id" : "obj-178",
 					"maxclass" : "panel",
@@ -859,7 +859,7 @@
 , 			{
 				"box" : 				{
 					"angle" : 270.0,
-					"bgcolor" : [ 0.75, 0.75, 0.75, 1 ],
+					"bgcolor" : [ 1, 1, 0, 1 ],
 					"hint" : "Pitch Bend in Semitones (signal or data LFO) modulates the pitch in semitones. Try connecting a pitchbend or LFO.",
 					"id" : "obj-176",
 					"maxclass" : "panel",
@@ -930,8 +930,8 @@
 					"numinlets" : 4,
 					"numoutlets" : 3,
 					"outlettype" : [ "signal", "signal", "signal" ],
-					"patching_rect" : [ 173.0, 625.0, 213.0, 23.0 ],
-					"text" : "poly~ _mb.poly.drumrack 32 @target 0"
+					"patching_rect" : [ 173.0, 625.0, 261.0, 23.0 ],
+					"text" : "poly~ _mb.poly.drumrack 32 @target 0 @steal 1"
 				}
 
 			}
@@ -950,7 +950,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
-							"parameter_longname" : "live.text[7]",
+							"parameter_longname" : "live.text[5]",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.text[1]",
 							"parameter_type" : 2
@@ -1027,7 +1027,7 @@
 					"presentation_rect" : [ 204.5, 18.5, 78.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "live.gain~[2]",
+							"parameter_longname" : "live.gain~[3]",
 							"parameter_mmax" : 6.0,
 							"parameter_mmin" : -70.0,
 							"parameter_shortname" : "live.gain~",
@@ -1123,7 +1123,7 @@
 , 			{
 				"box" : 				{
 					"angle" : 270.0,
-					"bgcolor" : [ 0.75, 0.75, 0.75, 1 ],
+					"bgcolor" : [ 1, 1, 0, 1 ],
 					"hint" : "Pitch Bend in Semitones (signal or data LFO) modulates the pitch in semitones. Try connecting a pitchbend or LFO.",
 					"id" : "obj-18",
 					"maxclass" : "panel",

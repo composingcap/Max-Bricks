@@ -130,7 +130,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 50.0, 252.0, 41.0, 23.0 ],
+									"patching_rect" : [ 52.0, 267.0, 41.0, 23.0 ],
 									"text" : "del 50"
 								}
 
@@ -142,7 +142,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "int", "int" ],
-									"patching_rect" : [ 52.0, 199.0, 56.0, 23.0 ],
+									"patching_rect" : [ 54.0, 214.0, 56.0, 23.0 ],
 									"text" : "change 1"
 								}
 
@@ -154,7 +154,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "bang", "" ],
-									"patching_rect" : [ 52.0, 227.0, 33.0, 23.0 ],
+									"patching_rect" : [ 54.0, 242.0, 33.0, 23.0 ],
 									"text" : "sel 1"
 								}
 
@@ -216,7 +216,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 50.0, 335.0, 30.0, 30.0 ]
+									"patching_rect" : [ 52.0, 350.0, 30.0, 30.0 ]
 								}
 
 							}
@@ -423,10 +423,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 361.0, 488.0, 43.0, 23.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"text" : "out~ 3"
 				}
 
@@ -438,10 +434,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 198.25, 488.0, 43.0, 23.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"text" : "out~ 2"
 				}
 
@@ -525,10 +517,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 28.0, 497.0, 43.0, 23.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"text" : "out~ 1"
 				}
 
@@ -685,10 +673,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 400.0, 268.0, 28.0, 23.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"text" : "in 4"
 				}
 
@@ -701,10 +685,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 255.0, 280.0, 28.0, 23.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"text" : "in 3"
 				}
 
@@ -717,10 +697,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 89.0, 296.0, 28.0, 23.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"text" : "in 2"
 				}
 
@@ -733,10 +709,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 43.0, 13.0, 28.0, 23.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"text" : "in 1"
 				}
 
@@ -796,7 +768,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 331.5, 87.0, 153.0, 54.0 ],
-									"presentation_linecount" : 3,
 									"text" : "Resonance value control the input curves of the square waves"
 								}
 
@@ -810,7 +781,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 167.5, 427.5, 153.0, 39.0 ],
-									"presentation_linecount" : 2,
 									"text" : "Only pass high frequency content"
 								}
 
@@ -824,7 +794,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 328.0, 384.5, 153.0, 39.0 ],
-									"presentation_linecount" : 2,
 									"text" : "Filters are also tuned by the square waves"
 								}
 
@@ -2634,7 +2603,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 561.666666666666742, 349.0, 150.0, 50.0 ],
-									"presentation_linecount" : 3,
 									"text" : "The two triangle wave create the sharp pitched components"
 								}
 
@@ -2647,7 +2615,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 333.666666666666742, 348.0, 150.0, 50.0 ],
-									"presentation_linecount" : 3,
 									"text" : "The resonant filter and noise creates the tuned noise components "
 								}
 
@@ -2660,7 +2627,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 417.0, 34.0, 150.0, 64.0 ],
-									"presentation_linecount" : 4,
 									"text" : "The pitch value controls two triangle oscilators pitch as well as a resonant filter which filters noise"
 								}
 
@@ -2685,7 +2651,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 805.0, 21.0, 150.0, 35.0 ],
-									"presentation_linecount" : 2,
 									"text" : "This snare is based on the TR-909 snare."
 								}
 
@@ -3625,13 +3590,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-33", 0 ],
-					"source" : [ "obj-31", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-8", 0 ],
 					"source" : [ "obj-31", 0 ]
 				}
@@ -3738,6 +3696,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-22", 1 ],
+					"order" : 1,
+					"source" : [ "obj-8", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-33", 0 ],
+					"order" : 0,
 					"source" : [ "obj-8", 1 ]
 				}
 
