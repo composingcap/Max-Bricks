@@ -57,7 +57,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 376.0, 235.0, 780.0, 698.0 ],
+						"rect" : [ 0.0, 26.0, 780.0, 698.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2912,7 +2912,7 @@
 													"numoutlets" : 3,
 													"outlettype" : [ "", "", "" ],
 													"patching_rect" : [ 597.0, 74.0, 148.0, 23.0 ],
-													"restore" : [ "16" ],
+													"restore" : [ "4" ],
 													"saved_object_attributes" : 													{
 														"parameter_enable" : 0,
 														"parameter_mappable" : 0
@@ -2950,7 +2950,7 @@
 													"numoutlets" : 3,
 													"outlettype" : [ "", "", "" ],
 													"patching_rect" : [ 41.5, 124.0, 96.0, 23.0 ],
-													"restore" : [ 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0 ],
+													"restore" : [ 1, 1, 1, 1 ],
 													"saved_object_attributes" : 													{
 														"parameter_enable" : 0,
 														"parameter_mappable" : 0
@@ -2969,7 +2969,7 @@
 													"numoutlets" : 3,
 													"outlettype" : [ "", "", "" ],
 													"patching_rect" : [ 251.0, 57.0, 91.0, 23.0 ],
-													"restore" : [ 0.870870870870871, 0.353353353353353, 0.93993993993994, 0.398398398398398, 0.27027027027027, 0.069444444444444, 0.482482482482482, 0.171171171171171, 0.806806806806807, 0.428428428428428, 0.684684684684685, 0.389389389389389, 0.555555555555556, 0.4004004004004, 0.993993993993994, 0.622622622622623 ],
+													"restore" : [ 1.0, 0.0, 1.0, 0.0 ],
 													"saved_object_attributes" : 													{
 														"parameter_enable" : 0,
 														"parameter_mappable" : 0
@@ -3243,7 +3243,7 @@
 													"presentation_rect" : [ 14.0, 109.5, 219.0, 14.0 ],
 													"setminmax" : [ 0.0, 1.0 ],
 													"settype" : 0,
-													"size" : 16,
+													"size" : 4,
 													"slidercolor" : [ 0.0, 0.192156862745098, 1.0, 1.0 ],
 													"spacing" : 1,
 													"thickness" : 5,
@@ -3270,7 +3270,7 @@
 													"presentation" : 1,
 													"presentation_rect" : [ 14.0, 71.5, 219.0, 36.0 ],
 													"setminmax" : [ 0.0, 1.0 ],
-													"size" : 16,
+													"size" : 4,
 													"slidercolor" : [ 0.0, 0.0, 0.0, 0.44 ],
 													"spacing" : 1,
 													"thickness" : 5,
@@ -6550,7 +6550,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 780.0, 698.0 ],
+						"rect" : [ 376.0, 235.0, 780.0, 698.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -6580,6 +6580,19 @@
 						"showontab" : 1,
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-1",
+									"linecount" : 7,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 16.0, 352.0, 250.0, 107.0 ],
+									"presentation_linecount" : 7,
+									"text" : "Changing the phase of the partials will dramatically change the sound of the resultant timbre. This is due to phase cancelation that is created when the sine waves are added together. Try changing the phase when only one partial is turned up, then when multiple are turned up."
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-28",
 									"linecount" : 9,
@@ -12086,7 +12099,7 @@
 									"mode" : 0,
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 9.0, 58.5, 261.0, 296.5 ],
+									"patching_rect" : [ 9.0, 58.5, 257.0, 462.5 ],
 									"proportion" : 0.39,
 									"rounded" : 0
 								}
