@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1616.0, 603.0, 1082.0, 659.0 ],
+		"rect" : [ 848.0, 611.0, 1082.0, 659.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -507,7 +507,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 674.0, 130.0, 54.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 62.0, 53.0, 54.0, 18.0 ],
+					"presentation_rect" : [ 53.0, 48.0, 54.0, 18.0 ],
 					"text" : "Steps",
 					"textjustification" : 0
 				}
@@ -523,12 +523,12 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 628.0, 130.0, 44.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 16.0, 56.0, 44.0, 15.0 ],
+					"presentation_rect" : [ 7.0, 49.0, 44.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_initial" : [ 16 ],
 							"parameter_initial_enable" : 1,
-							"parameter_longname" : "live.numbox[5]",
+							"parameter_longname" : "live.numbox[2]",
 							"parameter_mmax" : 32.0,
 							"parameter_mmin" : 4.0,
 							"parameter_shortname" : "live.numbox",
@@ -550,9 +550,9 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 550.0, 67.0, 150.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 133.0, 56.0, 57.0, 18.0 ],
+					"presentation_rect" : [ 146.0, 46.0, 57.0, 18.0 ],
 					"text" : "Edit Mode",
-					"textjustification" : 0
+					"textjustification" : 2
 				}
 
 			}
@@ -592,7 +592,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 471.0, 67.0, 77.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 200.0, 56.0, 77.0, 20.0 ]
+					"presentation_rect" : [ 205.0, 44.0, 77.0, 20.0 ]
 				}
 
 			}
@@ -734,7 +734,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 79.0, 203.0, 302.0, 121.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 10.0, 81.5, 259.0, 133.0 ],
+					"presentation_rect" : [ 7.0, 69.5, 275.0, 146.0 ],
 					"saved_attribute_attributes" : 					{
 						"bgrulercolor" : 						{
 							"expression" : ""
@@ -746,15 +746,15 @@
 ,
 						"valueof" : 						{
 							"parameter_invisible" : 1,
-							"parameter_longname" : "step[6]",
+							"parameter_longname" : "step[7]",
 							"parameter_shortname" : "step",
 							"parameter_type" : 3
 						}
 
 					}
 ,
-					"stepcolor" : [ 0.054901960784314, 0.054901960784314, 0.054901960784314, 1.0 ],
-					"stepcolor2" : [ 0.007843137254902, 0.313725490196078, 0.0, 1.0 ],
+					"stepcolor" : [ 0.6, 0.0, 1.0, 1.0 ],
+					"stepcolor2" : [ 0.6, 0.0, 1.0, 1.0 ],
 					"varname" : "step"
 				}
 
@@ -794,25 +794,9 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 45.5, 26.0, 195.0, 26.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 7.0, 10.5, 195.0, 26.0 ],
+					"presentation_rect" : [ 7.0, 10.5, 109.0, 26.0 ],
 					"text" : "MIDI Step",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"angle" : 270.0,
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"hint" : "MIDI Pitch (number)",
-					"id" : "obj-16",
-					"maxclass" : "panel",
-					"mode" : 0,
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 624.0, 359.0, 43.0, 43.0 ],
-					"proportion" : 0.39,
-					"shape" : 1
 				}
 
 			}
@@ -885,7 +869,7 @@
 				"box" : 				{
 					"angle" : 270.0,
 					"background" : 1,
-					"bgcolor" : [ 0.149019607843137, 0.498039215686275, 0.243137254901961, 1.0 ],
+					"bgcolor" : [ 0.439, 0.227, 0.906, 1.0 ],
 					"id" : "obj-20",
 					"maxclass" : "panel",
 					"mode" : 0,
@@ -893,7 +877,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 42.0, 14.0, 202.0, 38.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 10.5, 285.0, 30.0 ],
+					"presentation_rect" : [ 0.0, 10.5, 305.0, 30.0 ],
 					"proportion" : 0.39,
 					"rounded" : 0
 				}
@@ -921,7 +905,7 @@
 				"box" : 				{
 					"angle" : 270.0,
 					"background" : 1,
-					"bgcolor" : [ 0.6, 0.850980392156863, 0.619607843137255, 1.0 ],
+					"bgcolor" : [ 0.886, 0.792, 1.0, 1.0 ],
 					"id" : "obj-23",
 					"maxclass" : "panel",
 					"mode" : 0,
@@ -929,7 +913,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 37.0, 121.0, 409.0, 226.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 285.0, 222.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 305.0, 222.0 ],
 					"proportion" : 0.39,
 					"rounded" : 0
 				}

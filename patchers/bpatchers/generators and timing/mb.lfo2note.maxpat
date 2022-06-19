@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1548.0, 752.0, 1082.0, 597.0 ],
+		"rect" : [ 1348.0, 589.0, 1082.0, 597.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -46,7 +46,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 941.0, 388.0, 98.0, 23.0 ],
-					"restore" : [ 0 ],
+					"restore" : [ 250.0 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -65,7 +65,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 941.0, 316.5, 105.0, 23.0 ],
-					"restore" : [ 0 ],
+					"restore" : [ 64.0 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -84,7 +84,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 719.0, 233.5, 96.0, 23.0 ],
-					"restore" : [ 0 ],
+					"restore" : [ 24.0 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -103,7 +103,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 606.0, 160.5, 88.0, 23.0 ],
-					"restore" : [ 0 ],
+					"restore" : [ 60.0 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -206,6 +206,7 @@
 			}
 , 			{
 				"box" : 				{
+					"activedialcolor" : [ 0.671, 0.0, 1.0, 1.0 ],
 					"appearance" : 1,
 					"id" : "obj-10",
 					"maxclass" : "live.dial",
@@ -217,6 +218,10 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 101.0, 80.5, 58.0, 36.0 ],
 					"saved_attribute_attributes" : 					{
+						"activedialcolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_enum" : [ "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B" ],
 							"parameter_initial" : [ 64 ],
@@ -237,6 +242,7 @@
 			}
 , 			{
 				"box" : 				{
+					"activedialcolor" : [ 0.671, 0.0, 1.0, 1.0 ],
 					"appearance" : 1,
 					"id" : "obj-5",
 					"maxclass" : "live.dial",
@@ -248,6 +254,10 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 18.0, 80.5, 58.0, 36.0 ],
 					"saved_attribute_attributes" : 					{
+						"activedialcolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_enum" : [ "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B" ],
 							"parameter_initial" : [ 250 ],
@@ -293,6 +303,7 @@
 			}
 , 			{
 				"box" : 				{
+					"activedialcolor" : [ 0.671, 0.0, 1.0, 1.0 ],
 					"appearance" : 1,
 					"id" : "obj-33",
 					"maxclass" : "live.dial",
@@ -304,6 +315,10 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 101.0, 42.5, 50.0, 36.0 ],
 					"saved_attribute_attributes" : 					{
+						"activedialcolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_initial" : [ 24 ],
 							"parameter_initial_enable" : 1,
@@ -323,6 +338,7 @@
 			}
 , 			{
 				"box" : 				{
+					"activedialcolor" : [ 0.671, 0.0, 1.0, 1.0 ],
 					"appearance" : 1,
 					"id" : "obj-32",
 					"maxclass" : "live.dial",
@@ -334,6 +350,10 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 18.0, 42.5, 45.0, 36.0 ],
 					"saved_attribute_attributes" : 					{
+						"activedialcolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_initial" : [ 60 ],
 							"parameter_initial_enable" : 1,
@@ -542,8 +562,8 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 42.0, 20.0, 110.0, 26.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 7.0, 12.5, 92.0, 26.0 ],
-					"text" : "LFO 2 Note",
+					"presentation_rect" : [ 7.0, 12.5, 129.0, 26.0 ],
+					"text" : "LFO -> Note",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -565,7 +585,7 @@
 				"box" : 				{
 					"angle" : 270.0,
 					"background" : 1,
-					"bgcolor" : [ 0.149019607843137, 0.498039215686275, 0.243137254901961, 1.0 ],
+					"bgcolor" : [ 0.439, 0.227, 0.906, 1.0 ],
 					"id" : "obj-8",
 					"maxclass" : "panel",
 					"mode" : 0,
@@ -601,7 +621,7 @@
 				"box" : 				{
 					"angle" : 270.0,
 					"background" : 1,
-					"bgcolor" : [ 0.6, 0.851, 0.62, 1.0 ],
+					"bgcolor" : [ 0.886, 0.792, 1.0, 1.0 ],
 					"id" : "obj-7",
 					"maxclass" : "panel",
 					"mode" : 0,

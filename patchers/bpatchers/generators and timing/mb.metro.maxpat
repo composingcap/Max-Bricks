@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1189.0, 382.0, 1082.0, 733.0 ],
+		"rect" : [ 1790.0, 433.0, 1082.0, 733.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -196,7 +196,7 @@
 							"parameter_initial" : [ 7.0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "timeMode",
+							"parameter_longname" : "timeMode[1]",
 							"parameter_mmax" : 2,
 							"parameter_shortname" : "timeMode",
 							"parameter_type" : 2
@@ -247,6 +247,8 @@
 			}
 , 			{
 				"box" : 				{
+					"activebgoncolor" : [ 0.671, 0.0, 1.0, 1.0 ],
+					"activetextoncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"id" : "obj-3",
 					"maxclass" : "live.text",
 					"numinlets" : 1,
@@ -257,11 +259,19 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 60.5, 14.5, 38.0, 21.75 ],
 					"saved_attribute_attributes" : 					{
+						"activebgoncolor" : 						{
+							"expression" : ""
+						}
+,
+						"activetextoncolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_invisible" : 2,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "state",
+							"parameter_longname" : "state[1]",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "state",
 							"parameter_type" : 2
@@ -396,7 +406,8 @@
 				"box" : 				{
 					"angle" : 270.0,
 					"background" : 1,
-					"bgcolor" : [ 0.184313725490196, 0.184313725490196, 0.184313725490196, 1.0 ],
+					"bgcolor" : [ 0.439, 0.227, 0.906, 1.0 ],
+					"bordercolor" : [ 0.439, 0.227, 0.906, 1.0 ],
 					"id" : "obj-8",
 					"maxclass" : "panel",
 					"mode" : 0,

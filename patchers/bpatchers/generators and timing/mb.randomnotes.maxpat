@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1388.0, 566.0, 1082.0, 597.0 ],
+		"rect" : [ 2258.0, 595.0, 1082.0, 597.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -46,7 +46,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1014.0, 279.5, 111.0, 23.0 ],
-					"restore" : [ 0 ],
+					"restore" : [ 20.0 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -65,7 +65,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 900.0, 176.5, 105.0, 23.0 ],
-					"restore" : [ 0 ],
+					"restore" : [ 64.0 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -84,7 +84,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 908.0, 51.0, 103.0, 23.0 ],
-					"restore" : [ 0 ],
+					"restore" : [ 250.0 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -103,7 +103,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 544.0, 72.0, 96.0, 23.0 ],
-					"restore" : [ 0 ],
+					"restore" : [ 24.0 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -122,7 +122,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 471.0, 25.0, 88.0, 23.0 ],
-					"restore" : [ 0 ],
+					"restore" : [ 60.0 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -357,6 +357,7 @@
 			}
 , 			{
 				"box" : 				{
+					"activedialcolor" : [ 0.671, 0.0, 1.0, 1.0 ],
 					"appearance" : 1,
 					"id" : "obj-54",
 					"maxclass" : "live.dial",
@@ -368,12 +369,16 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 60.0, 79.5, 66.0, 36.0 ],
 					"saved_attribute_attributes" : 					{
+						"activedialcolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_enum" : [ "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B" ],
 							"parameter_initial" : [ 20 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "noteVelocity[2]",
+							"parameter_longname" : "noteVelocity[4]",
 							"parameter_mmax" : 64.0,
 							"parameter_shortname" : "velocity range",
 							"parameter_type" : 0,
@@ -388,6 +393,7 @@
 			}
 , 			{
 				"box" : 				{
+					"activedialcolor" : [ 0.671, 0.0, 1.0, 1.0 ],
 					"appearance" : 1,
 					"id" : "obj-10",
 					"maxclass" : "live.dial",
@@ -399,12 +405,16 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 60.0, 39.5, 58.0, 36.0 ],
 					"saved_attribute_attributes" : 					{
+						"activedialcolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_enum" : [ "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B" ],
 							"parameter_initial" : [ 64 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "noteVelocity",
+							"parameter_longname" : "noteVelocity[3]",
 							"parameter_mmin" : 1.0,
 							"parameter_shortname" : "base velocity",
 							"parameter_type" : 0,
@@ -467,6 +477,7 @@
 			}
 , 			{
 				"box" : 				{
+					"activedialcolor" : [ 0.671, 0.0, 1.0, 1.0 ],
 					"appearance" : 1,
 					"id" : "obj-49",
 					"maxclass" : "live.dial",
@@ -478,12 +489,16 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 126.0, 77.5, 58.0, 36.0 ],
 					"saved_attribute_attributes" : 					{
+						"activedialcolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_enum" : [ "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B" ],
 							"parameter_initial" : [ 250 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "noteLength[2]",
+							"parameter_longname" : "noteLength[3]",
 							"parameter_mmax" : 1000.0,
 							"parameter_mmin" : 50.0,
 							"parameter_shortname" : "length range",
@@ -499,6 +514,7 @@
 			}
 , 			{
 				"box" : 				{
+					"activedialcolor" : [ 0.671, 0.0, 1.0, 1.0 ],
 					"appearance" : 1,
 					"id" : "obj-48",
 					"maxclass" : "live.dial",
@@ -510,12 +526,16 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 126.0, 40.5, 58.0, 36.0 ],
 					"saved_attribute_attributes" : 					{
+						"activedialcolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_enum" : [ "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B" ],
 							"parameter_initial" : [ 250 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "noteLength",
+							"parameter_longname" : "noteLength[4]",
 							"parameter_mmax" : 1000.0,
 							"parameter_mmin" : 50.0,
 							"parameter_shortname" : "base length",
@@ -531,6 +551,7 @@
 			}
 , 			{
 				"box" : 				{
+					"activedialcolor" : [ 0.671, 0.0, 1.0, 1.0 ],
 					"appearance" : 1,
 					"id" : "obj-33",
 					"maxclass" : "live.dial",
@@ -542,11 +563,15 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 7.0, 79.5, 50.0, 36.0 ],
 					"saved_attribute_attributes" : 					{
+						"activedialcolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_initial" : [ 24 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "pitch range",
+							"parameter_longname" : "pitch range[1]",
 							"parameter_mmax" : 60.0,
 							"parameter_shortname" : "pitch range",
 							"parameter_type" : 0,
@@ -561,6 +586,7 @@
 			}
 , 			{
 				"box" : 				{
+					"activedialcolor" : [ 0.671, 0.0, 1.0, 1.0 ],
 					"appearance" : 1,
 					"id" : "obj-47",
 					"maxclass" : "live.dial",
@@ -572,11 +598,15 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 6.0, 40.5, 45.0, 36.0 ],
 					"saved_attribute_attributes" : 					{
+						"activedialcolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_initial" : [ 60 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "base pitch",
+							"parameter_longname" : "base pitch[1]",
 							"parameter_mmax" : 103.0,
 							"parameter_mmin" : 24.0,
 							"parameter_shortname" : "base pitch",
@@ -824,7 +854,7 @@
 				"box" : 				{
 					"angle" : 270.0,
 					"background" : 1,
-					"bgcolor" : [ 0.149019607843137, 0.498039215686275, 0.243137254901961, 1.0 ],
+					"bgcolor" : [ 0.439, 0.227, 0.906, 1.0 ],
 					"id" : "obj-20",
 					"maxclass" : "panel",
 					"mode" : 0,
@@ -860,7 +890,7 @@
 				"box" : 				{
 					"angle" : 270.0,
 					"background" : 1,
-					"bgcolor" : [ 0.6, 0.850980392156863, 0.619607843137255, 1.0 ],
+					"bgcolor" : [ 0.886, 0.792, 1.0, 1.0 ],
 					"id" : "obj-23",
 					"maxclass" : "panel",
 					"mode" : 0,

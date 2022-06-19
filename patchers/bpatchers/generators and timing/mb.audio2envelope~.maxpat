@@ -76,6 +76,7 @@
 			}
 , 			{
 				"box" : 				{
+					"activedialcolor" : [ 0.671, 0.0, 1.0, 1.0 ],
 					"appearance" : 1,
 					"id" : "obj-71",
 					"maxclass" : "live.dial",
@@ -87,9 +88,13 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 59.5, 42.0, 57.0, 36.0 ],
 					"saved_attribute_attributes" : 					{
+						"activedialcolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_linknames" : 1,
-							"parameter_longname" : "pregain",
+							"parameter_longname" : "pregain[1]",
 							"parameter_mmax" : 24.0,
 							"parameter_shortname" : "pregain",
 							"parameter_type" : 0,
@@ -140,6 +145,7 @@
 			}
 , 			{
 				"box" : 				{
+					"activedialcolor" : [ 0.671, 0.0, 1.0, 1.0 ],
 					"appearance" : 1,
 					"id" : "obj-67",
 					"maxclass" : "live.dial",
@@ -151,11 +157,15 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 12.0, 80.0, 57.0, 36.0 ],
 					"saved_attribute_attributes" : 					{
+						"activedialcolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_initial" : [ 0.5 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "smooth",
+							"parameter_longname" : "smooth[1]",
 							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "smooth",
 							"parameter_type" : 0,
@@ -182,6 +192,7 @@
 			}
 , 			{
 				"box" : 				{
+					"activedialcolor" : [ 0.670588235294118, 0.0, 1.0, 1.0 ],
 					"appearance" : 1,
 					"id" : "obj-65",
 					"maxclass" : "live.dial",
@@ -191,13 +202,17 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 566.0, 150.0, 57.0, 36.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 12.0, 42.0, 57.0, 36.0 ],
+					"presentation_rect" : [ 12.0, 42.0, 43.0, 36.0 ],
 					"saved_attribute_attributes" : 					{
+						"activedialcolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_initial" : [ -16 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "tresh",
+							"parameter_longname" : "tresh[1]",
 							"parameter_mmax" : -6.0,
 							"parameter_mmin" : -24.0,
 							"parameter_shortname" : "thresh",
@@ -321,7 +336,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
+					"bgcolor" : [ 0.780392156862745, 0.0, 1.0, 0.2 ],
 					"gridcolor" : [ 0.741176470588235, 0.741176470588235, 0.741176470588235, 0.0 ],
 					"id" : "obj-17",
 					"maxclass" : "scope~",
@@ -399,7 +414,7 @@
 					"patching_rect" : [ 691.0, 13.0, 195.0, 26.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 7.0, 12.5, 141.0, 26.0 ],
-					"text" : "Audio2Envelope",
+					"text" : "Audio -> Envelope",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -515,7 +530,7 @@
 							"parameter_initial" : [ 1 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "lfoMax[3]",
+							"parameter_longname" : "lfoMax[4]",
 							"parameter_mmax" : 1000.0,
 							"parameter_mmin" : -1000.0,
 							"parameter_shortname" : "lfoMax",
@@ -543,7 +558,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_linknames" : 1,
-							"parameter_longname" : "lfoMin[3]",
+							"parameter_longname" : "lfoMin[1]",
 							"parameter_mmax" : 1000.0,
 							"parameter_mmin" : -1000.0,
 							"parameter_shortname" : "lfoMin",
@@ -577,7 +592,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 47.099999999999994, 4.0, 30.0, 30.0 ]
 				}
 
