@@ -40,6 +40,18 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-27",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 155.0, 472.0, 31.0, 23.0 ],
+					"text" : "*~ 2"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-26",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
@@ -587,7 +599,7 @@
 					"numinlets" : 5,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 153.0, 442.800000488758087, 239.0, 23.0 ],
+					"patching_rect" : [ 155.0, 427.800000488758087, 239.0, 23.0 ],
 					"text" : "poly~ _mb.poly.pluck 32 @target 0 @steal 1"
 				}
 
@@ -611,7 +623,7 @@
 							"parameter_initial" : [ 0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "gain[1]",
+							"parameter_longname" : "gain[3]",
 							"parameter_mmax" : 6.0,
 							"parameter_mmin" : -70.0,
 							"parameter_shortname" : "gain",
@@ -708,7 +720,7 @@
 						"valueof" : 						{
 							"parameter_initial" : [ 0.8 ],
 							"parameter_initial_enable" : 1,
-							"parameter_longname" : "resonance[2]",
+							"parameter_longname" : "resonance[3]",
 							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "resonance",
 							"parameter_type" : 0,
@@ -737,7 +749,7 @@
 						"valueof" : 						{
 							"parameter_initial" : [ 0.8 ],
 							"parameter_initial_enable" : 1,
-							"parameter_longname" : "brightness[4]",
+							"parameter_longname" : "brightness[2]",
 							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "brightness",
 							"parameter_type" : 0,
@@ -784,7 +796,7 @@
 , 			{
 				"box" : 				{
 					"angle" : 270.0,
-					"bgcolor" : [ 0.75, 0.75, 0.75, 1 ],
+					"bgcolor" : [ 1, 1, 0, 1 ],
 					"hint" : "MIDI Pitch",
 					"id" : "obj-15",
 					"maxclass" : "panel",
@@ -1072,6 +1084,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-16", 0 ],
+					"source" : [ "obj-27", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-3", 0 ]
 				}
@@ -1086,7 +1105,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-16", 0 ],
+					"destination" : [ "obj-27", 0 ],
 					"source" : [ "obj-32", 0 ]
 				}
 

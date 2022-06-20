@@ -40,6 +40,18 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 178.0, 500.0, 31.0, 23.0 ],
+					"text" : "*~ 2"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-45",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -57,7 +69,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 107.0, 499.0, 71.0, 23.0 ],
+					"patching_rect" : [ 107.0, 549.0, 71.0, 23.0 ],
 					"text" : "r #0_gain"
 				}
 
@@ -350,7 +362,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 432.5, 313.5, 62.0, 23.0 ],
-					"restore" : [ 0 ],
+					"restore" : [ 3.0 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -381,7 +393,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 462.5, 239.0, 44.0, 23.0 ],
-					"restore" : [ 0 ],
+					"restore" : [ 0.61 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -411,7 +423,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 438.5, 506.0, 59.0, 23.0 ],
+					"patching_rect" : [ 438.5, 556.0, 59.0, 23.0 ],
 					"restore" : [ 0 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
@@ -430,7 +442,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "" ],
-					"patching_rect" : [ 334.0, 506.0, 91.0, 23.0 ],
+					"patching_rect" : [ 334.0, 556.0, 91.0, 23.0 ],
 					"text" : "_mb.param gain"
 				}
 
@@ -462,7 +474,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 897.0, 416.0, 59.0, 23.0 ],
-					"restore" : [ 0.0, 2000.0, 0.12, 389.869425349196092, 0.0, 0.98, 0.0, 0.0, 1.0, 1.0 ],
+					"restore" : [ 4.036613159905978, 2000.0, 0.12, 389.869425349196092, 0.0, 1.0, 0.0, 0.0, 1.0, 1.0 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -574,7 +586,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
-							"parameter_longname" : "live.text[6]",
+							"parameter_longname" : "live.text[4]",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.text[1]",
 							"parameter_type" : 2
@@ -646,12 +658,12 @@
 					"orientation" : 1,
 					"outlettype" : [ "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 179.0, 506.0, 136.0, 20.0 ],
+					"patching_rect" : [ 179.0, 556.0, 136.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 204.0, 18.5, 78.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "live.gain~[3]",
+							"parameter_longname" : "live.gain~[8]",
 							"parameter_mmax" : 6.0,
 							"parameter_mmin" : -70.0,
 							"parameter_shortname" : "live.gain~",
@@ -733,7 +745,7 @@
 						"valueof" : 						{
 							"parameter_initial" : [ 6000 ],
 							"parameter_initial_enable" : 1,
-							"parameter_longname" : "live.numbox[6]",
+							"parameter_longname" : "live.numbox[8]",
 							"parameter_mmax" : 10000.0,
 							"parameter_mmin" : 1000.0,
 							"parameter_shortname" : "live.numbox",
@@ -814,6 +826,7 @@
 					"activelinecolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"activeslopehandlecolor" : [ 0.0, 0.129, 0.847, 1.0 ],
 					"attack_domain" : [ 0.0, 2000.0 ],
+					"attack_time" : 4.036613159905978,
 					"decay_domain" : [ 1.5, 2000.0 ],
 					"decay_time" : 2000.0,
 					"hint" : "Sets the envelope for each synth note",
@@ -823,7 +836,6 @@
 					"numoutlets" : 10,
 					"outlettype" : [ "", "", "", "", "", "", "", "", "", "" ],
 					"patching_rect" : [ 890.5, 287.5, 184.0, 68.0 ],
-					"peak" : 0.98,
 					"presentation" : 1,
 					"presentation_rect" : [ 59.0, 41.0, 213.0, 50.0 ],
 					"release_domain" : [ 1.5, 2000.0 ],
@@ -930,7 +942,7 @@
 , 			{
 				"box" : 				{
 					"angle" : 270.0,
-					"bgcolor" : [ 0.75, 0.75, 0.75, 1 ],
+					"bgcolor" : [ 1, 1, 0, 1 ],
 					"hint" : "MIDI Notes (pitch velocity) trigger voices (16) of the additive synth",
 					"id" : "obj-15",
 					"maxclass" : "panel",
@@ -994,7 +1006,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 179.0, 628.0, 30.0, 30.0 ]
+					"patching_rect" : [ 179.0, 678.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -1095,7 +1107,7 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-76", 0 ],
+					"destination" : [ "obj-5", 0 ],
 					"source" : [ "obj-1", 0 ]
 				}
 
@@ -1459,6 +1471,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-50", 0 ],
 					"source" : [ "obj-47", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-76", 0 ],
+					"source" : [ "obj-5", 0 ]
 				}
 
 			}
