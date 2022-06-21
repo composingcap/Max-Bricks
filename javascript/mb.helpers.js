@@ -216,7 +216,7 @@ function dict_dump(dictName) {
 		n = parentNameBurrow(this.patcher.parentpatcher,n);
 		outlet(1,["send", n+"::"+varName]);
 
-		if (data == undefined){
+		if (data.length == 0){
 			data = "bang"
 		}
 
