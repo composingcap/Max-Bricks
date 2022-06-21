@@ -12,6 +12,8 @@ var p;
 var parent;
 var storage;
 
+var varNames = [];
+outlets = 3;
 function help(){
 	var p = this.patcher;
 	var n = p.name;
@@ -194,3 +196,42 @@ function dict_dump(dictName) {
 		return n;
 		
   }
+
+  function setParams(){
+	varNames = arrayfromargs(arguments);
+
+  }
+
+  function setValue(){
+
+	if ((typeof arrayfromargs(arguments)[0])=="number"){
+		outlet(2,arrayfromargs(arguments));
+		return;
+	}
+
+	var varName = arrayfromargs(arguments)[0];
+	var data = arrayfromargs(arguments).slice(1);
+	if (varNames == varName || varNames.contains(varName)){
+		var n = "";
+		n = parentNameBurrow(this.patcher.parentpatcher,n);
+		outlet(1,["send", n+"::"+varName]);
+		if (Array.isArray(data)){
+			data.unshift("_set")
+		}
+		else{
+			data = ["_set", data];
+		}
+		outlet(1, data);
+
+	}
+	else{
+		error(varName +" is not a message", "\n");
+	} 
+  }
+
+  Array.prototype.contains = function ( needle ) {
+	for (i in this) {
+		if (this[i] == needle) return true;
+	}
+	return false;
+ }
