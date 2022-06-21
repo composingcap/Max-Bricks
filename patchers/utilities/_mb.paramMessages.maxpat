@@ -42,11 +42,11 @@
 				"box" : 				{
 					"id" : "obj-7",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 547.0, 362.0, 41.0, 23.0 ],
-					"text" : "unjoin"
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 547.0, 362.0, 53.0, 23.0 ],
+					"text" : "zl.ecils 1"
 				}
 
 			}
@@ -289,7 +289,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "list" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 46.0, 42.0, 30.0, 30.0 ]
 				}
 

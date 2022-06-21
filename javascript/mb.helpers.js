@@ -215,17 +215,25 @@ function dict_dump(dictName) {
 		var n = "";
 		n = parentNameBurrow(this.patcher.parentpatcher,n);
 		outlet(1,["send", n+"::"+varName]);
+
+		if (data == undefined){
+			data = "bang"
+		}
+
 		if (Array.isArray(data)){
 			data.unshift("_set")
 		}
 		else{
 			data = ["_set", data];
 		}
+
 		outlet(1, data);
 
 	}
 	else{
-		error(varName +" is not a message", "\n");
+		n = "";
+		n = parentNameBurrow(this.patcher.parentpatcher,n);
+		error(varName +" is not a message for " +n, "\n");
 	} 
   }
 
