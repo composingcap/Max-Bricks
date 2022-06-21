@@ -204,7 +204,8 @@ function dict_dump(dictName) {
 
   function setValue(){
 
-	if ((typeof arrayfromargs(arguments)[0])=="number"){
+	
+	if ((typeof arrayfromargs(arguments)[0])=="number" || arrayfromargs(arguments)[0]=="bang"){
 		outlet(2,arrayfromargs(arguments));
 		return;
 	}

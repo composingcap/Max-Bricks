@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 3,
-			"revision" : 1,
+			"minor" : 2,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 2258.0, 595.0, 1082.0, 597.0 ],
+		"rect" : [ 474.0, 277.0, 1082.0, 597.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,18 @@
 		"subpatcher_template" : "minimal",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 131.25, 78.0, 117.0, 23.0 ],
+					"text" : "_mb.paramMessages"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-43",
 					"maxclass" : "newobj",
@@ -139,7 +151,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 2,
-					"outlettype" : [ "float", "" ],
+					"outlettype" : [ "float", "int" ],
 					"patching_rect" : [ 864.0, 274.0, 143.0, 23.0 ],
 					"text" : "_mb.param velocityRange"
 				}
@@ -151,7 +163,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 2,
-					"outlettype" : [ "float", "" ],
+					"outlettype" : [ "float", "int" ],
 					"patching_rect" : [ 753.0, 176.5, 137.0, 23.0 ],
 					"text" : "_mb.param baseVelocity"
 				}
@@ -163,7 +175,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 2,
-					"outlettype" : [ "float", "" ],
+					"outlettype" : [ "float", "int" ],
 					"patching_rect" : [ 454.0, 163.5, 130.0, 23.0 ],
 					"text" : "_mb.param baseLength"
 				}
@@ -175,7 +187,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 2,
-					"outlettype" : [ "float", "" ],
+					"outlettype" : [ "float", "int" ],
 					"patching_rect" : [ 760.0, 54.5, 135.0, 23.0 ],
 					"text" : "_mb.param lengthRange"
 				}
@@ -187,7 +199,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 2,
-					"outlettype" : [ "float", "" ],
+					"outlettype" : [ "float", "int" ],
 					"patching_rect" : [ 410.0, 72.0, 128.0, 23.0 ],
 					"text" : "_mb.param pitchRange"
 				}
@@ -199,7 +211,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 2,
-					"outlettype" : [ "float", "" ],
+					"outlettype" : [ "float", "int" ],
 					"patching_rect" : [ 338.0, 25.0, 120.0, 23.0 ],
 					"text" : "_mb.param basePitch"
 				}
@@ -380,7 +392,7 @@
 							"parameter_linknames" : 1,
 							"parameter_longname" : "noteVelocity[4]",
 							"parameter_mmax" : 64.0,
-							"parameter_shortname" : "velocity range",
+							"parameter_shortname" : "velocityRange",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 0
 						}
@@ -416,7 +428,7 @@
 							"parameter_linknames" : 1,
 							"parameter_longname" : "noteVelocity[3]",
 							"parameter_mmin" : 1.0,
-							"parameter_shortname" : "base velocity",
+							"parameter_shortname" : "baseVelocity",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 0
 						}
@@ -498,10 +510,10 @@
 							"parameter_initial" : [ 250 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "noteLength[3]",
+							"parameter_longname" : "noteLength[4]",
 							"parameter_mmax" : 1000.0,
 							"parameter_mmin" : 50.0,
-							"parameter_shortname" : "length range",
+							"parameter_shortname" : "lengthRange",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 2
 						}
@@ -535,10 +547,10 @@
 							"parameter_initial" : [ 250 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "noteLength[4]",
+							"parameter_longname" : "noteLength[3]",
 							"parameter_mmax" : 1000.0,
 							"parameter_mmin" : 50.0,
-							"parameter_shortname" : "base length",
+							"parameter_shortname" : "baseLength",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 2
 						}
@@ -573,7 +585,7 @@
 							"parameter_linknames" : 1,
 							"parameter_longname" : "pitch range[1]",
 							"parameter_mmax" : 60.0,
-							"parameter_shortname" : "pitch range",
+							"parameter_shortname" : "pitchRange",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 7
 						}
@@ -609,7 +621,7 @@
 							"parameter_longname" : "base pitch[1]",
 							"parameter_mmax" : 103.0,
 							"parameter_mmin" : 24.0,
-							"parameter_shortname" : "base pitch",
+							"parameter_shortname" : "basePitch",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 8
 						}
@@ -826,8 +838,8 @@
 					"id" : "obj-11",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 970.0, 434.0, 78.0, 23.0 ],
 					"saved_object_attributes" : 					{
 						"filename" : "mb.helpers",
@@ -1057,16 +1069,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-15", 0 ],
-					"order" : 0,
-					"source" : [ "obj-24", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-90", 0 ],
-					"order" : 1,
+					"destination" : [ "obj-3", 0 ],
 					"source" : [ "obj-24", 0 ]
 				}
 
@@ -1103,6 +1106,22 @@
 				"patchline" : 				{
 					"destination" : [ "obj-26", 0 ],
 					"source" : [ "obj-29", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-15", 0 ],
+					"order" : 0,
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-90", 0 ],
+					"order" : 1,
+					"source" : [ "obj-3", 0 ]
 				}
 
 			}
