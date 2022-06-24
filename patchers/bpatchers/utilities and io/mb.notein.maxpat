@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1882.0, 518.0, 1082.0, 832.0 ],
+		"rect" : [ 687.0, 540.0, 1082.0, 832.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -70,27 +70,11 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 57.0, 35.0, 195.0, 26.0 ],
+					"patching_rect" : [ 88.0, 26.0, 195.0, 26.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 7.0, 10.5, 195.0, 26.0 ],
 					"text" : "MIDI Note Input",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"angle" : 270.0,
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"hint" : "MIDI Pitch (number)",
-					"id" : "obj-16",
-					"maxclass" : "panel",
-					"mode" : 0,
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 848.0, 589.0, 43.0, 43.0 ],
-					"proportion" : 0.39,
-					"shape" : 1
 				}
 
 			}
@@ -135,11 +119,11 @@
 					"id" : "obj-11",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 889.0, 154.0, 78.0, 23.0 ],
 					"saved_object_attributes" : 					{
-						"filename" : "mb.helpers.js",
+						"filename" : "mb.helpers",
 						"parameter_enable" : 0
 					}
 ,
@@ -269,6 +253,14 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"bgfillcolor_angle" : 270.0,
+					"bgfillcolor_autogradient" : 0.0,
+					"bgfillcolor_color" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"bgfillcolor_color1" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"bgfillcolor_color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+					"bgfillcolor_proportion" : 0.39,
+					"bgfillcolor_type" : "color",
 					"fontsize" : 10.0,
 					"id" : "obj-3",
 					"items" : [ "all", ",", "Arturia MiniLab mkII", ",", "Focusrite USB MIDI" ],
@@ -283,7 +275,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "all", "Arturia MiniLab mkII", "Focusrite USB MIDI" ],
-							"parameter_longname" : "midiInputSelect",
+							"parameter_longname" : "midiInputSelect[1]",
 							"parameter_mmax" : 2,
 							"parameter_shortname" : "midiInputSelect",
 							"parameter_type" : 2
@@ -336,15 +328,15 @@
 				"box" : 				{
 					"angle" : 270.0,
 					"background" : 1,
-					"bgcolor" : [ 0.149019607843137, 0.498039215686275, 0.243137254901961, 1.0 ],
-					"id" : "obj-20",
+					"bgcolor" : [ 0.184313725490196, 0.184313725490196, 0.184313725490196, 1.0 ],
+					"id" : "obj-5",
 					"maxclass" : "panel",
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 42.0, 14.0, 202.0, 38.0 ],
+					"patching_rect" : [ 72.0, 14.0, 202.0, 38.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 10.5, 305.0, 30.0 ],
+					"presentation_rect" : [ 0.0, 10.5, 359.0, 30.0 ],
 					"proportion" : 0.39,
 					"rounded" : 0
 				}
@@ -355,14 +347,14 @@
 					"angle" : 270.0,
 					"background" : 1,
 					"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"id" : "obj-21",
+					"id" : "obj-9",
 					"maxclass" : "panel",
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 923.0, 515.0, 35.0, 38.0 ],
+					"patching_rect" : [ 676.0, 68.0, 35.0, 38.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 305.0, 12.5 ],
+					"presentation_rect" : [ 0.0, 0.0, 359.0, 12.5 ],
 					"proportion" : 0.39,
 					"rounded" : 0
 				}
@@ -372,15 +364,15 @@
 				"box" : 				{
 					"angle" : 270.0,
 					"background" : 1,
-					"bgcolor" : [ 0.6, 0.850980392156863, 0.619607843137255, 1.0 ],
-					"id" : "obj-23",
+					"bgcolor" : [ 0.686274509803922, 0.686274509803922, 0.686274509803922, 1.0 ],
+					"id" : "obj-16",
 					"maxclass" : "panel",
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 923.0, 580.5, 35.0, 38.0 ],
+					"patching_rect" : [ 300.5, 20.0, 74.0, 62.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 305.0, 133.0 ],
+					"presentation_rect" : [ 0.0, 34.0, 359.0, 206.0 ],
 					"proportion" : 0.39,
 					"rounded" : 0
 				}

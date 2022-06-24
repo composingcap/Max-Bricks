@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 2,
-			"revision" : 2,
+			"minor" : 3,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 474.0, 277.0, 1082.0, 597.0 ],
+		"rect" : [ 1890.0, 428.0, 1082.0, 597.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,12 +40,42 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-65",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 10.0, 122.0, 118.0, 23.0 ],
+					"text" : "_mb.inputConnected"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 270.0,
+					"bgcolor" : [ 0.75, 0.75, 0.75, 1 ],
+					"hint" : "MIDI Pitch (number)",
+					"id" : "obj-66",
+					"maxclass" : "panel",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 10.0, 146.5, 30.0, 29.5 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 7.0, 3.5, 5.0, 5.0 ],
+					"proportion" : 0.39,
+					"shape" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-3",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 131.25, 78.0, 117.0, 23.0 ],
+					"patching_rect" : [ 137.5, 72.0, 118.0, 23.0 ],
 					"text" : "_mb.paramMessages"
 				}
 
@@ -317,7 +347,7 @@
 				"box" : 				{
 					"angle" : 270.0,
 					"bgcolor" : [ 0.75, 0.75, 0.75, 1 ],
-					"hint" : "MIDI Note (pitch velocity) to be transposed",
+					"hint" : "",
 					"id" : "obj-1",
 					"maxclass" : "panel",
 					"mode" : 0,
@@ -390,7 +420,7 @@
 							"parameter_initial" : [ 20 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "noteVelocity[4]",
+							"parameter_longname" : "noteVelocity[3]",
 							"parameter_mmax" : 64.0,
 							"parameter_shortname" : "velocityRange",
 							"parameter_type" : 0,
@@ -426,7 +456,7 @@
 							"parameter_initial" : [ 64 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "noteVelocity[3]",
+							"parameter_longname" : "noteVelocity[4]",
 							"parameter_mmin" : 1.0,
 							"parameter_shortname" : "baseVelocity",
 							"parameter_type" : 0,
@@ -510,7 +540,7 @@
 							"parameter_initial" : [ 250 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "noteLength[4]",
+							"parameter_longname" : "noteLength[3]",
 							"parameter_mmax" : 1000.0,
 							"parameter_mmin" : 50.0,
 							"parameter_shortname" : "lengthRange",
@@ -547,7 +577,7 @@
 							"parameter_initial" : [ 250 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "noteLength[3]",
+							"parameter_longname" : "noteLength[4]",
 							"parameter_mmax" : 1000.0,
 							"parameter_mmin" : 50.0,
 							"parameter_shortname" : "baseLength",
@@ -778,22 +808,6 @@
 					"presentation_rect" : [ 7.0, 10.5, 195.0, 26.0 ],
 					"text" : "MIDI Random Notes",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"angle" : 270.0,
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"hint" : "MIDI Pitch (number)",
-					"id" : "obj-16",
-					"maxclass" : "panel",
-					"mode" : 0,
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 685.0, 535.0, 43.0, 43.0 ],
-					"proportion" : 0.39,
-					"shape" : 1
 				}
 
 			}
@@ -1119,6 +1133,14 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-65", 0 ],
+					"order" : 2,
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-90", 0 ],
 					"order" : 1,
 					"source" : [ "obj-3", 0 ]
@@ -1407,6 +1429,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-26", 2 ],
 					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-66", 0 ],
+					"source" : [ "obj-65", 0 ]
 				}
 
 			}

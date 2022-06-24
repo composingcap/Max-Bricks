@@ -40,6 +40,18 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 64.666666666666671, 116.0, 118.0, 23.0 ],
+					"text" : "_mb.paramMessages"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-12",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -78,7 +90,7 @@
 						"valueof" : 						{
 							"parameter_initial" : [ 250.0 ],
 							"parameter_initial_enable" : 1,
-							"parameter_longname" : "live.numbox",
+							"parameter_longname" : "live.numbox[41]",
 							"parameter_mmax" : 2000.0,
 							"parameter_mmin" : 10.0,
 							"parameter_shortname" : "live.numbox",
@@ -244,7 +256,7 @@
 , 			{
 				"box" : 				{
 					"angle" : 270.0,
-					"bgcolor" : [ 1, 1, 0, 1 ],
+					"bgcolor" : [ 0.75, 0.75, 0.75, 1 ],
 					"hint" : "Metro",
 					"id" : "obj-32",
 					"maxclass" : "panel",
@@ -266,7 +278,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 125.5, 688.0, 118.0, 23.0 ],
+					"patching_rect" : [ 192.5, 185.0, 118.0, 23.0 ],
 					"text" : "_mb.inputConnected"
 				}
 
@@ -281,7 +293,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 129.0, 723.0, 43.0, 43.0 ],
+					"patching_rect" : [ 196.0, 220.0, 43.0, 43.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 7.0, 3.5, 5.0, 5.0 ],
 					"proportion" : 0.39,
@@ -314,7 +326,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 2,
-					"outlettype" : [ "float", "" ],
+					"outlettype" : [ "float", "int" ],
 					"patching_rect" : [ 242.0, 124.0, 102.0, 23.0 ],
 					"text" : "_mb.param length"
 				}
@@ -328,20 +340,8 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 306.0, 255.0, 30.0, 30.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-29",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 816.0, 426.0, 34.0, 23.0 ],
-					"text" : "clear"
+					"patching_rect" : [ 306.0, 255.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -422,8 +422,8 @@
 					"id" : "obj-20",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 813.0, 197.0, 78.0, 23.0 ],
 					"saved_object_attributes" : 					{
 						"filename" : "mb.helpers",
@@ -455,7 +455,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 66.25, 124.0, 30.0, 30.0 ]
+					"patching_rect" : [ 64.666666666666671, 68.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -472,6 +472,18 @@
 					"presentation_rect" : [ 7.0, 12.5, 128.0, 26.0 ],
 					"text" : "MIDI Arpegiator",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-11",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 10.25, 438.0, 54.0, 23.0 ],
+					"text" : "sort -1 0"
 				}
 
 			}
@@ -529,22 +541,10 @@
 				}
 
 			}
-, 			{
-				"box" : 				{
-					"id" : "obj-11",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 10.25, 438.0, 54.0, 23.0 ],
-					"text" : "sort -1 0"
-				}
-
-			}
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-42", 0 ],
+					"destination" : [ "obj-5", 0 ],
 					"source" : [ "obj-1", 0 ]
 				}
 
@@ -778,6 +778,22 @@
 				"patchline" : 				{
 					"destination" : [ "obj-14", 0 ],
 					"source" : [ "obj-42", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-25", 0 ],
+					"order" : 0,
+					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-42", 0 ],
+					"order" : 1,
+					"source" : [ "obj-5", 0 ]
 				}
 
 			}

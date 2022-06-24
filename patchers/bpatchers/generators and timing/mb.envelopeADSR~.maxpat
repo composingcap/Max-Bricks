@@ -40,6 +40,48 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-90",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 500.299999999999955, 240.0, 118.0, 23.0 ],
+					"text" : "_mb.inputConnected"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 270.0,
+					"bgcolor" : [ 0.75, 0.75, 0.75, 1 ],
+					"hint" : "MIDI Notes (pitch velocity) trigger voices (16) of the additive synth",
+					"id" : "obj-19",
+					"maxclass" : "panel",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 500.299999999999955, 272.0, 43.0, 43.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 7.0, 3.5, 5.0, 5.0 ],
+					"proportion" : 0.39,
+					"shape" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-30",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 133.5, 179.0, 118.0, 23.0 ],
+					"text" : "_mb.paramMessages"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-8",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -64,7 +106,7 @@
 					"numinlets" : 10,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 78.0, 345.0, 113.5, 23.0 ],
+					"patching_rect" : [ 51.0, 342.0, 113.5, 23.0 ],
 					"text" : "join 10"
 				}
 
@@ -76,8 +118,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 86.0, 370.0, 59.0, 23.0 ],
-					"restore" : [ 0 ],
+					"patching_rect" : [ 51.25, 371.0, 59.0, 23.0 ],
+					"restore" : [ 58.852406813154332, 1.5, 0.26470588235294, 989.57487589603204, 0.0, 0.897058823529412, 0.0, 0.0, 1.0, 1.0 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -93,9 +135,9 @@
 					"id" : "obj-35",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"patching_rect" : [ 63.0, 70.0, 92.0, 23.0 ],
+					"numoutlets" : 2,
+					"outlettype" : [ "int", "" ],
+					"patching_rect" : [ 18.5, 160.0, 92.0, 23.0 ],
 					"text" : "_mb.modtrigger"
 				}
 
@@ -108,47 +150,11 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 57.0, 35.0, 195.0, 26.0 ],
+					"patching_rect" : [ 63.0, 20.0, 195.0, 26.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 3.0, 10.5, 144.0, 26.0 ],
 					"text" : "Envelope ADSR",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"angle" : 270.0,
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"hint" : "Pitch Bend in Semitones (signal or data LFO)",
-					"id" : "obj-19",
-					"maxclass" : "panel",
-					"mode" : 0,
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 702.0, 587.0, 43.0, 43.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 173.0, 3.5, 5.0, 5.0 ],
-					"proportion" : 0.39,
-					"shape" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"angle" : 270.0,
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"hint" : "MIDI Pitch (number)",
-					"id" : "obj-22",
-					"maxclass" : "panel",
-					"mode" : 0,
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 685.0, 535.0, 43.0, 43.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 3.0, 3.5, 5.0, 5.0 ],
-					"proportion" : 0.39,
-					"shape" : 1
 				}
 
 			}
@@ -193,8 +199,8 @@
 					"id" : "obj-9",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 903.0, 140.0, 78.0, 23.0 ],
 					"saved_object_attributes" : 					{
 						"filename" : "mb.helpers",
@@ -246,7 +252,7 @@
 						"valueof" : 						{
 							"parameter_initial" : [ 6000 ],
 							"parameter_initial_enable" : 1,
-							"parameter_longname" : "live.numbox[16]",
+							"parameter_longname" : "live.numbox[3]",
 							"parameter_mmax" : 10000.0,
 							"parameter_mmin" : 1000.0,
 							"parameter_shortname" : "live.numbox",
@@ -304,7 +310,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 37.5, 431.5, 30.0, 30.0 ]
+					"patching_rect" : [ 41.5, 500.5, 30.0, 30.0 ]
 				}
 
 			}
@@ -317,7 +323,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 37.5, 3.0, 30.0, 30.0 ]
+					"patching_rect" : [ 18.5, 46.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -328,9 +334,10 @@
 					"activelinecolor" : [ 0.266666666666667, 0.0, 0.545098039215686, 1.0 ],
 					"activeslopehandlecolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"attack_domain" : [ 0.0, 2000.0 ],
+					"attack_slope" : 0.131147540983606,
 					"attack_time" : 58.852406813154332,
 					"decay_domain" : [ 1.5, 2000.0 ],
-					"decay_time" : 106.0,
+					"decay_time" : 1060.83048445096415,
 					"id" : "obj-2",
 					"maxclass" : "live.adsrui",
 					"numinlets" : 10,
@@ -342,7 +349,7 @@
 					"presentation_rect" : [ 4.0, 45.5, 194.0, 50.0 ],
 					"release_domain" : [ 1.5, 2000.0 ],
 					"release_time" : 989.57487589603204,
-					"sustain" : 0.26470588235294
+					"sustain" : 0.279411764705881
 				}
 
 			}
@@ -353,7 +360,7 @@
 					"numinlets" : 11,
 					"numoutlets" : 3,
 					"outlettype" : [ "signal", "signal", "" ],
-					"patching_rect" : [ 37.5, 389.5, 124.0, 23.0 ],
+					"patching_rect" : [ 41.5, 457.5, 124.0, 23.0 ],
 					"text" : "live.adsr~"
 				}
 
@@ -566,6 +573,22 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
+					"order" : 1,
+					"source" : [ "obj-35", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-30", 0 ],
+					"source" : [ "obj-35", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-90", 0 ],
+					"order" : 0,
 					"source" : [ "obj-35", 0 ]
 				}
 
@@ -581,6 +604,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 1 ],
+					"midpoints" : [ 60.75, 412.0, 384.791666666666629, 412.0, 384.791666666666629, 234.5, 78.833333333333329, 234.5 ],
 					"order" : 0,
 					"source" : [ "obj-5", 0 ]
 				}
@@ -604,6 +628,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-15", 0 ],
 					"source" : [ "obj-8", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-19", 0 ],
+					"source" : [ "obj-90", 0 ]
 				}
 
 			}
