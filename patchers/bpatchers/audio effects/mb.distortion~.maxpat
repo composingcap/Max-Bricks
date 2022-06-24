@@ -739,7 +739,7 @@
 							"line_style" : "origin",
 							"number_style" : "none",
 							"filter" : "none",
-							"domain_start" : 0.0,
+							"domain_start" : -1.0,
 							"domain_end" : 1.0,
 							"domain_style" : "linear",
 							"domain_markers" : [  ],
@@ -918,7 +918,7 @@
 							"parameter_initial" : [ 100.0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "_mix",
+							"parameter_longname" : "_mix[2]",
 							"parameter_mmax" : 100.0,
 							"parameter_shortname" : "mix",
 							"parameter_type" : 0,
@@ -1190,7 +1190,7 @@
 							"parameter_initial" : [ 0.0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "_p",
+							"parameter_longname" : "_p[1]",
 							"parameter_mmax" : 0.99,
 							"parameter_shortname" : "p",
 							"parameter_type" : 0,
@@ -1356,11 +1356,11 @@
 					"presentation_rect" : [ 99.0, 41.326086956521735, 25.0, 36.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_exponent" : 0.5,
+							"parameter_exponent" : 4.0,
 							"parameter_initial" : [ 0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "_drive",
+							"parameter_longname" : "_drive[1]",
 							"parameter_mmax" : 0.99,
 							"parameter_shortname" : "drive",
 							"parameter_type" : 0,
@@ -1393,7 +1393,7 @@
 							"parameter_initial" : [ 0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "gain[2]",
+							"parameter_longname" : "gain[4]",
 							"parameter_mmax" : 6.0,
 							"parameter_mmin" : -70.0,
 							"parameter_shortname" : "gain",
@@ -1412,7 +1412,7 @@
 , 			{
 				"box" : 				{
 					"angle" : 270.0,
-					"bgcolor" : [ 0.75, 0.75, 0.75, 1 ],
+					"bgcolor" : [ 1, 1, 0, 1 ],
 					"hint" : "MIDI Pitch (number)",
 					"id" : "obj-15",
 					"maxclass" : "panel",
@@ -1452,7 +1452,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 43.0, 47.0, 30.0, 30.0 ]
 				}
 
