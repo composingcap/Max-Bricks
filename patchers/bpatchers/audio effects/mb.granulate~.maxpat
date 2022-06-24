@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1161.0, 322.0, 1562.0, 1146.0 ],
+		"rect" : [ 1286.0, 134.0, 1562.0, 1039.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -1478,7 +1478,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 140.0, 767.5, 82.0, 23.0 ],
+					"patching_rect" : [ 140.0, 788.5, 82.0, 23.0 ],
 					"text" : "mc.unpack~ 2"
 				}
 
@@ -1539,7 +1539,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "multichannelsignal" ],
 					"patching_rect" : [ 140.0, 709.0, 136.0, 23.0 ],
-					"text" : "mc.stereo~ @autogain 1"
+					"text" : "mc.stereo~ @autogain 0"
 				}
 
 			}
@@ -1872,7 +1872,7 @@
 , 			{
 				"box" : 				{
 					"angle" : 270.0,
-					"bgcolor" : [ 0.75, 0.75, 0.75, 1 ],
+					"bgcolor" : [ 1, 1, 0, 1 ],
 					"hint" : "MIDI Pitch (number)",
 					"id" : "obj-15",
 					"maxclass" : "panel",
