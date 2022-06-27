@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+<?xml-stylesheet href="./c74ref.xsl" type="text/xsl"?>
+
+<c74object name='mb.classicsynth~' module="msp" category="Max Bricks">
+
+	<digest>A synth the emulates the classic moog sound using a ladder filter</digest>
+	<description>
+	</description>
+
+
+	<!--METADATA-->
+
+	<metadatalist>
+		<metadata name='author'>Christopher Poovey</metadata>
+		<metadata name='tag'>Max Bricks</metadata>
+		<metadata name='tag'>Max Bricks Synth</metadata>
+
+	</metadatalist>
+<!--INLETS-->
+
+
+	<!--OUTLETS-->
+
+
+	<!--ARGUMENTS-->
+
+	<objarglist>
+	</objarglist>
+
+
+	<!--MESSAGES-->
+
+	<methodlist>
+		<method name='midi-note' type ='list'>
+			<digest>Lists starting with a number trigger a new midi event</digest>
+		</method>
+
+		<method name='ratio' type ='float'>
+			<digest>A multiple of the base frequency the resonant filter will slide to</digest>
+		</method>
+
+		<method name='q' type ='list'>
+			<digest>The resonance of the filter from 0-1</digest>
+		</method>
+
+	
+
+		<method name='adsr' type='list'>
+			<digest>Sets the parameters of the internal live.adsr~ with a list of attack decay sustain release inital peak final attack-slope decay-slope release-slope. 
+			<br/>You do not need to use all of the arguments for this message.
+			</digest>
+		</method>
+        <method name='gain' type='float'>
+			<digest>
+            Sets volume in decibles
+            </digest>
+		</method>
+		
+
+
+
+	</methodlist>
+
+
+	<!--ATTRIBUTES-->
+
+	<attributelist>
+
+	</attributelist>
+
+
+	<!--RELATED-->
+
+	<seealsolist>
+
+
+	</seealsolist>
+
+
+</c74object>

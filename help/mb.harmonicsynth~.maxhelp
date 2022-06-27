@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 376.0, 209.0, 780.0, 724.0 ],
+		"rect" : [ 1616.0, 317.0, 780.0, 724.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -57,7 +57,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 780.0, 698.0 ],
+						"rect" : [ 1616.0, 343.0, 780.0, 698.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -94,7 +94,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 147.0, 466.0, 177.0, 35.0 ],
-									"presentation_linecount" : 2,
 									"text" : "A list following the \"adsr\" will set the ADSR parameters"
 								}
 
@@ -106,8 +105,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 97.0, 378.0, 176.0, 50.0 ],
-									"presentation_linecount" : 3,
+									"patching_rect" : [ 97.0, 378.0, 177.0, 50.0 ],
 									"text" : "A number following the \"fold\" message will set the amound of wave folding."
 								}
 
@@ -120,7 +118,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 125.0, 255.0, 176.0, 50.0 ],
-									"presentation_linecount" : 3,
 									"text" : "A list following the \"pases\" message will set the phase of each partial"
 								}
 
@@ -134,7 +131,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 55.0, 198.5, 150.0, 39.0 ],
-									"presentation_linecount" : 2,
 									"text" : "Press to generate random phases"
 								}
 
@@ -159,7 +155,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 147.0, 125.0, 173.0, 64.0 ],
+									"patching_rect" : [ 147.0, 125.0, 176.0, 64.0 ],
 									"text" : "A list following the \"harmonics\" message will set the amplitude of the harmonics of the synth up to 64 partials"
 								}
 
@@ -185,7 +181,7 @@
 									"maxclass" : "ezdac~",
 									"numinlets" : 2,
 									"numoutlets" : 0,
-									"patching_rect" : [ 429.0, 498.0, 45.0, 45.0 ]
+									"patching_rect" : [ 429.0, 509.0, 45.0, 45.0 ]
 								}
 
 							}
@@ -271,7 +267,7 @@
 													"maxclass" : "newobj",
 													"numinlets" : 2,
 													"numoutlets" : 2,
-													"outlettype" : [ "float", "" ],
+													"outlettype" : [ "float", "int" ],
 													"patching_rect" : [ 292.0, 414.0, 91.0, 23.0 ],
 													"text" : "_mb.param gain"
 												}
@@ -302,7 +298,7 @@
 													"maxclass" : "newobj",
 													"numinlets" : 2,
 													"numoutlets" : 2,
-													"outlettype" : [ "float", "" ],
+													"outlettype" : [ "float", "int" ],
 													"patching_rect" : [ 357.0, 195.0, 89.0, 23.0 ],
 													"text" : "_mb.param pan"
 												}
@@ -491,8 +487,8 @@
 													"id" : "obj-20",
 													"maxclass" : "newobj",
 													"numinlets" : 1,
-													"numoutlets" : 1,
-													"outlettype" : [ "" ],
+													"numoutlets" : 3,
+													"outlettype" : [ "", "", "" ],
 													"patching_rect" : [ 798.0, 182.0, 78.0, 23.0 ],
 													"saved_object_attributes" : 													{
 														"filename" : "mb.helpers",
@@ -871,7 +867,7 @@
  ]
 									}
 ,
-									"patching_rect" : [ 429.0, 438.0, 190.0, 40.0 ],
+									"patching_rect" : [ 429.0, 449.0, 190.0, 40.0 ],
 									"varname" : "mb.pan~",
 									"viewvisibility" : 1
 								}
@@ -1031,8 +1027,8 @@
 													"id" : "obj-11",
 													"maxclass" : "newobj",
 													"numinlets" : 1,
-													"numoutlets" : 1,
-													"outlettype" : [ "" ],
+													"numoutlets" : 3,
+													"outlettype" : [ "", "", "" ],
 													"patching_rect" : [ 889.0, 154.0, 78.0, 23.0 ],
 													"saved_object_attributes" : 													{
 														"filename" : "mb.helpers",
@@ -3005,7 +3001,7 @@
 													"maxclass" : "newobj",
 													"numinlets" : 2,
 													"numoutlets" : 2,
-													"outlettype" : [ "float", "" ],
+													"outlettype" : [ "float", "int" ],
 													"patching_rect" : [ 414.0, 698.5, 91.0, 23.0 ],
 													"text" : "_mb.param gain"
 												}
@@ -3017,7 +3013,7 @@
 													"maxclass" : "newobj",
 													"numinlets" : 2,
 													"numoutlets" : 2,
-													"outlettype" : [ "float", "" ],
+													"outlettype" : [ "float", "int" ],
 													"patching_rect" : [ 516.0, 337.5, 90.0, 23.0 ],
 													"text" : "_mb.param fold"
 												}
@@ -4458,8 +4454,8 @@
 													"id" : "obj-25",
 													"maxclass" : "newobj",
 													"numinlets" : 1,
-													"numoutlets" : 1,
-													"outlettype" : [ "" ],
+													"numoutlets" : 3,
+													"outlettype" : [ "", "", "" ],
 													"patching_rect" : [ 844.5, 156.0, 78.0, 23.0 ],
 													"saved_object_attributes" : 													{
 														"filename" : "mb.helpers",
@@ -6550,7 +6546,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 376.0, 235.0, 780.0, 698.0 ],
+						"rect" : [ 0.0, 26.0, 780.0, 698.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -6587,7 +6583,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 16.0, 352.0, 250.0, 107.0 ],
-									"presentation_linecount" : 7,
 									"text" : "Changing the phase of the partials will dramatically change the sound of the resultant timbre. This is due to phase cancelation that is created when the sine waves are added together. Try changing the phase when only one partial is turned up, then when multiple are turned up."
 								}
 
@@ -6867,8 +6862,8 @@
 													"id" : "obj-11",
 													"maxclass" : "newobj",
 													"numinlets" : 1,
-													"numoutlets" : 1,
-													"outlettype" : [ "" ],
+													"numoutlets" : 3,
+													"outlettype" : [ "", "", "" ],
 													"patching_rect" : [ 889.0, 154.0, 78.0, 23.0 ],
 													"saved_object_attributes" : 													{
 														"filename" : "mb.helpers",
@@ -8280,7 +8275,7 @@
 													"maxclass" : "newobj",
 													"numinlets" : 2,
 													"numoutlets" : 2,
-													"outlettype" : [ "float", "" ],
+													"outlettype" : [ "float", "int" ],
 													"patching_rect" : [ 414.0, 698.5, 91.0, 23.0 ],
 													"text" : "_mb.param gain"
 												}
@@ -8292,7 +8287,7 @@
 													"maxclass" : "newobj",
 													"numinlets" : 2,
 													"numoutlets" : 2,
-													"outlettype" : [ "float", "" ],
+													"outlettype" : [ "float", "int" ],
 													"patching_rect" : [ 516.0, 337.5, 90.0, 23.0 ],
 													"text" : "_mb.param fold"
 												}
@@ -9733,8 +9728,8 @@
 													"id" : "obj-25",
 													"maxclass" : "newobj",
 													"numinlets" : 1,
-													"numoutlets" : 1,
-													"outlettype" : [ "" ],
+													"numoutlets" : 3,
+													"outlettype" : [ "", "", "" ],
 													"patching_rect" : [ 844.5, 156.0, 78.0, 23.0 ],
 													"saved_object_attributes" : 													{
 														"filename" : "mb.helpers",
@@ -11100,8 +11095,8 @@
 													"id" : "obj-11",
 													"maxclass" : "newobj",
 													"numinlets" : 1,
-													"numoutlets" : 1,
-													"outlettype" : [ "" ],
+													"numoutlets" : 3,
+													"outlettype" : [ "", "", "" ],
 													"patching_rect" : [ 889.0, 154.0, 78.0, 23.0 ],
 													"saved_object_attributes" : 													{
 														"filename" : "mb.helpers",
@@ -11467,7 +11462,7 @@
 													"maxclass" : "newobj",
 													"numinlets" : 2,
 													"numoutlets" : 2,
-													"outlettype" : [ "float", "" ],
+													"outlettype" : [ "float", "int" ],
 													"patching_rect" : [ 292.0, 414.0, 91.0, 23.0 ],
 													"text" : "_mb.param gain"
 												}
@@ -11498,7 +11493,7 @@
 													"maxclass" : "newobj",
 													"numinlets" : 2,
 													"numoutlets" : 2,
-													"outlettype" : [ "float", "" ],
+													"outlettype" : [ "float", "int" ],
 													"patching_rect" : [ 357.0, 195.0, 89.0, 23.0 ],
 													"text" : "_mb.param pan"
 												}
@@ -11687,8 +11682,8 @@
 													"id" : "obj-20",
 													"maxclass" : "newobj",
 													"numinlets" : 1,
-													"numoutlets" : 1,
-													"outlettype" : [ "" ],
+													"numoutlets" : 3,
+													"outlettype" : [ "", "", "" ],
 													"patching_rect" : [ 798.0, 182.0, 78.0, 23.0 ],
 													"saved_object_attributes" : 													{
 														"filename" : "mb.helpers",
@@ -12246,6 +12241,12 @@
 			}
 ,
 			"parameter_overrides" : 			{
+				"obj-1::obj-3::obj-3" : 				{
+					"parameter_invisible" : 0,
+					"parameter_modmode" : 0,
+					"parameter_unitstyle" : 10
+				}
+,
 				"obj-1::obj-9::obj-19" : 				{
 					"parameter_longname" : "live.text[1]"
 				}
