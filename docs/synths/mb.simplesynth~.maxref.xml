@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+<?xml-stylesheet href="./c74ref.xsl" type="text/xsl"?>
+
+<c74object name='mb.simpplefm~' module="msp" category="Max Bricks">
+
+	<digest>A physically modeled string based on a karplus-strong string model.</digest>
+	<description>
+	</description>
+
+
+	<!--METADATA-->
+
+	<metadatalist>
+		<metadata name='author'>Christopher Poovey</metadata>
+		<metadata name='tag'>Max Bricks</metadata>
+		<metadata name='tag'>Max Bricks Synth</metadata>
+
+	</metadatalist>
+<!--INLETS-->
+
+
+	<!--OUTLETS-->
+
+
+	<!--ARGUMENTS-->
+
+	<objarglist>
+	</objarglist>
+
+
+	<!--MESSAGES-->
+
+	<methodlist>
+		<method name='midi-note' type ='list'>
+			<digest>Lists starting with a number trigger a new midi event. This instrument is not truely polyphonic, but rather will select active notes by chance.</digest>
+		</method>
+
+      <method name='sinPitch' type='float'>
+			<digest>
+            The offset pitch of the sine tone oscilator from the MIDI pitch from an incomming note.
+            </digest>
+		</method>
+
+        <method name='sinAmp' type='float'>
+			<digest>
+				The volume of the sine tone oscilator. 
+            </digest>
+		</method>
+
+        <method name='triPitch' type='float'>
+			<digest>
+            The offset pitch of the triangle tone oscilator from the MIDI pitch from an incomming note.
+            </digest>
+		</method>
+
+        <method name='triAmp' type='float'>
+			<digest>
+				The volume of the triangle tone oscilator. 
+            </digest>
+		</method>
+
+        <method name='sawPitch' type='float'>
+			<digest>
+            The offset pitch of the saw tone oscilator from the MIDI pitch from an incomming note.
+            </digest>
+		</method>
+
+        <method name='sawAmp' type='float'>
+			<digest>
+				The volume of the saw tone oscilator. 
+            </digest>
+		</method>
+
+        <method name='squPitch' type='float'>
+			<digest>
+            The offset pitch of the square tone oscilator from the MIDI pitch from an incomming note.
+            </digest>
+		</method>
+
+        <method name='squAmp' type='float'>
+			<digest>
+				The volume of the square tone oscilator. 
+            </digest>
+		</method>
+
+        <method name='adsr' type='float'>
+			<digest>
+            Sets the parameters of the internal live.adsr~ with a list of attack decay sustain release inital peak final attack-slope decay-slope release-slope. 
+			<br/>You do not need to use all of the arguments for this message.
+        </digest>
+		</method>
+	
+
+        <method name='gain' type='float'>
+			<digest>
+            Sets volume in decibles
+            </digest>
+		</method>
+		
+
+
+
+	</methodlist>
+
+
+	<!--ATTRIBUTES-->
+
+	<attributelist>
+
+	</attributelist>
+
+
+	<!--RELATED-->
+
+	<seealsolist>
+
+
+	</seealsolist>
+
+
+</c74object>

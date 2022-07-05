@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+<?xml-stylesheet href="./c74ref.xsl" type="text/xsl"?>
+
+<c74object name='mb.pluck~' module="msp" category="Max Bricks">
+
+	<digest>A physically modeled string based on a karplus-strong string model.</digest>
+	<description>
+	</description>
+
+
+	<!--METADATA-->
+
+	<metadatalist>
+		<metadata name='author'>Christopher Poovey</metadata>
+		<metadata name='tag'>Max Bricks</metadata>
+		<metadata name='tag'>Max Bricks Synth</metadata>
+
+	</metadatalist>
+<!--INLETS-->
+
+
+	<!--OUTLETS-->
+
+
+	<!--ARGUMENTS-->
+
+	<objarglist>
+	</objarglist>
+
+
+	<!--MESSAGES-->
+
+	<methodlist>
+		<method name='midi-note' type ='list'>
+			<digest>Lists starting with a number trigger a new midi event. </digest>
+		</method>
+
+      <method name='pluckColor' type='float'>
+			<digest>
+            The timbre of the impulse that is used to exite the mesh.
+            </digest>
+		</method>
+
+        <method name='resonance' type='float'>
+			<digest>
+				How highly tuned the modal filters. More resonance is less bandwidth.
+            </digest>
+		</method>
+
+        <method name='brightness' type='float'>
+			<digest>
+            How much high frequencies are retained waveguide string
+        </digest>
+		</method>
+	
+
+        <method name='gain' type='float'>
+			<digest>
+            Sets volume in decibles
+            </digest>
+		</method>
+		
+
+
+
+	</methodlist>
+
+
+	<!--ATTRIBUTES-->
+
+	<attributelist>
+
+	</attributelist>
+
+
+	<!--RELATED-->
+
+	<seealsolist>
+
+
+	</seealsolist>
+
+
+</c74object>

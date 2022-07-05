@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+<?xml-stylesheet href="./c74ref.xsl" type="text/xsl"?>
+
+<c74object name='mb.modalSynth~' module="msp" category="Max Bricks">
+
+	<digest>A modal synthesis instrument that allows users to design timbres exited by impulses.</digest>
+	<description>
+	</description>
+
+
+	<!--METADATA-->
+
+	<metadatalist>
+		<metadata name='author'>Christopher Poovey</metadata>
+		<metadata name='tag'>Max Bricks</metadata>
+		<metadata name='tag'>Max Bricks Synth</metadata>
+
+	</metadatalist>
+<!--INLETS-->
+
+
+	<!--OUTLETS-->
+
+
+	<!--ARGUMENTS-->
+
+	<objarglist>
+	</objarglist>
+
+
+	<!--MESSAGES-->
+
+	<methodlist>
+		<method name='midi-note' type ='list'>
+			<digest>Lists starting with a number trigger a new midi event. </digest>
+		</method>
+
+      <method name='modes' type='float'>
+			<digest>
+            Set the mode frequencies in a list of semitone transpositions
+            </digest>
+		</method>
+        <method name='states' type='float'>
+			<digest>
+            Turns modes on and off in a list of ones and zeros
+            </digest>
+		</method>
+
+        <method name='resonance' type='float'>
+			<digest>
+				How highly tuned the modal filters. More resonance is less bandwidth.
+            </digest>
+		</method>
+
+        <method name='brightness' type='float'>
+			<digest>
+            The brighness of the impulse used to exite the modes.
+        </digest>
+		</method>
+	
+
+        <method name='gain' type='float'>
+			<digest>
+            Sets volume in decibles
+            </digest>
+		</method>
+		
+
+
+
+	</methodlist>
+
+
+	<!--ATTRIBUTES-->
+
+	<attributelist>
+
+	</attributelist>
+
+
+	<!--RELATED-->
+
+	<seealsolist>
+
+
+	</seealsolist>
+
+
+</c74object>

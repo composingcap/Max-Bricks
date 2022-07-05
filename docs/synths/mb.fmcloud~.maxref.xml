@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+<?xml-stylesheet href="./c74ref.xsl" type="text/xsl"?>
+
+<c74object name='mb.fmcloud~' module="msp" category="Max Bricks">
+
+	<digest>A granular cloud generator created using grains of FM synthesis timbres</digest>
+	<description>
+	</description>
+
+
+	<!--METADATA-->
+
+	<metadatalist>
+		<metadata name='author'>Christopher Poovey</metadata>
+		<metadata name='tag'>Max Bricks</metadata>
+		<metadata name='tag'>Max Bricks Synth</metadata>
+
+	</metadatalist>
+<!--INLETS-->
+
+
+	<!--OUTLETS-->
+
+
+	<!--ARGUMENTS-->
+
+	<objarglist>
+	</objarglist>
+
+
+	<!--MESSAGES-->
+
+	<methodlist>
+		<method name='midi-note' type ='list'>
+			<digest>Lists starting with a number trigger a new midi event. This instrument is not truely polyphonic, but rather will select active notes by chance.</digest>
+		</method>
+
+      <method name='freqRatio' type='float'>
+			<digest>
+            The ratio of the modulating frequency to the carrier
+            </digest>
+		</method>
+        <method name='freqRatioRand' type='float'>
+			<digest>
+            A random amount added to the freqRatio on each grain
+            </digest>
+		</method>
+
+        <method name='timbreVar' type='float'>
+			<digest>
+            Locks the freqRatioRand to different divisions of 1. 0% will result in only integer values being generates as where 100% will not have any rounding.
+            </digest>
+		</method>
+
+        <method name='modIndex' type='float'>
+			<digest>
+            The modulation depth determined by a ratio of the modulation frequency.
+        </digest>
+		</method>
+
+        <method name='modIndex' type='float'>
+			<digest>
+            A random value added to the modIndex for each grain.
+        </digest>
+		</method>
+
+        
+        <method name='pitchRand' type='float'>
+			<digest>
+            A random amount of semitones (+/-) added to individual grains
+        </digest>
+		</method>
+
+        <method name='rate' type='float'>
+			<digest>
+            Grains per second in Hz
+        </digest>
+		</method>
+
+                <method name='overlap' type='float'>
+			<digest>
+            The number of grains that will sound at the same time. Effects the grain size in relation to the grain rate.
+        </digest>
+		</method>
+        
+        
+        <method name='envelope' type='list'>
+			<digest>
+            Determines the grain envelope either via a list of points (x,y,c) or by a preset (name-of-preset). Lists of points are in the format x1 y1 c1 ... xn yn cn where x and y are positions from 0-1 and c is a curve factor from -1 to 1 where 0 is linear.
+        </digest>
+		</method>
+	
+
+        <method name='gain' type='float'>
+			<digest>
+            Sets volume in decibles
+            </digest>
+		</method>
+		
+
+
+
+	</methodlist>
+
+
+	<!--ATTRIBUTES-->
+
+	<attributelist>
+
+	</attributelist>
+
+
+	<!--RELATED-->
+
+	<seealsolist>
+
+
+	</seealsolist>
+
+
+</c74object>
