@@ -40,6 +40,30 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 120.0, 448.0, 116.0, 23.0 ],
+					"text" : "routepass dictionary"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 164.0, 538.0, 116.0, 23.0 ],
+					"text" : "routepass dictionary"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-121",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -260,7 +284,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "wait", "waiting" ],
-							"parameter_longname" : "live.text[6]",
+							"parameter_longname" : "live.text[2]",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.text",
 							"parameter_type" : 2
@@ -324,7 +348,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 385.593202412128448, 688.983018815517426, 138.98304671049118, 23.0 ],
-					"text" : "55 79 8190910"
+					"text" : "64 0 3412560"
 				}
 
 			}
@@ -379,7 +403,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
-							"parameter_longname" : "live.text[1]",
+							"parameter_longname" : "live.text[4]",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.text[1]",
 							"parameter_type" : 2
@@ -407,13 +431,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-87",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 263.559309780597687, 810.169453859329224, 50.0, 37.0 ],
-					"text" : "2140.5216"
+					"patching_rect" : [ 263.559309780597687, 810.169453859329224, 50.0, 23.0 ],
+					"text" : "0."
 				}
 
 			}
@@ -532,7 +555,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 192.855923771858215, 537.711838245391846, 49.0, 23.0 ],
+					"patching_rect" : [ 150.855923771858215, 556.711838245391846, 49.0, 23.0 ],
 					"text" : "dict.iter"
 				}
 
@@ -544,7 +567,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 181.355923771858215, 458.47455495595932, 49.0, 23.0 ],
+					"patching_rect" : [ 109.25, 477.0, 49.0, 23.0 ],
 					"text" : "dict.iter"
 				}
 
@@ -700,7 +723,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "record", "recording" ],
-							"parameter_longname" : "live.text[5]",
+							"parameter_longname" : "live.text[3]",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.text",
 							"parameter_type" : 2
@@ -729,537 +752,7 @@
 					"text" : "mtr 1 @loop 1",
 					"tracks" : [ 						{
 							"events" : [ 								{
-									"time" : 0.0,
-									"message" : "list",
-									"args" : [ 55, 87, 8243620 ]
-								}
-, 								{
-									"time" : 125.476699948310852,
-									"message" : "list",
-									"args" : [ 74, 94, 3924590 ]
-								}
-, 								{
-									"time" : 15.707000017166138,
-									"message" : "list",
-									"args" : [ 79, 0, 6188460 ]
-								}
-, 								{
-									"time" : 138.744600057601929,
-									"message" : "list",
-									"args" : [ 79, 105, 7793830 ]
-								}
-, 								{
-									"time" : 4.185899972915649,
-									"message" : "list",
-									"args" : [ 74, 0, 3924590 ]
-								}
-, 								{
-									"time" : 144.620700001716614,
-									"message" : "list",
-									"args" : [ 74, 92, 4406980 ]
-								}
-, 								{
-									"time" : 11.741499900817871,
-									"message" : "list",
-									"args" : [ 79, 0, 7793830 ]
-								}
-, 								{
-									"time" : 131.937899947166443,
-									"message" : "list",
-									"args" : [ 79, 95, 2709370 ]
-								}
-, 								{
-									"time" : 8.206100225448608,
-									"message" : "list",
-									"args" : [ 74, 0, 4406980 ]
-								}
-, 								{
-									"time" : 135.658899903297424,
-									"message" : "list",
-									"args" : [ 57, 86, 3891170 ]
-								}
-, 								{
-									"time" : 19.509599924087524,
-									"message" : "list",
-									"args" : [ 79, 0, 2709370 ]
-								}
-, 								{
-									"time" : 0.0,
-									"message" : "list",
-									"args" : [ 74, 83, 4643510 ]
-								}
-, 								{
-									"time" : 25.558799982070923,
-									"message" : "list",
-									"args" : [ 55, 0, 8243620 ]
-								}
-, 								{
-									"time" : 125.620100021362305,
-									"message" : "list",
-									"args" : [ 74, 0, 4643510 ]
-								}
-, 								{
-									"time" : 3.394700050354004,
-									"message" : "list",
-									"args" : [ 79, 89, 2926260 ]
-								}
-, 								{
-									"time" : 173.154299974441528,
-									"message" : "list",
-									"args" : [ 74, 98, 3306060 ]
-								}
-, 								{
-									"time" : 10.444400072097778,
-									"message" : "list",
-									"args" : [ 79, 0, 2926260 ]
-								}
-, 								{
-									"time" : 153.906999945640564,
-									"message" : "list",
-									"args" : [ 79, 96, 5707320 ]
-								}
-, 								{
-									"time" : 9.19159996509552,
-									"message" : "list",
-									"args" : [ 74, 0, 3306060 ]
-								}
-, 								{
-									"time" : 177.311699986457825,
-									"message" : "list",
-									"args" : [ 53, 103, 5725790 ]
-								}
-, 								{
-									"time" : 32.610300064086914,
-									"message" : "list",
-									"args" : [ 57, 0, 3891170 ]
-								}
-, 								{
-									"time" : 0.992499947547913,
-									"message" : "list",
-									"args" : [ 74, 99, 4786570 ]
-								}
-, 								{
-									"time" : 12.012700080871582,
-									"message" : "list",
-									"args" : [ 79, 0, 5707320 ]
-								}
-, 								{
-									"time" : 172.694799900054932,
-									"message" : "list",
-									"args" : [ 79, 102, 902180 ]
-								}
-, 								{
-									"time" : 10.405200123786926,
-									"message" : "list",
-									"args" : [ 74, 0, 4786570 ]
-								}
-, 								{
-									"time" : 159.229299902916182,
-									"message" : "list",
-									"args" : [ 74, 87, 1332420 ]
-								}
-, 								{
-									"time" : 3.525699973106384,
-									"message" : "list",
-									"args" : [ 79, 0, 902180 ]
-								}
-, 								{
-									"time" : 147.545700073242188,
-									"message" : "list",
-									"args" : [ 74, 0, 1332420 ]
-								}
-, 								{
-									"time" : 5.676699995994568,
-									"message" : "list",
-									"args" : [ 79, 85, 2276010 ]
-								}
-, 								{
-									"time" : 135.738800048827898,
-									"message" : "list",
-									"args" : [ 74, 88, 7800660 ]
-								}
-, 								{
-									"time" : 12.662599802017212,
-									"message" : "list",
-									"args" : [ 79, 0, 2276010 ]
-								}
-, 								{
-									"time" : 34.012500166893005,
-									"message" : "list",
-									"args" : [ 55, 79, 8190910 ]
-								}
-, 								{
-									"time" : 25.418799996376038,
-									"message" : "list",
-									"args" : [ 53, 0, 5725790 ]
-								}
-, 								{
-									"time" : 67.19349992275238,
-									"message" : "list",
-									"args" : [ 60, 0, 7087180 ]
-								}
-, 								{
-									"time" : 2.397699952125549,
-									"message" : "list",
-									"args" : [ 48, 0, 6711510 ]
-								}
-, 								{
-									"time" : 0.0,
-									"message" : "list",
-									"args" : [ 43, 0, 2690800 ]
-								}
-, 								{
-									"time" : 9.027200102806091,
-									"message" : "list",
-									"args" : [ 50, 0, 267460 ]
-								}
-, 								{
-									"time" : 12.586300015449524,
-									"message" : "list",
-									"args" : [ 74, 0, 7800660 ]
-								}
-, 								{
-									"time" : 0.0,
-									"message" : "list",
-									"args" : [ 79, 84, 6205460 ]
-								}
-, 								{
-									"time" : 51.267699956893921,
-									"message" : "list",
-									"args" : [ 55, 0, 4939950 ]
-								}
-, 								{
-									"time" : 109.103000044822693,
-									"message" : "list",
-									"args" : [ 79, 0, 6205460 ]
-								}
-, 								{
-									"time" : 0.0,
-									"message" : "list",
-									"args" : [ 74, 66, 8485340 ]
-								}
-, 								{
-									"time" : 105.998499989509583,
-									"message" : "list",
-									"args" : [ 43, 118, 3124380 ]
-								}
-, 								{
-									"time" : 6.057500004768372,
-									"message" : "list",
-									"args" : [ 60, 100, 2310460 ]
-								}
-, 								{
-									"time" : 0.0,
-									"message" : "list",
-									"args" : [ 55, 114, 1758770 ]
-								}
-, 								{
-									"time" : 3.665199995040894,
-									"message" : "list",
-									"args" : [ 50, 115, 3676510 ]
-								}
-, 								{
-									"time" : 0.0,
-									"message" : "list",
-									"args" : [ 48, 119, 9279470 ]
-								}
-, 								{
-									"time" : 4.879300117492676,
-									"message" : "list",
-									"args" : [ 55, 0, 8190910 ]
-								}
-, 								{
-									"time" : 0.0,
-									"message" : "list",
-									"args" : [ 50, 88, 1600460 ]
-								}
-, 								{
-									"time" : 20.341199994087219,
-									"message" : "list",
-									"args" : [ 74, 0, 8485340 ]
-								}
-, 								{
-									"time" : 0.0,
-									"message" : "list",
-									"args" : [ 79, 74, 3858540 ]
-								}
-, 								{
-									"time" : 138.939099907875061,
-									"message" : "list",
-									"args" : [ 74, 83, 378350 ]
-								}
-, 								{
-									"time" : 13.397700071334839,
-									"message" : "list",
-									"args" : [ 79, 0, 3858540 ]
-								}
-, 								{
-									"time" : 127.554499983787537,
-									"message" : "list",
-									"args" : [ 79, 98, 9590810 ]
-								}
-, 								{
-									"time" : 0.0,
-									"message" : "list",
-									"args" : [ 74, 0, 378350 ]
-								}
-, 								{
-									"time" : 82.153899908065796,
-									"message" : "list",
-									"args" : [ 48, 90, 7459280 ]
-								}
-, 								{
-									"time" : 0.0,
-									"message" : "list",
-									"args" : [ 50, 0, 1600460 ]
-								}
-, 								{
-									"time" : 77.511700034141541,
-									"message" : "list",
-									"args" : [ 79, 0, 9590810 ]
-								}
-, 								{
-									"time" : 12.666899919509888,
-									"message" : "list",
-									"args" : [ 74, 97, 4495400 ]
-								}
-, 								{
-									"time" : 146.158900022506714,
-									"message" : "list",
-									"args" : [ 79, 107, 5389920 ]
-								}
-, 								{
-									"time" : 6.164600014686584,
-									"message" : "list",
-									"args" : [ 74, 0, 4495400 ]
-								}
-, 								{
-									"time" : 172.00109994411423,
-									"message" : "list",
-									"args" : [ 74, 87, 9508190 ]
-								}
-, 								{
-									"time" : 10.010800004005432,
-									"message" : "list",
-									"args" : [ 79, 0, 5389920 ]
-								}
-, 								{
-									"time" : 164.812199950217746,
-									"message" : "list",
-									"args" : [ 79, 93, 6272170 ]
-								}
-, 								{
-									"time" : 5.686400055885315,
-									"message" : "list",
-									"args" : [ 74, 0, 9508190 ]
-								}
-, 								{
-									"time" : 140.560199975968317,
-									"message" : "list",
-									"args" : [ 52, 97, 4016640 ]
-								}
-, 								{
-									"time" : 15.16320013999939,
-									"message" : "list",
-									"args" : [ 48, 0, 7459280 ]
-								}
-, 								{
-									"time" : 46.778099894524075,
-									"message" : "list",
-									"args" : [ 74, 78, 2474990 ]
-								}
-, 								{
-									"time" : 11.50190007686615,
-									"message" : "list",
-									"args" : [ 79, 0, 6272170 ]
-								}
-, 								{
-									"time" : 167.860700011252902,
-									"message" : "list",
-									"args" : [ 79, 106, 4390390 ]
-								}
-, 								{
-									"time" : 2.386799931526184,
-									"message" : "list",
-									"args" : [ 74, 0, 2474990 ]
-								}
-, 								{
-									"time" : 158.427800059318542,
-									"message" : "list",
-									"args" : [ 74, 77, 9370140 ]
-								}
-, 								{
-									"time" : 19.36269998550415,
-									"message" : "list",
-									"args" : [ 79, 0, 4390390 ]
-								}
-, 								{
-									"time" : 148.963899970054626,
-									"message" : "list",
-									"args" : [ 74, 0, 9370140 ]
-								}
-, 								{
-									"time" : 2.64300000667572,
-									"message" : "list",
-									"args" : [ 79, 97, 5525740 ]
-								}
-, 								{
-									"time" : 165.67110002040863,
-									"message" : "list",
-									"args" : [ 50, 94, 175800 ]
-								}
-, 								{
-									"time" : 12.254499912261963,
-									"message" : "list",
-									"args" : [ 74, 91, 8200680 ]
-								}
-, 								{
-									"time" : 4.801500082015991,
-									"message" : "list",
-									"args" : [ 79, 0, 5525740 ]
-								}
-, 								{
-									"time" : 14.111199975013733,
-									"message" : "list",
-									"args" : [ 52, 0, 4016640 ]
-								}
-, 								{
-									"time" : 153.444399952888489,
-									"message" : "list",
-									"args" : [ 74, 0, 8200680 ]
-								}
-, 								{
-									"time" : 2.810400128364563,
-									"message" : "list",
-									"args" : [ 79, 103, 1346930 ]
-								}
-, 								{
-									"time" : 153.582599878311157,
-									"message" : "list",
-									"args" : [ 74, 82, 480080 ]
-								}
-, 								{
-									"time" : 10.989799976348877,
-									"message" : "list",
-									"args" : [ 79, 0, 1346930 ]
-								}
-, 								{
-									"time" : 137.33840000629425,
-									"message" : "list",
-									"args" : [ 74, 0, 480080 ]
-								}
-, 								{
-									"time" : 2.030200123786926,
-									"message" : "list",
-									"args" : [ 79, 90, 2507920 ]
-								}
-, 								{
-									"time" : 168.321199893951416,
-									"message" : "list",
-									"args" : [ 74, 74, 3074220 ]
-								}
-, 								{
-									"time" : 8.496900081634521,
-									"message" : "list",
-									"args" : [ 79, 0, 2507920 ]
-								}
-, 								{
-									"time" : 137.504400014877319,
-									"message" : "list",
-									"args" : [ 50, 0, 175800 ]
-								}
-, 								{
-									"time" : 0.995299935340881,
-									"message" : "list",
-									"args" : [ 79, 97, 8433520 ]
-								}
-, 								{
-									"time" : 9.16159999370575,
-									"message" : "list",
-									"args" : [ 74, 0, 3074220 ]
-								}
-, 								{
-									"time" : 175.6146000623703,
-									"message" : "list",
-									"args" : [ 74, 98, 3365080 ]
-								}
-, 								{
-									"time" : 0.0,
-									"message" : "list",
-									"args" : [ 79, 0, 8433520 ]
-								}
-, 								{
-									"time" : 134.721100091934204,
-									"message" : "list",
-									"args" : [ 79, 114, 2942180 ]
-								}
-, 								{
-									"time" : 5.186099886894226,
-									"message" : "list",
-									"args" : [ 74, 0, 3365080 ]
-								}
-, 								{
-									"time" : 75.519599914550781,
-									"message" : "list",
-									"args" : [ 43, 0, 3124380 ]
-								}
-, 								{
-									"time" : 4.398000121116638,
-									"message" : "list",
-									"args" : [ 48, 0, 9279470 ]
-								}
-, 								{
-									"time" : 5.199899911880493,
-									"message" : "list",
-									"args" : [ 50, 0, 3676510 ]
-								}
-, 								{
-									"time" : 8.203999996185303,
-									"message" : "list",
-									"args" : [ 60, 0, 2310460 ]
-								}
-, 								{
-									"time" : 3.047199964523315,
-									"message" : "list",
-									"args" : [ 55, 0, 1758770 ]
-								}
-, 								{
-									"time" : 23.997300148010254,
-									"message" : "list",
-									"args" : [ 79, 0, 2942180 ]
-								}
-, 								{
-									"time" : 244.853699803352356,
-									"message" : "list",
-									"args" : [ 43, 107, 2690800 ]
-								}
-, 								{
-									"time" : 0.0,
-									"message" : "list",
-									"args" : [ 60, 91, 7087180 ]
-								}
-, 								{
-									"time" : 2.015400171279907,
-									"message" : "list",
-									"args" : [ 55, 99, 4939950 ]
-								}
-, 								{
-									"time" : 5.589599967002869,
-									"message" : "list",
-									"args" : [ 48, 121, 6711510 ]
-								}
-, 								{
-									"time" : 0.0,
-									"message" : "list",
-									"args" : [ 50, 111, 267460 ]
-								}
-, 								{
-									"time" : 43.491899967193604,
-									"message" : "list",
-									"args" : [ 79, 99, 6188460 ]
-								}
-, 								{
-									"time" : 56.5278000831604,
+									"time" : 6000.0,
 									"message" : "done"
 								}
  ],
@@ -1369,8 +862,8 @@
 					"id" : "obj-11",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 889.0, 154.0, 78.0, 23.0 ],
 					"saved_object_attributes" : 					{
 						"filename" : "mb.helpers",
@@ -1449,6 +942,13 @@
 			}
  ],
 		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-41", 0 ],
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-103", 0 ],
 					"source" : [ "obj-100", 0 ]
@@ -1594,6 +1094,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-40", 0 ],
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-18", 0 ],
 					"order" : 1,
 					"source" : [ "obj-3", 0 ]
@@ -1645,16 +1152,16 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-39", 0 ],
-					"order" : 0,
+					"destination" : [ "obj-1", 0 ],
+					"order" : 1,
 					"source" : [ "obj-42", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-41", 0 ],
-					"order" : 1,
+					"destination" : [ "obj-39", 0 ],
+					"order" : 0,
 					"source" : [ "obj-42", 0 ]
 				}
 
@@ -1707,7 +1214,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-40", 0 ],
+					"destination" : [ "obj-2", 0 ],
 					"source" : [ "obj-6", 0 ]
 				}
 
