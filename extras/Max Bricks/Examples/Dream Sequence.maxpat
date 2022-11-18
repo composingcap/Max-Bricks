@@ -3597,7 +3597,7 @@
 									"patching_rect" : [ 130.666670560836792, 348.333334863185883, 204.0, 35.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 67.0, 42.5, 142.0, 35.0 ],
-									"text" : "180 : 3 : 351",
+									"text" : "9 : 3 : 155",
 									"wordwrap" : 0
 								}
 
@@ -5876,7 +5876,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 552.0, 673.0, 1082.0, 591.0 ],
+						"rect" : [ 550.0, 332.0, 1082.0, 591.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -6254,8 +6254,7 @@
 									"patching_rect" : [ 746.0, 101.0, 58.0, 23.0 ],
 									"restore" : 									{
 										"gain" : [ 0.0 ],
-										"live.numbox" : [ 1.0 ],
-										"live.text" : [ 1.0 ]
+										"live.numbox" : [ 1.0 ]
 									}
 ,
 									"text" : "autopattr",
@@ -6378,6 +6377,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-20", 0 ],
 									"source" : [ "obj-18", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-25", 0 ],
+									"source" : [ "obj-19", 1 ]
 								}
 
 							}
@@ -12070,7 +12076,7 @@
 , 							{
 								"box" : 								{
 									"angle" : 270.0,
-									"bgcolor" : [ 1, 1, 0, 1 ],
+									"bgcolor" : [ 0.75, 0.75, 0.75, 1 ],
 									"hint" : "Metro",
 									"id" : "obj-32",
 									"maxclass" : "panel",

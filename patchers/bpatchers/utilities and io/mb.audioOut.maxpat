@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 3,
+			"minor" : 5,
 			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 552.0, 673.0, 1082.0, 591.0 ],
+		"rect" : [ 550.0, 332.0, 1082.0, 591.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -199,7 +199,7 @@
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_invisible" : 2,
-							"parameter_longname" : "dspState[2]",
+							"parameter_longname" : "dspState[3]",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "dspState",
 							"parameter_type" : 2
@@ -265,7 +265,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_invisible" : 2,
-							"parameter_longname" : "live.numbox[2]",
+							"parameter_longname" : "live.numbox[3]",
 							"parameter_mmax" : 63.0,
 							"parameter_mmin" : 1.0,
 							"parameter_shortname" : "live.numbox",
@@ -294,7 +294,7 @@
 					"presentation_rect" : [ 7.0, 48.5, 75.0, 36.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "live.gain~[2]",
+							"parameter_longname" : "live.gain~[3]",
 							"parameter_mmax" : 6.0,
 							"parameter_mmin" : -70.0,
 							"parameter_shortname" : "live.gain~",
@@ -388,8 +388,7 @@
 					"patching_rect" : [ 746.0, 101.0, 58.0, 23.0 ],
 					"restore" : 					{
 						"gain" : [ 0.0 ],
-						"live.numbox" : [ 1.0 ],
-						"live.text" : [ 0.0 ]
+						"live.numbox" : [ 1.0 ]
 					}
 ,
 					"text" : "autopattr",
@@ -512,6 +511,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-20", 0 ],
 					"source" : [ "obj-18", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-25", 0 ],
+					"source" : [ "obj-19", 1 ]
 				}
 
 			}
