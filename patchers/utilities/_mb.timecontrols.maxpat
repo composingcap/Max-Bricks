@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 3,
+			"minor" : 5,
 			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1740.0, 349.0, 1082.0, 597.0 ],
+		"rect" : [ 379.0, 321.0, 1082.0, 597.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -46,7 +46,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "float" ],
 					"patching_rect" : [ 587.0, 6.0, 30.0, 30.0 ]
 				}
 
@@ -58,7 +58,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 358.0, 184.0, 95.0, 23.0 ],
+					"patching_rect" : [ 307.0, 71.0, 95.0, 23.0 ],
 					"restore" : [ 7.0 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
@@ -271,7 +271,7 @@
 							"parameter_initial" : [ 7.0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "_noteval[1]",
+							"parameter_longname" : "live.menu[5]",
 							"parameter_mmax" : 20,
 							"parameter_shortname" : "ntoeval",
 							"parameter_type" : 2
@@ -434,7 +434,7 @@
 							"parameter_initial" : [ 250 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "_timems[1]",
+							"parameter_longname" : "timems[5]",
 							"parameter_mmax" : 5000.0,
 							"parameter_mmin" : 10.0,
 							"parameter_shortname" : "timems",

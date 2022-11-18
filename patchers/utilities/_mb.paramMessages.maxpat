@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 3,
+			"minor" : 5,
 			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 562.0, 748.0, 1082.0, 597.0 ],
+		"rect" : [ 425.0, 309.0, 1082.0, 597.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,18 @@
 		"subpatcher_template" : "minimal",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-8",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 670.0, 394.0, 70.0, 23.0 ],
+					"text" : "route mode"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-7",
 					"maxclass" : "newobj",
@@ -105,7 +117,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 558.0, 414.0, 50.0, 23.0 ],
+					"patching_rect" : [ 558.0, 446.0, 50.0, 23.0 ],
 					"text" : "zl.group"
 				}
 
@@ -289,7 +301,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "list" ],
 					"patching_rect" : [ 46.0, 42.0, 30.0, 30.0 ]
 				}
 
@@ -454,8 +466,15 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-2", 0 ],
+					"destination" : [ "obj-8", 0 ],
 					"source" : [ "obj-7", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"source" : [ "obj-8", 1 ]
 				}
 
 			}
