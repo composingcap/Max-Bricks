@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 3,
-			"revision" : 1,
+			"minor" : 5,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1482.0, 216.0, 1112.0, 1136.0 ],
+		"rect" : [ 34.0, 87.0, 1612.0, 929.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -241,7 +241,7 @@
 ,
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
-							"parameter_longname" : "live.text[17]",
+							"parameter_longname" : "live.text[3]",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.text[4]",
 							"parameter_type" : 2
@@ -1198,7 +1198,7 @@
 ,
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
-							"parameter_longname" : "live.text[16]",
+							"parameter_longname" : "live.text[4]",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.text[12]",
 							"parameter_type" : 2
@@ -1260,7 +1260,7 @@
 ,
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
-							"parameter_longname" : "live.text[18]",
+							"parameter_longname" : "live.text[2]",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.text[12]",
 							"parameter_type" : 2
@@ -1319,7 +1319,13 @@
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 213.0, 276.0, 88.0, 23.0 ],
 					"restore" : [ 						{
-
+							"1" : "none::none",
+							"5" : "none::none",
+							"2" : "none::none",
+							"6" : "none::none",
+							"3" : "none::none",
+							"4" : "none::none",
+							"7" : "none::none"
 						}
  ],
 					"saved_object_attributes" : 					{
@@ -1419,7 +1425,13 @@
 , 			{
 				"box" : 				{
 					"data" : 					{
-
+						"1" : "none::none",
+						"5" : "none::none",
+						"2" : "none::none",
+						"6" : "none::none",
+						"3" : "none::none",
+						"4" : "none::none",
+						"7" : "none::none"
 					}
 ,
 					"id" : "obj-22",
@@ -1431,7 +1443,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_invisible" : 1,
-							"parameter_longname" : "mappings[1]",
+							"parameter_longname" : "mappings[2]",
 							"parameter_shortname" : "mappings",
 							"parameter_type" : 3
 						}
@@ -1477,7 +1489,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "refresh", "val2" ],
-							"parameter_longname" : "live.text[15]",
+							"parameter_longname" : "live.text[1]",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "refresh",
 							"parameter_type" : 2
@@ -1871,7 +1883,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "1", "2", "3", "4", "5", "6", "7", "8" ],
-							"parameter_longname" : "live.tab[3]",
+							"parameter_longname" : "live.tab[4]",
 							"parameter_mmax" : 7,
 							"parameter_shortname" : "live.tab",
 							"parameter_type" : 2,
@@ -2095,7 +2107,7 @@
 					"fontname" : "Ableton Sans Medium",
 					"fontsize" : 9.5,
 					"id" : "obj-58",
-					"items" : "<empty>",
+					"items" : "none",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -2186,7 +2198,7 @@
 					"fontname" : "Ableton Sans Medium",
 					"fontsize" : 9.5,
 					"id" : "obj-1",
-					"items" : "<empty>",
+					"items" : [ "none", ",", "mb.granulate~" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -2287,8 +2299,8 @@
 					"id" : "obj-20",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 813.0, 243.0, 78.0, 23.0 ],
 					"saved_object_attributes" : 					{
 						"filename" : "mb.helpers",

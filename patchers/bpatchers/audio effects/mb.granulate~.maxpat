@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 3,
-			"revision" : 1,
+			"minor" : 5,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1286.0, 134.0, 1562.0, 1039.0 ],
+		"rect" : [ 136.0, 243.0, 564.0, 614.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -46,8 +46,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 181.0, 633.0, 73.0, 50.0 ],
-					"presentation_linecount" : 2,
+					"patching_rect" : [ 181.0, 633.0, 74.0, 50.0 ],
 					"text" : "Apply the envelope to the grain"
 				}
 
@@ -61,7 +60,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 351.0, 537.0, 111.0, 50.0 ],
-					"presentation_linecount" : 3,
 					"text" : "Read an envelope based on the grain phasor"
 				}
 
@@ -75,7 +73,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 801.0, 280.0, 111.0, 93.0 ],
-					"presentation_linecount" : 6,
 					"text" : "Converts semitones to playback rate (like a tape) with conpensation the grain rate."
 				}
 
@@ -88,8 +85,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 793.5, 450.5, 108.0, 50.0 ],
-					"presentation_linecount" : 3,
+					"patching_rect" : [ 793.5, 450.5, 111.0, 50.0 ],
 					"text" : "Overlap is sampled when the grain is off"
 				}
 
@@ -102,8 +98,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 312.5, 377.5, 107.0, 50.0 ],
-					"presentation_linecount" : 3,
+					"patching_rect" : [ 312.5, 377.5, 108.0, 50.0 ],
 					"text" : "Delay time is sampled when the phasor grain is off"
 				}
 
@@ -131,8 +126,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 1,
+							"minor" : 5,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -166,7 +161,6 @@
 						"style" : "Minimal-1",
 						"subpatcher_template" : "minimal",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-6",
@@ -430,8 +424,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 611.5, 645.0, 107.0, 35.0 ],
-					"presentation_linecount" : 2,
+					"patching_rect" : [ 611.5, 645.0, 109.0, 35.0 ],
 					"text" : "Random stereo for spread"
 				}
 
@@ -460,8 +453,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 1,
+							"minor" : 5,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1872,7 +1865,7 @@
 , 			{
 				"box" : 				{
 					"angle" : 270.0,
-					"bgcolor" : [ 1, 1, 0, 1 ],
+					"bgcolor" : [ 0.75, 0.75, 0.75, 1 ],
 					"hint" : "MIDI Pitch (number)",
 					"id" : "obj-15",
 					"maxclass" : "panel",
@@ -1911,7 +1904,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 139.0, 48.0, 30.0, 30.0 ]
 				}
 
