@@ -7,7 +7,8 @@ var extralarge = [420,220];
 
 var snapshotapi = 0;
 var storage;
-var editFlag = false;
+//var editFlag = false;
+var editFlag = true;
 var p;
 var parent;
 var storage;
