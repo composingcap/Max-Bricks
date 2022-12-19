@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 3,
-			"revision" : 1,
+			"minor" : 5,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1690.0, 260.0, 1082.0, 915.0 ],
+		"rect" : [ 144.0, 256.0, 409.0, 350.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -161,7 +161,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 6,
 					"outlettype" : [ "signal", "bang", "int", "float", "", "list" ],
-					"patching_rect" : [ 28.5, 85.0, 71.5, 23.0 ],
+					"patching_rect" : [ 0.75, 83.0, 71.5, 23.0 ],
 					"text" : "typeroute~"
 				}
 
@@ -334,8 +334,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 1,
+							"minor" : 5,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2275,7 +2275,7 @@
 ,
 						"valueof" : 						{
 							"parameter_enum" : [ "1", "2", "3", "4", "5", "6", "7", "8" ],
-							"parameter_longname" : "live.tab[4]",
+							"parameter_longname" : "live.tab[1]",
 							"parameter_mmax" : 7,
 							"parameter_shortname" : "live.tab",
 							"parameter_type" : 2,
@@ -2547,7 +2547,7 @@
 ,
 						"valueof" : 						{
 							"parameter_enum" : [ "lowpass", "lowshelf", "bandstop", "peaknotch", "highshelf", "highpass" ],
-							"parameter_longname" : "top1[2]",
+							"parameter_longname" : "top1[3]",
 							"parameter_mmax" : 5,
 							"parameter_shortname" : "top1",
 							"parameter_type" : 2
@@ -2616,7 +2616,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_invisible" : 2,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "g",
+							"parameter_longname" : "g[1]",
 							"parameter_mmax" : 6.0,
 							"parameter_mmin" : -70.0,
 							"parameter_shortname" : "Gain",
@@ -2684,7 +2684,7 @@
 							"parameter_initial" : [ 0.71 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "q",
+							"parameter_longname" : "q[1]",
 							"parameter_mmax" : 20.0,
 							"parameter_mmin" : 0.5,
 							"parameter_shortname" : "Q",
@@ -2764,7 +2764,7 @@
 					"presentation_rect" : [ 208.0, 12.5, 64.0, 26.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "mc.live.gain~[5]",
+							"parameter_longname" : "mc.live.gain~[2]",
 							"parameter_mmax" : 6.0,
 							"parameter_mmin" : -70.0,
 							"parameter_shortname" : "mc.live.gain~",
@@ -2892,7 +2892,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_invisible" : 2,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "f",
+							"parameter_longname" : "f[1]",
 							"parameter_mmax" : 15000.0,
 							"parameter_mmin" : 50.0,
 							"parameter_shortname" : "Freq",
@@ -3029,7 +3029,7 @@
 							"parameter_initial" : [ 100 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "_mix",
+							"parameter_longname" : "_mix[1]",
 							"parameter_mmax" : 100.0,
 							"parameter_shortname" : "Mix",
 							"parameter_type" : 0,
@@ -3085,7 +3085,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 28.5, 51.0, 30.0, 30.0 ]
+					"patching_rect" : [ 0.75, 49.0, 30.0, 30.0 ]
 				}
 
 			}

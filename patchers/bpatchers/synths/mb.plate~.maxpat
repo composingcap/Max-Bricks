@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 3,
-			"revision" : 1,
+			"minor" : 5,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1578.0, 503.0, 1059.0, 847.0 ],
+		"rect" : [ 34.0, 87.0, 1612.0, 929.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -246,7 +246,7 @@
 							"parameter_initial" : [ 0.8 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "_detune",
+							"parameter_longname" : "_detune[1]",
 							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "detune",
 							"parameter_type" : 0,
@@ -336,7 +336,7 @@
 							"parameter_initial" : [ 0.5 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "_hitColor",
+							"parameter_longname" : "_hitColor[1]",
 							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "hitColor",
 							"parameter_type" : 0,
@@ -416,7 +416,7 @@
 							"parameter_initial" : [ 0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "_gain",
+							"parameter_longname" : "_gain[1]",
 							"parameter_mmax" : 6.0,
 							"parameter_mmin" : -70.0,
 							"parameter_shortname" : "gain",
@@ -451,7 +451,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 590.0, 434.0, 80.0, 23.0 ],
+					"patching_rect" : [ 590.0, 419.0, 80.0, 23.0 ],
 					"text" : "patcherargs 0"
 				}
 
@@ -477,7 +477,7 @@
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 590.0, 528.0, 78.0, 23.0 ],
 					"saved_object_attributes" : 					{
-						"filename" : "mb.helpers",
+						"filename" : "mb.helpers.js",
 						"parameter_enable" : 0
 					}
 ,
@@ -514,7 +514,7 @@
 							"parameter_initial" : [ 0.8 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "_resonance",
+							"parameter_longname" : "_resonance[1]",
 							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "resonance",
 							"parameter_type" : 0,
@@ -544,7 +544,7 @@
 							"parameter_initial" : [ 0.8 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "_brightness",
+							"parameter_longname" : "_brightness[1]",
 							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "brightness",
 							"parameter_type" : 0,
