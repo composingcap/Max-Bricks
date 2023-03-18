@@ -4,7 +4,7 @@ var extraSmall= [190,90];
 var extraextraSmall= [190,40];
 var large = [290,220];
 var extralarge = [420,220];
-
+var xss = [140,90];
 var snapshotapi = 0;
 var storage;
 //var editFlag = false;
@@ -64,6 +64,10 @@ function autoTransform(size){
 
 
 	}
+	else if (size =="xss"){
+		position[3] = xss[0];
+		position[4] = xss[1];
+		}
 	else{
 		position[3] = medium[0];
 		position[4] = medium[1];

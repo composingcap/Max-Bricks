@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 3,
-			"revision" : 1,
+			"minor" : 5,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 747.0, 598.0, 944.0, 667.0 ],
+		"rect" : [ 188.0, 292.0, 944.0, 667.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -63,7 +63,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 2,
-					"outlettype" : [ "float", "" ],
+					"outlettype" : [ "float", "int" ],
 					"patching_rect" : [ 71.0, 29.0, 103.0, 23.0 ],
 					"text" : "_mb.param period"
 				}
@@ -75,7 +75,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 2,
-					"outlettype" : [ "float", "" ],
+					"outlettype" : [ "float", "int" ],
 					"patching_rect" : [ 253.0, 493.5, 121.0, 23.0 ],
 					"text" : "_mb.param maximum"
 				}
@@ -87,7 +87,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 2,
-					"outlettype" : [ "float", "" ],
+					"outlettype" : [ "float", "int" ],
 					"patching_rect" : [ 253.0, 461.5, 118.0, 23.0 ],
 					"text" : "_mb.param minimum"
 				}
@@ -150,7 +150,7 @@
 						"valueof" : 						{
 							"parameter_initial" : [ 1 ],
 							"parameter_initial_enable" : 1,
-							"parameter_longname" : "lfoMax[4]",
+							"parameter_longname" : "lfoMax[5]",
 							"parameter_mmax" : 1000.0,
 							"parameter_mmin" : -1000.0,
 							"parameter_shortname" : "lfoMax",
@@ -184,7 +184,7 @@
 						"valueof" : 						{
 							"parameter_initial" : [ 1 ],
 							"parameter_initial_enable" : 1,
-							"parameter_longname" : "number[3]",
+							"parameter_longname" : "number[4]",
 							"parameter_mmax" : 1000.0,
 							"parameter_mmin" : -1000.0,
 							"parameter_shortname" : "number[1]",
@@ -400,7 +400,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 6,
 					"outlettype" : [ "signal", "bang", "int", "float", "", "list" ],
-					"patching_rect" : [ 346.75, 31.0, 71.5, 23.0 ],
+					"patching_rect" : [ 346.75, 35.0, 71.5, 23.0 ],
 					"text" : "typeroute~"
 				}
 
@@ -886,7 +886,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_invisible" : 1,
-							"parameter_longname" : "steps[10]",
+							"parameter_longname" : "steps[1]",
 							"parameter_shortname" : "steps",
 							"parameter_type" : 3
 						}
@@ -899,24 +899,6 @@
 					"slidercolor" : [ 0.439, 0.227, 0.906, 1.0 ],
 					"spacing" : 2,
 					"varname" : "multislider"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"angle" : 270.0,
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"hint" : "MIDI Pitch (number)",
-					"id" : "obj-22",
-					"maxclass" : "panel",
-					"mode" : 0,
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 685.0, 535.0, 43.0, 43.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 7.0, 3.5, 5.0, 5.0 ],
-					"proportion" : 0.39,
-					"shape" : 1
 				}
 
 			}
@@ -977,8 +959,8 @@
 					"id" : "obj-15",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 705.0, 155.0, 78.0, 23.0 ],
 					"saved_object_attributes" : 					{
 						"filename" : "mb.helpers",
