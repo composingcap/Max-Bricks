@@ -68,6 +68,10 @@ function autoTransform(size){
 		position[3] = xss[0];
 		position[4] = xss[1];
 		}
+	else if (size =="xxss"){
+		position[3] = xss[0];
+		position[4] = extraextraSmall[1];
+		}
 	else{
 		position[3] = medium[0];
 		position[4] = medium[1];
@@ -237,9 +241,11 @@ function dict_dump(dictName) {
 
 	}
 	else{
+		outlet(2, arrayfromargs(arguments));
+
 		n = "";
 		n = parentNameBurrow(this.patcher.parentpatcher,n);
-		error(varName +" is not a message for " +n, "\n");
+		//error(varName +" is not a message for " +n, "\n");
 	} 
   }
 

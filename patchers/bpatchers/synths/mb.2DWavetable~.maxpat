@@ -166,7 +166,7 @@
 									"parameter_enable" : 1,
 									"patching_rect" : [ 210.75, 150.0, 25.0, 23.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 2.0, 1.5, 25.0, 23.0 ],
+									"presentation_rect" : [ 2.0, 1.5, 33.0, 23.0 ],
 									"saved_attribute_attributes" : 									{
 										"activedialcolor" : 										{
 											"expression" : ""
@@ -174,7 +174,7 @@
 ,
 										"valueof" : 										{
 											"parameter_linknames" : 1,
-											"parameter_longname" : "live.dial",
+											"parameter_longname" : "live.dial[13]",
 											"parameter_mmax" : 100.0,
 											"parameter_mmin" : -100.0,
 											"parameter_shortname" : "pan",
@@ -205,7 +205,7 @@
 									"presentation_rect" : [ 31.0, 1.5, 74.0, 26.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
-											"parameter_longname" : "mc.live.gain~",
+											"parameter_longname" : "mc.live.gain~[10]",
 											"parameter_mmax" : 6.0,
 											"parameter_mmin" : -70.0,
 											"parameter_order" : -1,
@@ -616,7 +616,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 364.5, 853.0, 57.0, 23.0 ],
-					"restore" : [ 0 ],
+					"restore" : [ 0.0 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -1952,7 +1952,7 @@
 						"valueof" : 						{
 							"parameter_initial" : [ 6000 ],
 							"parameter_initial_enable" : 1,
-							"parameter_longname" : "live.numbox[7]",
+							"parameter_longname" : "live.numbox[9]",
 							"parameter_mmax" : 10000.0,
 							"parameter_mmin" : 1000.0,
 							"parameter_shortname" : "live.numbox",
@@ -2043,7 +2043,7 @@
 						"valueof" : 						{
 							"parameter_exponent" : 2.0,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "envelope rows",
+							"parameter_longname" : "live.dial[15]",
 							"parameter_mmax" : 64.0,
 							"parameter_shortname" : "envRows",
 							"parameter_type" : 0,
@@ -2136,7 +2136,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_linknames" : 1,
-							"parameter_longname" : "row position",
+							"parameter_longname" : "live.dial[14]",
 							"parameter_mmax" : 64.0,
 							"parameter_shortname" : "row",
 							"parameter_type" : 0,
@@ -2168,7 +2168,7 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 166.0, 645.5, 260.0, 23.0 ],
+					"patching_rect" : [ 166.0, 645.5, 274.0, 23.0 ],
 					"text" : "poly~ _mb.poly.wt2d 32 @args #0_wt @target 0"
 				}
 
@@ -2230,7 +2230,7 @@
 				"box" : 				{
 					"comment" : "Wavetable positon modulator (0-64)",
 					"id" : "obj-74",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -2381,7 +2381,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
-							"parameter_longname" : "live.text[10]",
+							"parameter_longname" : "live.text[16]",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.text[1]",
 							"parameter_type" : 2
@@ -2520,7 +2520,7 @@
 						"valueof" : 						{
 							"parameter_initial" : [ 6000 ],
 							"parameter_initial_enable" : 1,
-							"parameter_longname" : "live.numbox[8]",
+							"parameter_longname" : "live.numbox[10]",
 							"parameter_mmax" : 10000.0,
 							"parameter_mmin" : 1000.0,
 							"parameter_shortname" : "live.numbox",
@@ -2749,7 +2749,7 @@
 				"box" : 				{
 					"comment" : "Pitch Bend in Semitones (signal or data LFO)",
 					"id" : "obj-3",
-					"index" : 0,
+					"index" : 3,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -2779,7 +2779,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-54",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -2791,7 +2791,7 @@
 				"box" : 				{
 					"comment" : "MIDI Note (pitch velocity)",
 					"id" : "obj-41",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -3785,84 +3785,6 @@
 
 			}
  ],
-		"parameters" : 		{
-			"obj-100" : [ "envelope rows", "envRows", 0 ],
-			"obj-105" : [ "live.numbox[7]", "live.numbox", 0 ],
-			"obj-19" : [ "live.text[10]", "live.text[1]", 0 ],
-			"obj-44" : [ "live.numbox[8]", "live.numbox", 0 ],
-			"obj-86::obj-61" : [ "mc.live.gain~", "mc.live.gain~", -1 ],
-			"obj-86::obj-67" : [ "live.dial", "pan", 0 ],
-			"obj-94" : [ "row position", "row", 0 ],
-			"parameterbanks" : 			{
-				"0" : 				{
-					"index" : 0,
-					"name" : "",
-					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-				}
-
-			}
-,
-			"inherited_shortname" : 1
-		}
-,
-		"dependency_cache" : [ 			{
-				"name" : "_mb.adsrtime.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Max-Bricks/patchers/utilities",
-				"patcherrelativepath" : "../../utilities",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "_mb.inputConnected.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Max-Bricks/patchers/utilities",
-				"patcherrelativepath" : "../../utilities",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "_mb.lfoInput.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Max-Bricks/patchers/utilities",
-				"patcherrelativepath" : "../../utilities",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "_mb.param.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Max-Bricks/patchers/utilities",
-				"patcherrelativepath" : "../../utilities",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "_mb.paramMessages.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Max-Bricks/patchers/utilities",
-				"patcherrelativepath" : "../../utilities",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "_mb.poly.wt2d.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Max-Bricks/patchers/poly",
-				"patcherrelativepath" : "../../poly",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "mb.helpers.js",
-				"bootpath" : "~/Documents/Max 8/Packages/Max-Bricks/javascript",
-				"patcherrelativepath" : "../../../javascript",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "pan2S.maxpat",
-				"bootpath" : "~/Library/Application Support/Cycling '74/Max 8/Examples/spatialization/panning/lib",
-				"patcherrelativepath" : "../../../../../../../Library/Application Support/Cycling '74/Max 8/Examples/spatialization/panning/lib",
-				"type" : "JSON",
-				"implicit" : 1
-			}
- ],
-		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "Minimal",
 				"default" : 				{
