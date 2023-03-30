@@ -172,7 +172,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 128.0, 68.0, 63.0, 23.0 ],
-					"restore" : [ 1.0 ],
+					"restore" : [ 0.0 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -697,7 +697,7 @@
 											"parameter_initial" : [ 7.0 ],
 											"parameter_initial_enable" : 1,
 											"parameter_linknames" : 1,
-											"parameter_longname" : "_noteval[1]",
+											"parameter_longname" : "_noteval[2]",
 											"parameter_mmax" : 20,
 											"parameter_shortname" : "ntoeval",
 											"parameter_type" : 2
@@ -860,7 +860,7 @@
 											"parameter_initial" : [ 250 ],
 											"parameter_initial_enable" : 1,
 											"parameter_linknames" : 1,
-											"parameter_longname" : "_timems[1]",
+											"parameter_longname" : "_timems[2]",
 											"parameter_mmax" : 5000.0,
 											"parameter_mmin" : 10.0,
 											"parameter_shortname" : "timems",
