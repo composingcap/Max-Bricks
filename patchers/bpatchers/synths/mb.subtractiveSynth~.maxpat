@@ -1074,7 +1074,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 191.0, 535.0, 40.0, 23.0 ],
-					"text" : "*~ 0.1"
+					"text" : "*~ 0.5"
 				}
 
 			}
@@ -1145,7 +1145,7 @@
 						"valueof" : 						{
 							"parameter_initial" : [ 0.5 ],
 							"parameter_initial_enable" : 1,
-							"parameter_longname" : "_resonance[1]",
+							"parameter_longname" : "_resonance[3]",
 							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "resonance",
 							"parameter_type" : 0,
@@ -1166,7 +1166,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 890.5, 406.0, 59.0, 23.0 ],
-					"restore" : [ 2.303140490103667, 1144.148861317674346, 0.029411764705882, 2000.0, 0.0, 1.0, 0.0, 0.029411764705882, 0.46815834767642, -0.831313994443703 ],
+					"restore" : [ 2.303140490103667, 134.917940321635513, 0.329411764705882, 11.659010004108247, 0.0, 1.0, 0.0, 0.029411764705882, 0.46815834767642, -0.831313994443703 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -1227,7 +1227,7 @@
 						"valueof" : 						{
 							"parameter_enum" : [ "lowpass", "bandpass", "highpass" ],
 							"parameter_enum_icons" : [ "lowpass.svg", "bandpass.svg", "highpass.svg" ],
-							"parameter_longname" : "live.menu[1]",
+							"parameter_longname" : "live.menu[3]",
 							"parameter_mmax" : 2,
 							"parameter_shortname" : "live.menu",
 							"parameter_type" : 2
@@ -1279,7 +1279,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
-							"parameter_longname" : "live.text[12]",
+							"parameter_longname" : "live.text[2]",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.text[1]",
 							"parameter_type" : 2
@@ -1406,7 +1406,7 @@
 						"valueof" : 						{
 							"parameter_initial" : [ 6000 ],
 							"parameter_initial_enable" : 1,
-							"parameter_longname" : "live.numbox[5]",
+							"parameter_longname" : "live.numbox[1]",
 							"parameter_mmax" : 10000.0,
 							"parameter_mmin" : 1000.0,
 							"parameter_shortname" : "live.numbox",
@@ -1491,7 +1491,7 @@
 					"attack_time" : 2.303140490103667,
 					"decay_domain" : [ 1.5, 2000.0 ],
 					"decay_slope" : 0.46815834767642,
-					"decay_time" : 1144.148861317674346,
+					"decay_time" : 134.917940321635513,
 					"hint" : "Sets the envelope for each synth note",
 					"id" : "obj-28",
 					"maxclass" : "live.adsrui",
@@ -1503,8 +1503,8 @@
 					"presentation_rect" : [ 7.0, 58.5, 191.0, 50.0 ],
 					"release_domain" : [ 1.5, 2000.0 ],
 					"release_slope" : -0.831313994443703,
-					"release_time" : 2000.0,
-					"sustain" : 0.029411764705882
+					"release_time" : 11.659010004108247,
+					"sustain" : 0.329411764705882
 				}
 
 			}
@@ -1618,7 +1618,7 @@
 , 			{
 				"box" : 				{
 					"angle" : 270.0,
-					"bgcolor" : [ 0.75, 0.75, 0.75, 1 ],
+					"bgcolor" : [ 1, 1, 0, 1 ],
 					"hint" : "MIDI Notes (pitch velocity) trigger voices (16) of the additive synth",
 					"id" : "obj-15",
 					"maxclass" : "panel",

@@ -8338,7 +8338,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 16.0, 128.5, 254.0, 64.0 ],
+									"patching_rect" : [ 16.0, 128.5, 256.0, 64.0 ],
 									"text" : "This type of synthesis is based on Joseph Fourier's idea that any function (sound) can be aproximated through a sum of sine waves. This is known as Fourier synthesis."
 								}
 
@@ -8457,7 +8457,7 @@
 									"numoutlets" : 4,
 									"offset" : [ 0.0, 0.0 ],
 									"outlettype" : [ "", "", "signal", "signal" ],
-									"patching_rect" : [ 426.0, 2.0, 290.0, 120.0 ],
+									"patching_rect" : [ 426.0, 2.0, 286.0, 88.0 ],
 									"varname" : "mb.notein",
 									"viewvisibility" : 1
 								}
@@ -8480,7 +8480,7 @@
 									"numoutlets" : 1,
 									"offset" : [ 0.0, 0.0 ],
 									"outlettype" : [ "multichannelsignal" ],
-									"patching_rect" : [ 426.0, 136.0, 290.0, 220.0 ],
+									"patching_rect" : [ 426.0, 103.0, 290.0, 220.0 ],
 									"varname" : "mb.harmonicsynth~",
 									"viewvisibility" : 1
 								}
@@ -8502,7 +8502,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"offset" : [ 0.0, 0.0 ],
-									"patching_rect" : [ 426.0, 458.0, 190.0, 90.0 ],
+									"patching_rect" : [ 426.0, 345.0, 190.0, 90.0 ],
 									"varname" : "mb.audioOut",
 									"viewvisibility" : 1
 								}
@@ -8726,84 +8726,84 @@
 		"dependency_cache" : [ 			{
 				"name" : "_mb.adsrtime.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/Max-Bricks/patchers/utilities",
-				"patcherrelativepath" : "../patchers/utilities",
+				"patcherrelativepath" : "../../patchers/utilities",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "_mb.inputConnected.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/Max-Bricks/patchers/utilities",
-				"patcherrelativepath" : "../patchers/utilities",
+				"patcherrelativepath" : "../../patchers/utilities",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "_mb.lfoInput.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/Max-Bricks/patchers/utilities",
-				"patcherrelativepath" : "../patchers/utilities",
+				"patcherrelativepath" : "../../patchers/utilities",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "_mb.notetagger.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/Max-Bricks/patchers/utilities",
-				"patcherrelativepath" : "../patchers/utilities",
+				"patcherrelativepath" : "../../patchers/utilities",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "_mb.param.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/Max-Bricks/patchers/utilities",
-				"patcherrelativepath" : "../patchers/utilities",
+				"patcherrelativepath" : "../../patchers/utilities",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "_mb.paramMessages.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/Max-Bricks/patchers/utilities",
-				"patcherrelativepath" : "../patchers/utilities",
+				"patcherrelativepath" : "../../patchers/utilities",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "_mb.poly.harmonicsynth.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/Max-Bricks/patchers/poly",
-				"patcherrelativepath" : "../patchers/poly",
+				"patcherrelativepath" : "../../patchers/poly",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mb.audioOut.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/Max-Bricks/patchers/bpatchers/utilities and io",
-				"patcherrelativepath" : "../patchers/bpatchers/utilities and io",
+				"patcherrelativepath" : "../../patchers/bpatchers/utilities and io",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mb.harmonicsynth~.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/Max-Bricks/patchers/bpatchers/synths",
-				"patcherrelativepath" : "../patchers/bpatchers/synths",
+				"patcherrelativepath" : "../../patchers/bpatchers/synths",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mb.helpers.js",
 				"bootpath" : "~/Documents/Max 8/Packages/Max-Bricks/javascript",
-				"patcherrelativepath" : "../javascript",
+				"patcherrelativepath" : "../../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mb.notein.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/Max-Bricks/patchers/bpatchers/utilities and io",
-				"patcherrelativepath" : "../patchers/bpatchers/utilities and io",
+				"patcherrelativepath" : "../../patchers/bpatchers/utilities and io",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "pan2S.maxpat",
 				"bootpath" : "~/Library/Application Support/Cycling '74/Max 8/Examples/spatialization/panning/lib",
-				"patcherrelativepath" : "../../../../../Library/Application Support/Cycling '74/Max 8/Examples/spatialization/panning/lib",
+				"patcherrelativepath" : "../../../../../../Library/Application Support/Cycling '74/Max 8/Examples/spatialization/panning/lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
