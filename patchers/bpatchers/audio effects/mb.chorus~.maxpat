@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 87.0, 1612.0, 929.0 ],
+		"rect" : [ 34.0, 87.0, 1318.0, 929.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -287,7 +287,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 528.5, 35.0, 58.0, 23.0 ],
-					"restore" : [ 5.0 ],
+					"restore" : [ 5 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -348,7 +348,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 912.0, 226.5, 68.0, 23.0 ],
-					"restore" : [ 1.0 ],
+					"restore" : [ 1 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -382,7 +382,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 749.5, 220.0, 53.0, 36.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 53.0, 43.0, 46.0, 36.0 ],
+					"presentation_rect" : [ 53.0, 43.0, 50.0, 36.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_exponent" : 2.0,
@@ -446,7 +446,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 401.75, 445.0, 56.0, 23.0 ],
-					"restore" : [ 100.0 ],
+					"restore" : [ 50 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -465,7 +465,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 845.0, 141.0, 85.0, 23.0 ],
-					"restore" : [ 0.0 ],
+					"restore" : [ 0 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -600,10 +600,10 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 259.75, 432.0, 25.0, 36.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 147.0, 43.0, 45.0, 36.0 ],
+					"presentation_rect" : [ 145.0, 43.0, 45.0, 36.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_initial" : [ 100 ],
+							"parameter_initial" : [ 50 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
 							"parameter_longname" : "mix[1]",
@@ -715,7 +715,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "multichannelsignal" ],
 					"patching_rect" : [ 59.25, 63.5, 30.0, 30.0 ]
 				}
 

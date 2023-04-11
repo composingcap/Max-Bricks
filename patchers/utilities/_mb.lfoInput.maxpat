@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 3,
-			"revision" : 1,
+			"minor" : 5,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 985.0, 586.0, 1082.0, 597.0 ],
+		"rect" : [ 556.0, 443.0, 1082.0, 597.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -45,7 +45,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "float" ],
-					"patching_rect" : [ 182.0, 126.0, 30.0, 23.0 ],
+					"patching_rect" : [ 182.0, 134.0, 30.0, 23.0 ],
 					"text" : "t b f"
 				}
 
@@ -57,7 +57,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 50.0, 176.0, 29.5, 23.0 ],
+					"patching_rect" : [ 50.0, 184.0, 29.5, 23.0 ],
 					"text" : "+ 0."
 				}
 
@@ -81,7 +81,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 121.0, 205.0, 67.0, 23.0 ],
+					"patching_rect" : [ 121.0, 213.0, 67.0, 23.0 ],
 					"text" : "loadmess 0"
 				}
 
@@ -93,7 +93,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "int", "int" ],
-					"patching_rect" : [ 50.0, 205.0, 59.0, 23.0 ],
+					"patching_rect" : [ 50.0, 213.0, 59.0, 23.0 ],
 					"text" : "change 0."
 				}
 
@@ -105,7 +105,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 55.0, 142.0, 73.0, 23.0 ],
+					"patching_rect" : [ 55.0, 150.0, 73.0, 23.0 ],
 					"text" : "snapshot~ 4"
 				}
 
@@ -118,7 +118,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 55.0, 40.0, 30.0, 30.0 ]
 				}
 
@@ -131,7 +131,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 79.5, 288.0, 30.0, 30.0 ]
+					"patching_rect" : [ 79.5, 296.0, 30.0, 30.0 ]
 				}
 
 			}
