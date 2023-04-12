@@ -547,4 +547,63 @@ if you follow the oversampling & dcblocking instructions
 (see the contents of the 'cnld8-folder' folder that came with
 this download for an example) */
 
+/* Tube Screamer */
 
+tubeScreamer(Vin1, k, G, OS){
+History Vin_n1(0), V_HP_n1(0), V_n1(0);
+
+
+//OS = 1;                     // Oversampling factor
+// User Parameters
+
+//G = clip(G,0,1);      // Input gain (in V)  [0,1]
+//k = clip(k,0,1);      // "Distortion" level [0,1]
+
+
+Is = 2.52e-9;   // Saturation Current    (N914)
+N = 1.752;      // Diode ideality factor (N914)
+VT = 25.864e-3; // Thermal Voltage
+
+// Component Values
+R1 = 4.7e3;
+R2 = 51e3 + k*500e3;
+C1 = 47e-9;
+C2 = 51e-12;
+Fs = samplerate;
+Ts = 1/(OS*samplerate); // Sampling period
+
+
+// Processing Loop
+   
+    Vin = G*Vin1;  // Input Gain
+    
+    // High Pass Input Stage
+    V_HP = ((1 - Ts/(2*R1*C1))*V_HP_n1 + Vin - Vin_n1)/(1 + Ts/(2*R1*C1));
+    I = V_HP/R1;
+    
+    // Newton Solver
+    V = V_n1;
+    for (m=1;m<=1000;m+=1) {
+       
+        F = V - V_n1 - (Ts/C2)*I + (Ts/(2*R2*C2))*(V+V_n1) + (Ts*Is/C2)*sinh(V/(N*VT)) + (Ts*Is/C2)*sinh(V_n1/(N*VT));
+        dF = 1 + (Ts/(2*R2*C2)) + ((Ts*Is)/(N*VT*C2))*cosh(V/(N*VT));
+        err = F/dF;
+        if (abs(err)<10e-12) {
+            break;
+		}
+        else {
+            V = V - err;
+        }
+                
+    }
+    // Read Output
+    Vout = Vin + V;
+    
+    // Update states
+    Vin_n1 = Vin;
+    V_HP_n1 = V_HP;
+    V_n1 = V;
+    
+	return Vout;
+
+}

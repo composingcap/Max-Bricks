@@ -40,6 +40,18 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
+					"patching_rect" : [ 347.0, 595.0, 23.0, 23.0 ],
+					"text" : "sin"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -56,7 +68,7 @@
 					"outlettype" : [ "multichannelsignal", "", "" ],
 					"patching_rect" : [ 33.5, 482.0, 113.0, 42.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 162.0, 493.5, 108.0, 30.0 ],
+					"presentation_rect" : [ 142.0, 10.5, 108.0, 30.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -494,7 +506,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 985.0, 586.0, 1082.0, 597.0 ],
+						"rect" : [ 564.0, 586.0, 1082.0, 597.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -830,8 +842,8 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 345.0, 455.5, 106.0, 23.0 ],
-					"text" : "scale 0. 1024. -1 1"
+					"patching_rect" : [ 345.0, 455.5, 121.0, 23.0 ],
+					"text" : "scale 0. 1024. 0. 6.28"
 				}
 
 			}
@@ -960,7 +972,7 @@
 							"parameter_initial" : [ 100.0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "_mix[6]",
+							"parameter_longname" : "_mix[1]",
 							"parameter_mmax" : 100.0,
 							"parameter_shortname" : "mix",
 							"parameter_type" : 0,
@@ -1119,7 +1131,7 @@
 				"box" : 				{
 					"fontsize" : 10.0,
 					"id" : "obj-35",
-					"items" : [ "atan", ",", "Gloubi-boulga", ",", "110 Saturn", ",", "tape", ",", "Cubic Non-linear" ],
+					"items" : [ "atan", ",", "Gloubi-boulga", ",", "110 Saturn", ",", "tape", ",", "Cubic Non-linear", ",", "Tube Screamer" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -1170,6 +1182,11 @@
 						"Cubic Non-linear" : 						{
 							"controls" : 2,
 							"description" : "Soft clip distortion that reduces alliasing. Based on code by Julius O. Smith III."
+						}
+,
+						"Tube Screamer" : 						{
+							"controls" : 2,
+							"description" : "Physically modeled Tube Screamer emulation from Fabian Esqueda"
 						}
 
 					}
@@ -1381,7 +1398,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 212.0, 99.5, 25.0, 36.0 ],
+					"patching_rect" : [ 242.0, 99.5, 25.0, 36.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 99.0, 41.326086956521735, 25.0, 36.0 ],
 					"saved_attribute_attributes" : 					{
@@ -1447,7 +1464,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 37.75, 48.0, 30.0, 30.0 ]
 				}
 
@@ -1599,6 +1616,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-20", 0 ],
 					"source" : [ "obj-19", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-9", 0 ],
+					"source" : [ "obj-2", 0 ]
 				}
 
 			}
@@ -1959,7 +1983,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-9", 0 ],
+					"destination" : [ "obj-2", 0 ],
 					"source" : [ "obj-55", 0 ]
 				}
 

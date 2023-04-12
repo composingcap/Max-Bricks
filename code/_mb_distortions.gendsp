@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 3,
-			"revision" : 1,
+			"minor" : 5,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "dsp.gen",
-		"rect" : [ 1993.0, 722.0, 1082.0, 597.0 ],
+		"rect" : [ 309.0, 270.0, 721.0, 597.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -64,7 +64,7 @@
 			}
 , 			{
 				"box" : 				{
-					"code" : "require(\"_mb_stkr.waveshaping.genexpr\");\r\nParam mode(1);\r\nx = in1;\r\na = in2;\r\nd = in3;\r\n\r\n\r\nif (mode == 1){\r\n\t\r\n\tout1 = atanDrive(x,scale(a*2,0,1,1,20));\r\n\t\r\n\t}\r\n\t\r\nelse if (mode == 2){\r\n\t\r\n\t//out1 = polyWs(x, a*6+1);\r\n\t\r\n\tout1 = gloubiBoulga(x,a*10);\r\n\t\r\n\t}\r\n\t\r\n\r\nelse if (mode == 3){\r\n\t\r\n\tout1 = polarSplit2(x,scale(a*2,0,1,0.1,1));\r\n\t\r\n\t}\r\n\r\nelse if (mode == 4){\r\n\tout1 = tapeH(x, a*40, 0, scale(d, 0,1,-5,-2));\r\n\t\r\n\t}\r\n\t\r\nelse if (mode == 5){\r\n\t\r\n\tout1 = cnld(x, scale(d,0,1,0,0.1), a*3);\r\n\t\r\n\t}\r\n",
+					"code" : "require(\"_mb_stkr.waveshaping.genexpr\");\r\nParam mode(1);\r\nx = in1;\r\na = in2;\r\nd = in3;\r\n\r\n\r\nif (mode == 1){\r\n\t\r\n\tout1 = atanDrive(x,scale(a*2,0,1,1,20));\r\n\t\r\n\t}\r\n\t\r\nelse if (mode == 2){\r\n\t\r\n\t//out1 = polyWs(x, a*6+1);\r\n\t\r\n\tout1 = gloubiBoulga(x,a*10);\r\n\t\r\n\t}\r\n\t\r\n\r\nelse if (mode == 3){\r\n\t\r\n\tout1 = polarSplit2(x,scale(a*2,0,1,0.1,1));\r\n\t\r\n\t}\r\n\r\nelse if (mode == 4){\r\n\tout1 = tapeH(x, a*40, 0, scale(d, 0,1,-5,-2));\r\n\t\r\n\t}\r\n\t\r\nelse if (mode == 5){\r\n\t\r\n\tout1 = cnld(x, scale(d,0,1,0,0.1), a*3);\r\n\t\r\n\t}\r\nelse if (mode ==6){\r\n\tout1 = tubeScreamer(x, a, d*0.95+0.05, 2);\r\n\r\n\t}\r\n",
 					"fontface" : 0,
 					"fontname" : "<Monospaced>",
 					"fontsize" : 12.0,
