@@ -255,3 +255,21 @@ function dict_dump(dictName) {
 	}
 	return false;
  }
+
+ function ezUi(paramname, parammin, parammax){
+	var uiname = "live.dial"
+	var p = this.patcher;
+	var pos = p.getattr("patching_rect");
+	var parent = p.parentpatcher;
+	var uiElement = parent.newdefault(pos[0],pos[1], uiname);
+	uiElement.setattr("_parameter_range", parammin,parammax);
+	uiElement.setattr("_parameter_unitstyle", 1);
+	uiElement.setattr("_parameter_shortname", paramname);
+	var pattr = parent.newdefault(pos[0]+150,pos[1]+25, "pattr", paramname);
+	var mbparam = parent.newdefault(pos[0]+35,pos[1]+25, "_mb.param", paramname);
+	parent.connect(mbparam, 0, uiElement, 0);
+	parent.connect(uiElement, 0, mbparam, 0);
+	parent.connect(mbparam, 1, pattr, 0);
+	parent.connect(pattr, 0, mbparam, 1);
+	p.dispose();
+ }
